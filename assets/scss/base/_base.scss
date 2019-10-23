@@ -19,20 +19,16 @@ html {
 }
 
 body {
-	background: $backgroundroststarterite;
-	font-family: $fontroststarterecondary;
-	font-size: $fontroststarterize_base; // default for document */
+	background: $background_site;
+	font-family: $font_secondary;
+	font-size: 1.6rem; // default for document */
 	line-height: $line_height;
 	color: $color_text;
 	margin: 0px; // Remove the margin in all browsers.
 	min-height: 100%;
-
-	@include respond-to('large') {
-		font-size: $lg_fontroststarterize_base;
-	}
 }
 
-// Accessibility
+/* Accessibility */
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -61,4 +57,9 @@ body {
   top: 5px;
   width: auto;
   z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Images */
+figure {
+  max-width: 100%;
 }

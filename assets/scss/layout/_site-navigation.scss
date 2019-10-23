@@ -1,22 +1,91 @@
 /**
  *
- * Layout => Site Navigation 
+ * Layout => Site Navigation
  *
  **/
 
-.main-navigation {
 
-	/* Hide menu when not open */
-	ul {
-		display: none;
-	}
+ .main-navigation {
 
-	/* Toggled menu */
-	&.toggled {
-		ul {
-			display: block;
+ 	/* Hide desktop menu on mobile */
+ 	ul.nav-menu {
+ 		display: none;
+ 		padding: 0;
+ 		list-style: none;
+
+ 		@include respond-to('md') {
+ 			display: inline-block;
+ 			margin: 0;
+ 		}
+ 	}
+
+ 	/* Menu items */
+ 	.page_item {
+ 		display: block;
+
+ 		@include respond-to('md') {
+ 			display: inline-block;
+ 		}
+ 	}
+
+ 	/* Mobile menu */
+ 	&.toggled {
+ 		ul {
+ 			display: block;
+ 		}
+
+ 		#primary-menu {} // Mobile menu wrapper
+ 	}
+
+ 	/* Style active menu item differently */
+ 	.current_page_item {
+ 		a {
+ 			text-decoration: none;
+ 			cursor: default;
+ 		}
+ 	}
+
+ 	/* Sub menu */
+ 	.page_item_has_children {
+ 		.sub-menu {
+ 			margin-top: $size_xs;
+ 			padding-left: 0;
+
+ 			@include respond-to('md') {
+ 				position: absolute;
+ 				display: none;
+ 				margin-top: 0;
+ 				padding-top: $size_xs;
+ 			}
+
+ 			.page_item {
+ 				a {
+ 					text-decoration: none;
+
+ 					&:focus,
+ 					&:hover {
+ 						text-decoration: underline;
+ 					}
+ 				}
+
+ 				@include respond-to('md') {
+ 					display: block;
+ 					padding: 0;
+ 					text-align: left;
+
+ 					a {
+ 						text-decoration: underline;
+ 						cursor: pointer;
+ 					}
+ 				}
+ 			}
+ 		}
+
+			// Display on hover
+			&:hover > .sub-menu {
+				display: block;
+			}
 		}
 	}
-}
 
 

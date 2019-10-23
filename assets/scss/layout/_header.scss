@@ -4,149 +4,35 @@
  *
  */
 
-.site-header {
-	padding-top: $size_m;
-	padding-bottom: $size_m;
+ .site-header {
+ 	display: flex;
+ 	flex-direction: row;
+ 	clear: both;
 
-	@include respond-to('medium') {
-		padding-top: $lgroststarterizeroststarter;
-		padding-bottom: $lgroststarterize_xs;
-}
+ 	.site-branding {
+ 		width: 50%;
+ 	}
 
-	/* Logo */
-	.site-branding {
-		.site-logo {
-			max-width: 100px;
-			height: auto;
-			float: left;
+ 	#site-navigation {
+ 		width: 50%;
+ 		text-align: right;
 
-			@include respond-to('medium') {
-				max-width: 112px;
-			}
-		}
+ 		.menu-toggle {
+ 			cursor: pointer;
 
-		.site-title {
-			color: $color_orange;
+ 			&:after {
+ 				content: 'Meny';
+ 			}
 
-			@include respond-to('medium') {
-				font-size: 4.8rem;
-		}
-		}
-	}
+ 			&[aria-expanded=true] {
+ 				&:after {
+ 					content: 'Lukk';
+ 				}
+ 			}
 
-	/* Navigation */
-	.main-navigation {
-		float: right;
-		text-align: right;
-
-		.current-menu-item,
-		.current-page-item {
-			a {
-			color: #728C80;
-			text-decoration: none;
-			cursor: default;
-		}
-		}
-
-		ul.menu {
-		@include respond-to('medium') {
-			display: block;
-			margin: 0;
-		}
-
-		.menu-item {
-			list-style: none;
-
-			@include respond-to('only-mobile') {
-				font-size: $fontroststarterize_large;
-			}
-
-			@include respond-to('medium') {
-				display: inline-block;
-				font-size: $fontroststarterize_base;
-
-				+ .menu-item {
-					padding-left: $sizeroststarter;
-					}
-				}
-		}
-	}
-
-	/* Mobile menu */
-	 .menu-toggle {
-		-webkit-appearance: none;
-		background: none;
-		border: none;
-		padding: 0;
-		cursor: pointer;
-
-		&:after {
-			content: 'Meny';
-		}
-
-		@include respond-to('medium') {
-		   display: none;
-		}
-	}
-
-	&.toggled {
-		.primary-container {
-		position: absolute;
-		clear: both;
-		background: $backgroundroststarterite;
-		padding: $size_xl 0;
-		width: 100%;
-		min-height: 70%;
-		left: 0;
-		text-align: left;
-		z-index: 10000;
-		}
-
-		.menu-toggle[aria-expanded=true] {
-			&:after {
-				content: 'Lukk';
-			}
-		}
-	}
-
-	}
-
-	/* Social media links */
-	.social-media {
-		display: none;
-
-		a {
-			color: $color_light_green;
-			text-decoration: none;
-
-			&:hover,
-			&:focus {
-				text-decoration: underline;
-			}
-		}
-
-	@include respond-to ('medium') {
-		position: fixed;
-		display: block;
-		top: 50%;
-		left: -($lgroststarterize_xxs + $lgroststarterize_xs);
-		transform: rotate(-90deg);
-		font-size: $fontroststarterize_base;
-
-		ul,
-		li {
-			margin: 0;
-			padding: 0;
-		}
-
-		li {
-			display: inline-block;
-			list-style: none;
-
-			+ li {
-				padding-left: $lgroststarterize_xs;
-			}
-		}
-	}
-}
-}
+ 			@include respond-to('md') {
+ 				display: none;
+ 			}
+ 		}
+ 	}
+ }

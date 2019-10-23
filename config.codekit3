@@ -196,6 +196,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/base/_buttons.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_buttons.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/base/_links.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -404,7 +417,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/assets/scss/layout/_content.scss": {
+	"/assets/scss/layout/_blocks.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -412,7 +425,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/_content.css",
+		"oAP": "/_blocks.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -443,6 +456,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/layout/_hero.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_hero.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/layout/_site-navigation.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -469,7 +495,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/assets/scss/partials/_hero.scss": {
+	"/assets/scss/layout/post/_content-project.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -477,7 +503,33 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/_hero.css",
+		"oAP": "/_content-project.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/layout/post/_content.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_content.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/partials/_scroll-to-top.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_scroll-to-top.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -549,6 +601,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/inc/advanced-custom-fields.php",
+		"oF": 0
+		},
+	"/inc/component-project-meta.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/component-project-meta.php",
 		"oF": 0
 		},
 	"/inc/cpt-projects.php": {
@@ -671,6 +731,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/template-parts/content-blocks.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content-blocks.php",
+		"oF": 0
+		},
 	"/template-parts/content-hero.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -695,12 +763,44 @@
 		"oAP": "/template-parts/page/content-page.php",
 		"oF": 0
 		},
+	"/template-parts/partials/block-content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/partials/block-content.php",
+		"oF": 0
+		},
+	"/template-parts/partials/block-image.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/partials/block-image.php",
+		"oF": 0
+		},
+	"/template-parts/partials/block-row.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/partials/block-row.php",
+		"oF": 0
+		},
 	"/template-parts/post/content-none.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/post/content-none.php",
+		"oF": 0
+		},
+	"/template-parts/post/content-project.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/post/content-project.php",
 		"oF": 0
 		},
 	"/template-parts/post/content.php": {
@@ -2186,7 +2286,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://localhost/lole",
+	"externalServerAddress": "http://localhost/roststarter",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

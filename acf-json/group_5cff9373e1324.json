@@ -40,52 +40,6 @@
                             "toolbar": "full",
                             "media_upload": 1,
                             "delay": 0
-                        },
-                        {
-                            "key": "field_5d44217ed78d6",
-                            "label": "Knapp",
-                            "name": "button",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array"
-                        },
-                        {
-                            "key": "field_5d44218cd78d7",
-                            "label": "Velg type",
-                            "name": "button_type",
-                            "type": "radio",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5d44217ed78d6",
-                                        "operator": "!=empty"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "primary": "Primær (ramme)",
-                                "secondary": "Sekundær (understreket)"
-                            },
-                            "allow_null": 0,
-                            "other_choice": 0,
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "return_format": "value",
-                            "save_other_choice": 0
                         }
                     ],
                     "min": "",
@@ -97,6 +51,25 @@
                     "label": "Bildeblokk",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_5d4421fcd78d8",
+                            "label": "Innhold",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "60",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
                         {
                             "key": "field_5d44226af9c7a",
                             "label": "Bilde",
@@ -134,7 +107,10 @@
                                     "max_width": "",
                                     "max_height": "",
                                     "maxroststarterize": "",
-                                    "mime_types": ""
+                                    "mime_types": "",
+                                    "preview_size": "thumbnail",
+                                    "min_size": 0,
+                                    "max_size": 0
                                 },
                                 {
                                     "key": "field_5d44227df9c7b",
@@ -161,25 +137,6 @@
                                     "save_other_choice": 0
                                 }
                             ]
-                        },
-                        {
-                            "key": "field_5d4421fcd78d8",
-                            "label": "Innhold",
-                            "name": "content",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "60",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 0,
-                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -192,9 +149,9 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d5bbc7c5470b",
+                            "key": "field_5d5bbc995470c",
                             "label": "",
-                            "name": "one",
+                            "name": "two",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -211,9 +168,9 @@
                             "delay": 0
                         },
                         {
-                            "key": "field_5d5bbc995470c",
+                            "key": "field_5d5bbc7c5470b",
                             "label": "",
-                            "name": "two",
+                            "name": "one",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -258,14 +215,14 @@
             {
                 "param": "post_template",
                 "operator": "==",
-                "value": "service.php"
+                "value": "default"
             }
         ],
         [
             {
                 "param": "post_template",
                 "operator": "==",
-                "value": "contact.php"
+                "value": "default"
             }
         ]
     ],
@@ -274,10 +231,8 @@
     "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_onroststartercreen": [
-        "the_content"
-    ],
+    "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1566903664
+    "modified": 1571837106
 }

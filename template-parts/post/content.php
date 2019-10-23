@@ -23,7 +23,17 @@
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
-			<?php echo wp_trim_words( get_the_content(), 30, ' ...' ); ?>
+			<?php
+
+			if ( is_singular() ) {
+				the_content();
+			}
+
+			else {
+				echo wp_trim_words( get_the_content(), 30, ' ...' );
+			}
+
+			?>
 		</div><!-- .entry-content -->
 
 	</article><!-- #post-<?php the_ID(); ?> -->

@@ -43,7 +43,10 @@
             "max_width": "",
             "max_height": "",
             "maxroststarterize": "",
-            "mime_types": ""
+            "mime_types": "",
+            "preview_size": "thumbnail",
+            "min_size": 0,
+            "max_size": 0
         }
     ],
     "location": [
@@ -52,11 +55,6 @@
                 "param": "post_template",
                 "operator": "==",
                 "value": "default"
-            },
-            {
-                "param": "page_type",
-                "operator": "!=",
-                "value": "front_page"
             }
         ]
     ],
@@ -65,11 +63,8 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_onroststartercreen": [
-        "the_content",
-        "featured_image"
-    ],
+    "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1566293500
+    "modified": 1571842439
 }

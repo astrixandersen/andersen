@@ -2,15 +2,21 @@
  *
  * Base => Links
  *
- */ 
+ */
 
- 		a {
-			color: $color_dark_grey;
+.site-header,
+#content,
+.site-footer {
+	a {
+		color: $color_text;
 
-	
-			&:hover,
-			&:focus,
-			&:active {
-				color: $color_light_green;
-			}
+		&:hover,
+		&:focus {
+			text-decoration: none;
 		}
+	}
+
+	figure a {
+		border: none;
+	}
+}

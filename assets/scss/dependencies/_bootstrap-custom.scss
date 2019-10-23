@@ -5,20 +5,42 @@
  *
  */
 
+/* Breakpoints */
+$grid-breakpoints: (
+	xs: 0,
+	sm: $screen_sm,
+	md: $screen_md,
+	lg: $screen_lg,
+	xl: $screen_xl
+);
+
 /* Grid containers */
 $container-max-widths: (
-  lg: $container_lg,
-  xl: 100%
+	lg: $container_lg,
+	xl: $container_xl
 );
+
+/* Grid Gutter */
+$grid-gutter-width: 40px;
 
 .container,
 .container-fluid {
-	padding-left: $size_m !important;
-	padding-right: $size_m !important;
+	padding-left: $size_xs !important;
+	padding-right: $size_xs !important;
 
-	@include respond-to('medium') {
-		padding-left: $lgroststarterizeroststarter !important;
-		padding-right: $lgroststarterizeroststarter !important;
+	@include respond-to("sm") {
+		padding-left: $size_s !important;
+		padding-right: $size_s !important;
+	}
+
+	@include respond-to("md") {
+		padding-left: $size_m !important;
+		padding-right: $size_m !important;
+	}
+
+	@include respond-to("lg") {
+		padding-left: $size_l !important;
+		padding-right: $size_l !important;
 	}
 }
 
