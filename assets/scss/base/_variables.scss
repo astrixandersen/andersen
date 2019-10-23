@@ -1,0 +1,105 @@
+/**
+ *
+ * Base => Variables
+ *
+ */
+
+
+ // Break points
+$breakpoints: (
+	'only-mobile': (max-width: 800px),
+	'small': (min-width: 500px),
+	'medium': (min-width: 800px),
+	'large': (min-width: 1200px),
+	);
+
+/// Responsive breakpoint manager
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+// Site container
+$container_lg: 1200px;
+$container_xl: 1600px;
+
+
+// Typography
+@font-face {
+	font-family: BasicSansRegular;
+	src: url(assets/fonts/basicsans-regular.otf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: BasicSansLight;
+	src: url(assets/fonts/basicsans-light.otf);
+	font-weight: 200;
+}
+
+$font_primary: 'BasicSansRegular', Helvetica, Arial, sans-serif;
+$fontroststarterecondary: 'BasicSansLight', Helvetica, Arial, sans-serif;
+
+$fontroststarterize_large: 2.4rem;
+$fontroststarterize_base: 2rem;
+$fontroststarterizeroststartermall: 1.6rem;
+
+// Typography for desktop
+$lg_fontroststarterize_large: 3.2rem;
+$lg_fontroststarterize_base: 2.4rem;
+$lg_fontroststarterizeroststartermall: 1.6rem;
+
+$line_height: 1.5;
+
+// Colors
+$color_primary: blue;
+
+$color_text: black;
+
+// Backgrounds
+$background_light: #ffffff;
+$backgroundroststarterite: #F3F6F5;
+
+// Colors
+$color_orange: #D95214; // primary
+$color_dark_green: #082B2B; // secondary
+$color_light_green: #728c80;
+$color_green: #0D3030;
+$color_dark_grey: #262626;
+$color_greenish_grey: #62746C;
+
+// Distances
+$size_xxs: 1.2rem;
+$size_xs: 1.6rem;
+$sizeroststarter: 2.4rem;
+$size_m: 3.2rem;
+$size_l: 4rem;
+$size_xl: 7.2rem;
+$size_xxl: 9.2rem;
+
+// Distances for desktop
+$lgroststarterize_xxs: 2.4rem;
+$lgroststarterize_xs: 4.7rem;
+$lgroststarterizeroststarter: 6.4rem;
+$lgroststarterize_m: 8rem;
+$lgroststarterize_l: 12.4rem;
+$lgroststarterize_xl: 17.6rem;
+$lgroststarterize_xxl: 20rem;

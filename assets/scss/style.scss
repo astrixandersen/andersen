@@ -1,0 +1,30 @@
+/*!
+Theme Name: Røst Starter
+Author: Røst kommunikasjon
+Author URI: https://rostkommunikasjon.no
+Description: A lightweight and awesome starter theme with neat functions.
+Version: 1.0.0
+License: GPL
+Text Domain: roststarter
+
+*/
+
+// Base
+@import 'base/variables';
+@import 'base/base';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/links';
+
+// Dependencies
+@import 'dependencies/bootstrap-custom';
+
+// Layout
+@import 'layout/header';
+@import 'layout/site-navigation';
+@import 'layout/content';
+@import 'layout/page/content-page';
+@import 'layout/footer';
+
+// Partials
+@import 'partials/hero';

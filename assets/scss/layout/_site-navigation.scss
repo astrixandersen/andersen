@@ -1,0 +1,22 @@
+/**
+ *
+ * Layout => Site Navigation 
+ *
+ **/
+
+.main-navigation {
+
+	/* Hide menu when not open */
+	ul {
+		display: none;
+	}
+
+	/* Toggled menu */
+	&.toggled {
+		ul {
+			display: block;
+		}
+	}
+}
+
+

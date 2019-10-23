@@ -1,0 +1,19 @@
+/**
+ *
+ * Layout => Content
+ *
+ **/
+
+ #content {
+ 	clear: both;
+ 	margin: $size_xxl auto;
+
+ 	@include respond-to('medium') {
+ 		margin: $lgroststarterize_m auto;
+ 	}
+
+ 	a {
+ 		color: $color_primary;
+ 		text-decoration: none;
+ 	}
+ }

@@ -1,0 +1,79 @@
+
+/**
+ *
+ * Base => Typography
+ *
+ */
+
+@font-face {
+	font-family: BasicSansRegular;
+	src: url(assets/fonts/basicsans-regular.otf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: BasicSansLight;
+	src: url(assets/fonts/basicsans-light.otf);
+	font-weight: 200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	color: $color_dark_green;
+}
+
+h1 {
+	font-size: 4.4rem;
+
+	@include respond-to('large') {
+	font-size: 9.5rem;
+	}
+}
+
+h2 {
+	font-size: 3.6rem;
+
+	@include respond-to('large') {
+	font-size: 6.4rem;
+}
+}
+
+h3 {
+	font-size: 2.8rem;
+
+	@include respond-to('large') {
+	font-size: 4.8rem;
+}
+}
+
+h4,
+.lead {
+	font-size: $fontroststarterize_large;
+
+	@include respond-to('large') {
+		font-size: $lg_fontroststarterize_large;
+	}
+}
+
+h5,
+h6 {
+	font-size: 2rem;
+
+	@include respond-to('large') {
+		font-size: 2.4rem;
+	}
+}
+
+p {
+	margin-bottom: 3.2rem;
+}
+
+.lead {
+	color: $color_dark_green;
+}
+

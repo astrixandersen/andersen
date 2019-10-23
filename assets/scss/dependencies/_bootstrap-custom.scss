@@ -1,0 +1,26 @@
+/**
+ *
+ * Dependencies => Bootstrap
+ * @url https://getbootstrap.com/docs/4.3/getting-started/theming/
+ *
+ */
+
+/* Grid containers */
+$container-max-widths: (
+  lg: $container_lg,
+  xl: 100%
+);
+
+.container,
+.container-fluid {
+	padding-left: $size_m !important;
+	padding-right: $size_m !important;
+
+	@include respond-to('medium') {
+		padding-left: $lgroststarterizeroststarter !important;
+		padding-right: $lgroststarterizeroststarter !important;
+	}
+}
+
+// Include parts of Bootstrap
+@import "bootstrap/bootstrap-grid";
