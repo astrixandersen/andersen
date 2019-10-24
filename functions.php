@@ -103,13 +103,6 @@ function roststarter_scripts() {
 
 	// Theme functions
 	wp_enqueue_script( 'theme-core', get_template_directory_uri() . '/assets/js/min/theme-core.min.js', array(), '20190811', true );
-
-	// Feather Icons
-	wp_enqueue_script( 'feather-icons', '//unpkg.com/feather-icons', array(), '4.22.1', false );
-	wp_enqueue_script( 'feather-replace', get_template_directory_uri() . '/assets/js/min/feather-replace.min.js', array(), '20190805', true );
-
-	// Scroll To Top-function
-	wp_enqueue_script( 'scroll-to-top', get_template_directory_uri() . '/assets/js/min/scroll-to-top.min.js', array(), '20191014', true );
 }
 add_action( 'wp_enqueue_scripts', 'roststarter_scripts' );
 

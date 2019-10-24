@@ -643,12 +643,12 @@
 		"oAP": "/languages/readme.txt",
 		"oF": 0
 		},
-	"/languages/rostkom.pot": {
+	"/languages/roststarter.pot": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/languages/rostkom.pot",
+		"oAP": "/languages/roststarter.pot",
 		"oF": 0
 		},
 	"/LICENSE": {
