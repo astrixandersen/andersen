@@ -10,23 +10,16 @@
 
 get_header();
 
-?>
+while ( have_posts() ) :
+	the_post();
 
-<div class="container">
+	?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<?php get_template_part( 'template-parts/content', 'hero' ); ?>
+		<?php get_template_part( 'template-parts/page/content', 'page' ); ?>
+	</article>
 
-	<?php while ( have_posts() ) : the_post(); ?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-			<!-- Hero -->
-			<?php get_template_part( 'template-parts/content', 'hero' ); ?>
-
-			<!-- Content -->
-			<?php get_template_part( 'template-parts/page/content', 'page' ); ?>
-
-		</article>
-	<?php endwhile; ?>
-
-</div> <!-- .container -->
+<?php endwhile; ?>
 
 <?php
 get_footer();

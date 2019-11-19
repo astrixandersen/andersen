@@ -3,7 +3,7 @@ Theme Name: Røst Starter
 Author: Røst Kommunikasjon
 Author URI: https://rostkommunikasjon.no
 Description: A lightweight and awesome starter theme with neat functions.
-Tags: Bootstrap, Feather Icons, responsive, HTML5
+Tags: Feather Icons, responsive, HTML5
 Version: 1.0.0
 License: GPL
 Text Domain: roststarter
@@ -12,14 +12,11 @@ Text Domain: roststarter
 
 // Base
 @import 'base/variables';
+@import 'base/grid';
 @import 'base/base';
-@import 'base/normalize';
 @import 'base/typography';
 @import 'base/links';
 @import 'base/buttons';
-
-// Dependencies
-@import 'dependencies/bootstrap-custom';
 
 // Layout
 @import 'layout/header';
@@ -28,10 +25,9 @@ Text Domain: roststarter
 @import 'layout/blocks';
 @import 'layout/footer';
 
-@import 'layout/page/content-page';
-
-@import 'layout/post/content';
-@import 'layout/post/content-project';
+@import 'layout/content-page';
+@import 'layout/content';
+@import 'layout/content-project';
 
 
 // Partials

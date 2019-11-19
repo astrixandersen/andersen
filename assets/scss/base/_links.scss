@@ -4,19 +4,20 @@
  *
  */
 
-.site-header,
-#content,
-.site-footer {
-	a {
-		color: $color_text;
+ #site-header,
+ #site-content,
+ #site-footer {
 
-		&:hover,
-		&:focus {
-			text-decoration: none;
-		}
-	}
+ 	a {
+ 		color: $color_text;
 
-	figure a {
-		border: none;
-	}
-}
+ 		&:hover,
+ 		&:focus {
+ 			text-decoration: none;
+ 		}
+ 	}
+
+ 	figure a {
+ 		border: none;
+ 	}
+ }

@@ -44,11 +44,12 @@ $breakpoints: (
     }
   }
 
-// Site container
-$container_lg: 1200px;
-$container_xl: 1600px;
-
+// Containers
+$container_main: 1200px;
 $container_text: 850px;
+
+// Grid
+$grid_gutters: 4rem 4rem;
 
 // Typography
 

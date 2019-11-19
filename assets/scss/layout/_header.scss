@@ -4,17 +4,17 @@
  *
  */
 
- .site-header {
- 	display: flex;
- 	flex-direction: row;
+#site-header {
+ 	display: grid;
+ 	grid-template-columns: [branding] 1fr [navigation] 2fr;
  	clear: both;
 
  	.site-branding {
- 		width: 50%;
+ 		grid-column: branding;
  	}
 
  	#site-navigation {
- 		width: 50%;
+ 		grid-column: navigation;
  		text-align: right;
 
  		.menu-toggle {

@@ -92,9 +92,6 @@ function roststarter_scripts() {
 	// jQuery
 	wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.3.1.slim.min.js', array(), '3.3.1', true );
 
-	// Bootstrap script
-	wp_enqueue_script( 'bootstrap-js', '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array('jquery'), '4.3.1', true );
-
 	// Navigation
 	wp_enqueue_script( 'roststarter-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
@@ -109,7 +106,6 @@ add_action( 'wp_enqueue_scripts', 'roststarter_scripts' );
 /**
  * Include PHP-files located in '/inc'-folder
  */
-
 $incdir   = dirname( __FILE__ ) . '/inc';
 
 // see if files exists in directory inc

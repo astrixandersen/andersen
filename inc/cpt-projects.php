@@ -36,6 +36,7 @@ function cpt_project() {
         'has_archive'        => false,
         'hierarchical'       => false,
         'menu_position'      => 4,
+        'show_in_rest'       => true,
         'supports'           => array( 'title', 'editor', 'thumbnail' ),
     );
 

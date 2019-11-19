@@ -11,24 +11,19 @@
 get_header();
 
 ?>
+<section class="error-404 not-found">
 
-<div class="container">
+	<header class="page-header">
+		<h1 class="page-title"><?php esc_html_e( 'Oida! Siden ble ikke funnet', 'roststarter' ); ?></h1>
+	</header><!-- .page-header -->
 
-	<section class="error-404 not-found">
+	<div class="page-content">
+		<p><?php esc_html_e( 'Vi finner ikke det du leter etter. Kanskje det hjelper å gjøre et søk?', 'roststarter' ); ?></p>
 
-		<header class="page-header">
-			<h1 class="page-title"><?php esc_html_e( 'Oida! Siden ble ikke funnet', 'roststarter' ); ?></h1>
-		</header><!-- .page-header -->
+		<?php get_search_form(); ?>
+	</div><!-- .page-content -->
 
-		<div class="page-content">
-			<p><?php esc_html_e( 'Vi finner ikke det du leter etter. Kanskje det hjelper å gjøre et søk?', 'roststarter' ); ?></p>
-
-			<?php get_search_form(); ?>
-		</div><!-- .page-content -->
-
-	</section><!-- .error-404 -->
-
-</div> <!-- .container -->
+</section><!-- .error-404 -->
 
 <?php
 get_footer();

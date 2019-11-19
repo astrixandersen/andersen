@@ -4,6 +4,13 @@
  *
  */
 
+ html,
+ body {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 html {
 	font-size: 62.5%; // 10px = 1rem
 	box-sizing: border-box;
@@ -61,5 +68,50 @@ body {
 
 /* Images */
 figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figure,
+img {
   max-width: 100%;
+}
+
+/* Reset */
+blockquote,
+address,
+big,
+cite,
+code,
+em,
+font,
+img,
+small,
+strike,
+sub,
+sup,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tr,
+th,
+td {
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+}
+
+blockquote::before,
+blockquote::after {
+  content: "";
 }

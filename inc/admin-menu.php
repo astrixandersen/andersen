@@ -10,7 +10,6 @@
  */
 
 function admin_menu_customizations() {
-	remove_menu_page( 'edit.php' );
 	remove_menu_page( 'edit-comments.php' );
 	remove_submenu_page( 'themes.php', 'theme-editor.php' );
 }

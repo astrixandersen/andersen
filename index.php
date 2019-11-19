@@ -15,31 +15,29 @@
 
 get_header();
 
-?>
+if ( have_posts() ) :
 
-<div class="container">
+	?>
 
-	<?php if ( have_posts() ) : ?>
-
+	<header class="page-header">
 		<?php if ( is_home() && ! is_front_page() ) : ?>
-		<header>
-			<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-		</header>
-	<?php endif; ?>
+		<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 
-	<?php while ( have_posts() ) : the_post(); ?>
-		<?php get_template_part( 'template-parts/post/content', get_post_type() ); ?>
-	<?php endwhile; ?>
+		<?php elseif ( is_archive() ) : ?>
+			<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
+			<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
+		<?php endif; ?>
+	</header>
 
-	<?php the_posts_navigation(); ?>
+	<?php while ( have_posts() ) {
+		the_post();
+		get_template_part( 'template-parts/content', get_post_type() );
+	}
 
-	<?php else : ?>
+	the_posts_navigation();
 
-		<?php get_template_part( 'template-parts/post/content', 'none' ); ?>
+	else {
+		get_template_part( 'template-parts/content', 'none' );
+	}
 
-	<?php endif; ?>
-
-</div> <!-- .container -->
-
-<?php
-get_footer();
+	get_footer();
