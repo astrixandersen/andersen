@@ -50,7 +50,8 @@ body {
 }
 
 .screen-reader-text:focus {
-  background-color: #eee;
+  background-color: white;
+  border: 1px solid $color_primary;
   clip: auto !important;
   clip-path: none;
   color: #444;

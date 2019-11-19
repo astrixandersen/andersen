@@ -65,28 +65,6 @@
 		"oAP": "/assets/fonts/basicsans-regular.otf",
 		"oF": 0
 		},
-	"/assets/js/feather-replace.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/feather-replace.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/min/feather-replace.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/min/feather-replace.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/assets/js/min/navigation.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -109,28 +87,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/assets/js/min/skip-link-focus-fix.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/min/skip-link-focus-fix.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/min/theme-core.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/min/theme-core.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/assets/js/navigation.js": {
 		"bF": 0,
 		"ft": 64,
@@ -149,28 +105,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/assets/js/min/scroll-to-top.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/skip-link-focus-fix.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/skip-link-focus-fix.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/theme-core.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/theme-core.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -493,6 +427,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/phpcs.xml.dist",
+		"oF": 0
+		},
+	"/readme.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/readme.html",
 		"oF": 0
 		},
 	"/readme.md": {

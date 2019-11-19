@@ -93,18 +93,13 @@ function roststarter_scripts() {
 	// Theme styles
 	wp_enqueue_style( 'roststarter-style', get_stylesheet_uri() );
 
-	// jQuery
-	wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.3.1.slim.min.js', array(), '3.3.1', true );
-
 	// Navigation
 	wp_enqueue_script( 'roststarter-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
 	// Accessibility fix
 	wp_enqueue_script( 'roststarter-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-	// Theme functions
-	wp_enqueue_script( 'theme-core', get_template_directory_uri() . '/assets/js/min/theme-core.min.js', array(), '20190811', true );
 }
+
 add_action( 'wp_enqueue_scripts', 'roststarter_scripts' );
 
 /**
