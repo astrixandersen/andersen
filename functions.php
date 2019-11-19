@@ -95,9 +95,6 @@ function roststarter_scripts() {
 
 	// Navigation
 	wp_enqueue_script( 'roststarter-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
-
-	// Accessibility fix
-	wp_enqueue_script( 'roststarter-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'roststarter_scripts' );
