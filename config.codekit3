@@ -49,14 +49,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/archive.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/archive.php",
-		"oF": 0
-		},
 	"/assets/fonts/basicsans-light.otf": {
 		"cB": 0,
 		"ft": 8192,
@@ -209,6 +201,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/base/_grid.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_grid.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/base/_links.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -218,19 +223,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_links.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/base/_normalize.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_normalize.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -261,162 +253,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/assets/scss/dependencies/_bootstrap-custom.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_bootstrap-custom.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/dependencies/bootstrap/_functions.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_functions.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/dependencies/bootstrap/_grid.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_grid.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/dependencies/bootstrap/_variables.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_variables.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/dependencies/bootstrap/bootstrap-grid.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bootstrap-grid.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/dependencies/bootstrap/bootstrap.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/bootstrap.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/dependencies/bootstrap/mixins/_breakpoints.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_breakpoints.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/dependencies/bootstrap/mixins/_grid-framework.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_grid-framework.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/dependencies/bootstrap/mixins/_grid.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_grid.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/dependencies/bootstrap/utilities/_display.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_display.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/dependencies/bootstrap/utilities/_flex.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_flex.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/dependencies/bootstrap/utilities/_spacing.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_spacing.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"/assets/scss/layout/_blocks.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -426,6 +262,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_blocks.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/layout/_content-page.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_content-page.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/layout/_content-project.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_content-project.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/layout/_content.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_content.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -482,45 +357,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/assets/scss/layout/page/_content-page.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_content-page.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/layout/post/_content-project.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_content-project.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/layout/post/_content.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_content.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"/assets/scss/partials/_scroll-to-top.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -563,14 +399,6 @@
 		"oAP": "/footer.php",
 		"oF": 0
 		},
-	"/front-page.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/front-page.php",
-		"oF": 0
-		},
 	"/functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -603,6 +431,14 @@
 		"oAP": "/inc/advanced-custom-fields.php",
 		"oF": 0
 		},
+	"/inc/component-entry-meta.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/inc/component-entry-meta.php",
+		"oF": 0
+		},
 	"/inc/component-project-meta.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -617,14 +453,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/inc/cpt-projects.php",
-		"oF": 0
-		},
-	"/inc/wysiwyg.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/wysiwyg.php",
 		"oF": 0
 		},
 	"/index.php": {
@@ -657,14 +485,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/LICENSE",
-		"oF": 0
-		},
-	"/page.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page.php",
 		"oF": 0
 		},
 	"/phpcs.xml.dist": {
@@ -713,12 +533,12 @@
 		"oAP": "/search.php",
 		"oF": 0
 		},
-	"/single.php": {
+	"/singular.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/single.php",
+		"oAP": "/singular.php",
 		"oF": 0
 		},
 	"/style.css": {
@@ -747,20 +567,44 @@
 		"oAP": "/template-parts/content-hero.php",
 		"oF": 0
 		},
+	"/template-parts/content-none.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content-none.php",
+		"oF": 0
+		},
+	"/template-parts/content-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content-page.php",
+		"oF": 0
+		},
+	"/template-parts/content-post.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content-post.php",
+		"oF": 0
+		},
+	"/template-parts/content-project.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content-project.php",
+		"oF": 0
+		},
 	"/template-parts/content-search.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/content-search.php",
-		"oF": 0
-		},
-	"/template-parts/page/content-page.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/page/content-page.php",
 		"oF": 0
 		},
 	"/template-parts/partials/block-content.php": {
@@ -785,30 +629,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/partials/block-row.php",
-		"oF": 0
-		},
-	"/template-parts/post/content-none.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/post/content-none.php",
-		"oF": 0
-		},
-	"/template-parts/post/content-project.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/post/content-project.php",
-		"oF": 0
-		},
-	"/template-parts/post/content.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/post/content.php",
 		"oF": 0
 		}
 	},

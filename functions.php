@@ -59,13 +59,17 @@ if ( ! function_exists( 'roststarter_setup' ) ) :
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support( 'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+				'script',
+				'style',
+			)
+		);
 	}
 
 endif;
@@ -127,3 +131,29 @@ if( file_exists( $incdir ) ){
 		}
 	}
 }
+
+/**
+ * Fix skip link focus in IE11.
+ *
+ * This does not enqueue the script because it is tiny and because it is only for IE11,
+ * thus it does not warrant having an entire dedicated blocking script being loaded.
+ *
+ * @link https://git.io/vWdr2
+ */
+function roststarter_skip_link_focus_fix() {
+	// The following is minified via `terser --compress --mangle -- assets/js/skip-link-focus-fix.js`.
+	?>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	<?php
+}
+add_action( 'wp_print_footer_scripts', 'roststarter_skip_link_focus_fix' );
+
+/**
+ * Include a skip to content link at the top of the page so that users can bypass the menu.
+ */
+function roststarter_skip_link() {
+	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Hopp til innhold', 'roststarter' ) . '</a>';
+}
+add_action( 'wp_body_open', 'roststarter_skip_link', 5 );
