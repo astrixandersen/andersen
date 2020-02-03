@@ -4,35 +4,8 @@
  *
  */
 
-#site-header {
+ #site-header {
  	display: grid;
  	grid-template-columns: [branding] 1fr [navigation] 2fr;
  	clear: both;
-
- 	.site-branding {
- 		grid-column: branding;
- 	}
-
- 	#site-navigation {
- 		grid-column: navigation;
- 		text-align: right;
-
- 		.menu-toggle {
- 			cursor: pointer;
-
- 			&:after {
- 				content: 'Meny';
- 			}
-
- 			&[aria-expanded=true] {
- 				&:after {
- 					content: 'Lukk';
- 				}
- 			}
-
- 			@include respond-to('md') {
- 				display: none;
- 			}
- 		}
- 	}
  }

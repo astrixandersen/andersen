@@ -4,11 +4,10 @@
  *
  **/
 
-/* Site Container */
-#site-header,
-#site-content,
-#site-footer {
-	max-width: $container_main;
-	margin-left: auto;
-	margin-right: auto;
-}
+ #site-header,
+ #site-content,
+ #site-footer {
+ 	max-width: $container_site;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }

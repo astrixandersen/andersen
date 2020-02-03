@@ -25,11 +25,11 @@ html {
 }
 
 body {
-	background: $background_site;
-	font-family: $font_secondary;
+	background: white;
+	font-family: $font_family;
 	font-size: 1.6rem; // default for document */
-	line-height: $line_height;
-	color: $color_text;
+	line-height: 1.4;
+	color: $color_purple_black;
 	margin: 0px; // Remove the margin in all browsers.
 	min-height: 100%;
 }
@@ -50,7 +50,7 @@ body {
 
 .screen-reader-text:focus {
   background-color: white;
-  border: 1px solid $color_primary;
+  border: 1px solid $color_purple_black;
   clip: auto !important;
   clip-path: none;
   color: #444;

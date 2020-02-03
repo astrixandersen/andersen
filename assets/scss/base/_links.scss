@@ -7,17 +7,4 @@
  #site-header,
  #site-content,
  #site-footer {
-
- 	a {
- 		color: $color_text;
-
- 		&:hover,
- 		&:focus {
- 			text-decoration: none;
- 		}
- 	}
-
- 	figure a {
- 		border: none;
- 	}
  }

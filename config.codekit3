@@ -25,6 +25,54 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/assets/fonts/Inter-Bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-Bold.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-Bold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-Bold.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-SemiBold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-SemiBold.woff",
+		"oF": 0
+		},
+	"/assets/fonts/Inter-SemiBold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/Inter-SemiBold.woff2",
+		"oF": 0
+		},
+	"/assets/fonts/inter.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/inter.woff",
+		"oF": 0
+		},
+	"/assets/fonts/inter.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/fonts/inter.woff2",
+		"oF": 0
+		},
 	"/assets/scss/base/_base.scss": {
 		"aP": 1,
 		"bl": 0,

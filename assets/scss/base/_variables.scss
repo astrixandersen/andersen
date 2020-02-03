@@ -9,84 +9,52 @@
  $screen_lg: 1106px;
  $screen_xl: 1560px;
 
-// Break pointss
-$breakpoints: (
-  "sm": (
-    min-width: $screen_sm
-    ),
-  "md": (
-    min-width: $screen_md
-    ),
-  "lg": (
-    min-width: $screen_lg
-    ),
-  "xl": (
-    min-width: $screen_xl
-    )
-  );
-
-@mixin respond-to($breakpoint) {
-  $raw-query: map-get($breakpoints, $breakpoint);
-
-  @if $raw-query {
-    $query: if(
-      type-of($raw-query) == "string",
-      unquote($raw-query),
-      inspect($raw-query)
-      );
-
-    @media #{$query} {
-      @content;
-    }
-    } @else {
-      @error 'No value found for `#{$breakpoint}`. '
-      + 'Please make sure it is defined in `$breakpoints` map.';
-    }
-  }
-
 // Containers
-$container_main: 1200px;
+$container_site: 1200px;
 $container_text: 850px;
 
 // Grid
 $grid_gutters: 4rem 4rem;
 
 // Typography
-
-/* Register custom fonts here:
-
 @font-face {
-	font-family: BasicSansRegular;
-	src: url(assets/fonts/basicsans-regular.otf);
-	font-weight: 400;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/inter.woff2") format("woff2"),
+  url("assets/fonts/inter.woff") format("woff");
 }
 
 @font-face {
-	font-family: BasicSansLight;
-	src: url(assets/fonts/basicsans-light.otf);
-	font-weight: 200;
-}*/
+  font-family: 'Inter';
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/inter-semibold.woff2") format("woff2"),
+  url("assets/fonts/inter-semibold.woff") format("woff");
+}
 
-$font_primary: Inter, system-ui, sans-serif;
-$font_secondary: Inter, system-ui, sans-serif;
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/inter-bold.woff2") format("woff2"),
+  url("assets/fonts/inter-bold.woff") format("woff");
+}
 
-$line_height: 1.5;
+$font_family: Inter, system-ui, sans-serif;
 
 // Colors
-$color_primary: black;
-$color_text: black;
+$color_purple_black  : #170D24;
+$color_dark_purple   : #241438;
+$color_greyish_purple: #C2AED8;
+$color_light_purple  : #F9F7FB;
 
-// Backgrounds
-$background_site: #ffffff;
-
-// Distances
-$size_xxxs      : 1.2rem;
-$size_xxs       : 1.6rem;
-$size_xs        : 2.4rem;
-$size_s         : 3.2rem;
-$size_ms        : 4rem;
-$size_m         : 5.6rem;
-$size_l         : 7.2rem;
-$size_xl        : 8.8rem;
-$size_xxl       : 12rem;
-$size_xxxl      : 16rem;
+// Spacing
+$unit100: 1.6rem;
+$unit200: 2.4rem;
+$unit300: 4rem;
+$unit400: 6.4rem;
+$unit500: 9.6rem;
+$unit600: 12rem;
+$unit700: 18.4rem;
+$unit800: 22.4rem;
