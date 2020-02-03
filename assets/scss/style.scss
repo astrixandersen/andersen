@@ -1,12 +1,12 @@
 /*!
-Theme Name: Røst Starter
-Author: Røst Kommunikasjon
-Author URI: https://rostkommunikasjon.no
-Description: A lightweight and awesome starter theme with neat functions.
-Tags: Feather Icons, responsive, HTML5
+Theme Name: Andersen
+Author: Astrid Mathilde Andersen
+Author URI: https://astridandersen.no
+Description: Personal website made with WordPress + Javascript
+Tags: lightweight,
 Version: 1.0.0
 License: GPL
-Text Domain: roststarter
+Text Domain: andersen
 
 */
 
@@ -16,19 +16,8 @@ Text Domain: roststarter
 @import 'base/base';
 @import 'base/typography';
 @import 'base/links';
-@import 'base/buttons';
 
 // Layout
 @import 'layout/header';
-@import 'layout/site-navigation';
-@import 'layout/hero';
-@import 'layout/blocks';
 @import 'layout/footer';
-
-@import 'layout/content-page';
 @import 'layout/content';
-@import 'layout/content-project';
-
-
-// Partials
-@import 'partials/scroll-to-top';

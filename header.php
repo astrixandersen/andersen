@@ -6,7 +6,7 @@
  * This is the template that displays all of the <head> section and everything up until <main id="main">
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- * @package roststarter
+ * @package andersen
  *
  */
 
@@ -44,7 +44,7 @@
 
 			<nav id="site-navigation" class="main-navigation">
 
-				<button class="menu-toggle" aria-label="<?php echo esc_html__( 'Meny', 'roststarter' ); ?>" aria-controls="primary-menu" aria-expanded="false"></button>
+				<button class="menu-toggle" aria-label="<?php echo esc_html__( 'Meny', 'andersen' ); ?>" aria-controls="primary-menu" aria-expanded="false"></button>
 
 				<?php
 

@@ -5,7 +5,7 @@
  * Remove Menu Items
  *
  * @link https://codex.wordpress.org/Function_Reference/remove_menu_page
- * @package roststarter
+ * @package andersen
  *
  */
 

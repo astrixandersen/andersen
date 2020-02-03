@@ -4,25 +4,25 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package roststarter
+ * @package andersen
  */
 
-if ( ! function_exists( 'roststarter_setup' ) ) :
+if ( ! function_exists( 'andersen_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
-	 * Note that this function is hooked into the afterroststarteretup_theme hook, which
+	 * Note that this function is hooked into the afterandersenetup_theme hook, which
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function roststarter_setup() {
+	function andersen_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on roststarter, use a find and replace
-		 * to change roststarter to the name of your theme in all the template files.
+		 * If you're building a theme based on andersen, use a find and replace
+		 * to change andersen to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( '_roststarter', get_template_directory() . '/languages' );
+		load_theme_textdomain( '_andersen', get_template_directory() . '/languages' );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -51,8 +51,8 @@ if ( ! function_exists( 'roststarter_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Hovedmeny', 'roststarter' ),
-			'menu-2' => esc_html__( 'Footer', 'roststarter' ),
+			'menu-1' => esc_html__( 'Hovedmeny', 'andersen' ),
+			'menu-2' => esc_html__( 'Footer', 'andersen' ),
 		) );
 
 		/*
@@ -73,13 +73,13 @@ if ( ! function_exists( 'roststarter_setup' ) ) :
 	}
 
 endif;
-add_action( 'after_setup_theme', 'roststarter_setup' );
+add_action( 'after_setup_theme', 'andersen_setup' );
 
 /**
  * Admin footer modification
  */
 function remove_footer_admin () {
-	echo '<span id="footer-thankyou">Levert av <a href="https://roststartermunikasjon.no/" target="_blank">Røst kommunikasjon</a>.</span>';
+	echo '<span id="footer-thankyou">Levert av <a href="https://andersenmunikasjon.no/" target="_blank">Røst kommunikasjon</a>.</span>';
 }
 
 add_filter('admin_footer_text', 'remove_footer_admin');
@@ -88,16 +88,16 @@ add_filter('admin_footer_text', 'remove_footer_admin');
 /**
  * Enqueue scripts and styles.
  */
-function roststarter_scripts() {
+function andersen_scripts() {
 
 	// Theme styles
-	wp_enqueue_style( 'roststarter-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'andersen-style', get_stylesheet_uri() );
 
 	// Navigation
-	wp_enqueue_script( 'roststarter-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'andersen-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 }
 
-add_action( 'wp_enqueue_scripts', 'roststarter_scripts' );
+add_action( 'wp_enqueue_scripts', 'andersen_scripts' );
 
 /**
  * Include PHP-files located in '/inc'-folder
@@ -132,7 +132,7 @@ if( file_exists( $incdir ) ){
  *
  * @link https://git.io/vWdr2
  */
-function roststarter_skip_link_focus_fix() {
+function andersen_skip_link_focus_fix() {
 	// The following is minified via `terser --compress --mangle -- assets/js/skip-link-focus-fix.js`.
 	?>
 	<script>
@@ -140,12 +140,12 @@ function roststarter_skip_link_focus_fix() {
 	</script>
 	<?php
 }
-add_action( 'wp_print_footer_scripts', 'roststarter_skip_link_focus_fix' );
+add_action( 'wp_print_footer_scripts', 'andersen_skip_link_focus_fix' );
 
 /**
  * Include a skip to content link at the top of the page so that users can bypass the menu.
  */
-function roststarter_skip_link() {
-	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Hopp til innhold', 'roststarter' ) . '</a>';
+function andersen_skip_link() {
+	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Hopp til innhold', 'andersen' ) . '</a>';
 }
-add_action( 'wp_body_open', 'roststarter_skip_link', 5 );
+add_action( 'wp_body_open', 'andersen_skip_link', 5 );

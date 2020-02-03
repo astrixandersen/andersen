@@ -25,90 +25,6 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
-	"/acf-json/group_5cff9373e1324.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5cff9373e1324-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/acf-json/group_5cffa45e2f508.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5cffa45e2f508-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/acf-json/group_5d5bbbec580c8.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/acf-json/group_5d5bbbec580c8-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/assets/fonts/basicsans-light.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/basicsans-light.otf",
-		"oF": 0
-		},
-	"/assets/fonts/basicsans-regular.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/fonts/basicsans-regular.otf",
-		"oF": 0
-		},
-	"/assets/js/min/navigation.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/min/navigation.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/min/scroll-to-top.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/min/scroll-to-top.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/navigation.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/navigation.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/scroll-to-top.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/min/scroll-to-top.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/assets/scss/base/_base.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -118,19 +34,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_base.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/base/_buttons.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_buttons.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -187,45 +90,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/assets/scss/layout/_blocks.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_blocks.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/layout/_content-page.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_content-page.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/layout/_content-project.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_content-project.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"/assets/scss/layout/_content.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -261,45 +125,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_header.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/layout/_hero.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_hero.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/layout/_site-navigation.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_site-navigation.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/assets/scss/partials/_scroll-to-top.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_scroll-to-top.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -349,44 +174,20 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
-	"/inc/admin-menu.php": {
+	"/inc/acf-footer.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/inc/admin-menu.php",
+		"oAP": "/inc/acf-footer.php",
 		"oF": 0
 		},
-	"/inc/advanced-custom-fields.php": {
+	"/inc/disable-comments.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/inc/advanced-custom-fields.php",
-		"oF": 0
-		},
-	"/inc/component-entry-meta.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/component-entry-meta.php",
-		"oF": 0
-		},
-	"/inc/component-project-meta.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/component-project-meta.php",
-		"oF": 0
-		},
-	"/inc/cpt-projects.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/inc/cpt-projects.php",
+		"oAP": "/inc/disable-comments.php",
 		"oF": 0
 		},
 	"/index.php": {
@@ -397,20 +198,20 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
+	"/languages/andersen.pot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/languages/andersen.pot",
+		"oF": 0
+		},
 	"/languages/readme.txt": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/languages/readme.txt",
-		"oF": 0
-		},
-	"/languages/roststarter.pot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/languages/roststarter.pot",
 		"oF": 0
 		},
 	"/LICENSE": {
@@ -456,25 +257,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/screenshot.png": {
-		"ft": 32768,
-		"iS": 44694,
-		"oA": 0,
-		"oAP": "/screenshot.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/search.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/search.php",
-		"oF": 0
-		},
 	"/singular.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -492,86 +274,6 @@
 		"oAP": "/style-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"/template-parts/content-blocks.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/content-blocks.php",
-		"oF": 0
-		},
-	"/template-parts/content-hero.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/content-hero.php",
-		"oF": 0
-		},
-	"/template-parts/content-none.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/content-none.php",
-		"oF": 0
-		},
-	"/template-parts/content-page.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/content-page.php",
-		"oF": 0
-		},
-	"/template-parts/content-post.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/content-post.php",
-		"oF": 0
-		},
-	"/template-parts/content-project.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/content-project.php",
-		"oF": 0
-		},
-	"/template-parts/content-search.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/content-search.php",
-		"oF": 0
-		},
-	"/template-parts/partials/block-content.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/partials/block-content.php",
-		"oF": 0
-		},
-	"/template-parts/partials/block-image.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/partials/block-image.php",
-		"oF": 0
-		},
-	"/template-parts/partials/block-row.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-parts/partials/block-row.php",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -580,9 +282,9 @@
 	},
 "projectAttributes": {
 	"creationDate": 580391201.99604499,
-	"displayValue": "Røst Starter",
+	"displayValue": "astridandersen",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "logo-wordpress",
+	"iconImageName": "meme-punDog",
 	"iconImageWasSetByUser": 1
 	},
 "projectSettings": {
@@ -2061,7 +1763,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://localhost/roststarter",
+	"externalServerAddress": "http://localhost/andersen",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

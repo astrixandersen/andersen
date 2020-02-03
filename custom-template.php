@@ -4,7 +4,7 @@
  * Template Name: Tjeneste
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files
- * @package roststarter
+ * @package andersen
  *
  */
 

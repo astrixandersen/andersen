@@ -4,7 +4,7 @@
  * The template for displaying the footer
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- * @package roststarter
+ * @package andersen
  *
  */
 
@@ -14,7 +14,7 @@
 
 <footer id="site-footer" role="contentinfo">
 	<div class="footer-credits">
-		<?php echo esc_html__( 'Design/utvikling:'); ?> <a href="https://roststartermunikasjon.no">Røst kommunikasjon</a>
+		<?php echo esc_html__( 'Design/utvikling:'); ?> <a href="https://andersenmunikasjon.no">Røst kommunikasjon</a>
 	</div> <!-- .credit -->
 </footer><!-- #site-footer -->
 

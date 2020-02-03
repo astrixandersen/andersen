@@ -3,7 +3,7 @@
  * The template for displaying single posts and pages.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- * @package roststarter
+ * @package andersen
  *
  */
 
@@ -44,11 +44,11 @@ while ( have_posts() ) : the_post(); ?>
 				<h2><?php
 
 				if ( is_single('project') ) {
-					echo esc_html__( 'Relaterte prosjekter', 'roststarter' );
+					echo esc_html__( 'Relaterte prosjekter', 'andersen' );
 				}
 
 				else {
-					echo esc_html__( 'Relaterte innlegg', 'roststarter' );
+					echo esc_html__( 'Relaterte innlegg', 'andersen' );
 				}
 
 				?></h2>
