@@ -1,0 +1,13 @@
+/**
+ *
+ * Layout => Post => Content
+ *
+ **/
+
+ #site-header,
+ #site-content,
+ #site-footer {
+ 	max-width: $container_site;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }

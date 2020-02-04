@@ -1,0 +1,11 @@
+/*!
+Theme Name: Andersen
+Author: Astrid Mathilde Andersen
+Author URI: https://astridandersen.no
+Description: Personal website made with WordPress + Javascript
+Tags: lightweight,
+Version: 1.0.0
+License: GPL
+Text Domain: andersen
+
+*/@font-face{font-family:'Inter';font-weight:400;font-display:swap;src:url("assets/fonts/inter.woff2") format("woff2"),url("assets/fonts/inter.woff") format("woff")}@font-face{font-family:'Inter';font-weight:600;font-display:swap;src:url("assets/fonts/inter-semibold.woff2") format("woff2"),url("assets/fonts/inter-semibold.woff") format("woff")}@font-face{font-family:'Inter';font-weight:700;font-display:swap;src:url("assets/fonts/inter-bold.woff2") format("woff2"),url("assets/fonts/inter-bold.woff") format("woff")}.grid{display:grid;gap:4rem 4rem}html,body{border:none;margin:0;padding:0}html{font-size:62.5%;box-sizing:border-box;-ms-overflow-style:scrollbar;height:100%}*,*:before,*:after{box-sizing:inherit}body{background:white;font-family:Inter,system-ui,sans-serif;font-size:1.6rem;line-height:1.4;color:#170D24;margin:0px;min-height:100%}.screen-reader-text{border:0;clip:rect(1px, 1px, 1px, 1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal !important}.screen-reader-text:focus{background-color:white;border:1px solid #170D24;clip:auto !important;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}figure{margin-left:0;margin-right:0}figure,img{max-width:100%}blockquote,address,big,cite,code,em,font,img,small,strike,sub,sup,li,ol,ul,fieldset,form,label,legend,button,table,caption,tr,th,td{border:none;font-size:inherit;line-height:inherit;margin:0;padding:0;text-align:inherit}blockquote::before,blockquote::after{content:""}h1,h2,h3,h4,h5,h6{clear:both}#site-header{display:grid;grid-template-columns:[branding] 1fr [navigation] 2fr;clear:both}#site-footer{clear:both}#site-header,#site-content,#site-footer{max-width:1200px;margin-left:auto;margin-right:auto}

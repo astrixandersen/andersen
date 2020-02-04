@@ -1,0 +1,10 @@
+/**
+ *
+ * Base => Grid
+ *
+ */
+
+ .grid {
+ 	display: grid;
+ 	gap: $grid_gutters;
+ }

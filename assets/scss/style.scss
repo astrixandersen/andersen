@@ -1,0 +1,23 @@
+/*!
+Theme Name: Andersen
+Author: Astrid Mathilde Andersen
+Author URI: https://astridandersen.no
+Description: Personal website made with WordPress + Javascript
+Tags: lightweight,
+Version: 1.0.0
+License: GPL
+Text Domain: andersen
+
+*/
+
+// Base
+@import 'base/variables';
+@import 'base/grid';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/links';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/content';

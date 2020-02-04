@@ -1,0 +1,11 @@
+/**
+ *
+ * Layout => Header
+ *
+ */
+
+ #site-header {
+ 	display: grid;
+ 	grid-template-columns: [branding] 1fr [navigation] 2fr;
+ 	clear: both;
+ }

@@ -1,0 +1,117 @@
+/**
+ *
+ * Base
+ *
+ */
+
+ html,
+ body {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+	font-size: 62.5%; // 10px = 1rem
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar;
+	height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background: white;
+	font-family: $font_family;
+	font-size: 1.6rem; // default for document */
+	line-height: 1.4;
+	color: $color_purple_black;
+	margin: 0px; // Remove the margin in all browsers.
+	min-height: 100%;
+}
+
+/* Accessibility */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: white;
+  border: 1px solid $color_purple_black;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Images */
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figure,
+img {
+  max-width: 100%;
+}
+
+/* Reset */
+blockquote,
+address,
+big,
+cite,
+code,
+em,
+font,
+img,
+small,
+strike,
+sub,
+sup,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tr,
+th,
+td {
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+}
+
+blockquote::before,
+blockquote::after {
+  content: "";
+}

@@ -1,0 +1,60 @@
+/**
+ *
+ * Base => Variables
+ *
+ */
+
+ $screen_sm: 576px;
+ $screen_md: 768px;
+ $screen_lg: 1106px;
+ $screen_xl: 1560px;
+
+// Containers
+$container_site: 1200px;
+$container_text: 850px;
+
+// Grid
+$grid_gutters: 4rem 4rem;
+
+// Typography
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/inter.woff2") format("woff2"),
+  url("assets/fonts/inter.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/inter-semibold.woff2") format("woff2"),
+  url("assets/fonts/inter-semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/inter-bold.woff2") format("woff2"),
+  url("assets/fonts/inter-bold.woff") format("woff");
+}
+
+$font_family: Inter, system-ui, sans-serif;
+
+// Colors
+$color_purple_black  : #170D24;
+$color_dark_purple   : #241438;
+$color_greyish_purple: #C2AED8;
+$color_light_purple  : #F9F7FB;
+
+// Spacing
+$unit100: 1.6rem;
+$unit200: 2.4rem;
+$unit300: 4rem;
+$unit400: 6.4rem;
+$unit500: 9.6rem;
+$unit600: 12rem;
+$unit700: 18.4rem;
+$unit800: 22.4rem;
