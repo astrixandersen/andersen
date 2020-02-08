@@ -27,7 +27,10 @@
 	<header id="site-header" role="banner">
 
 		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-		<a href="#" class="toggle-menu" role="button" aria-label ="<?php echo esc_html__( 'Åpne meny', 'andersen' ); ?>"><span role="img" aria-label="Åpne">👈🏻</span> Meny</a>
+
+		<div class="site-menu-toggle">
+			<a href="#" class="toggle-menu" role="button" aria-label ="<?php echo esc_html__( 'Åpne meny', 'andersen' ); ?>"><span role="img" aria-label="Åpne">👈🏻</span> Meny</a>
+		</div> <!-- .site-menu-toggle -->
 
 		<div class="container-menu">
 			<?php get_template_part('template-parts/layout/menu', 'content'); ?>

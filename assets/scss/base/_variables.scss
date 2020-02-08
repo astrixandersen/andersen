@@ -4,25 +4,39 @@
  *
  */
 
- $screen_sm: 576px;
- $screen_md: 768px;
- $screen_lg: 1106px;
- $screen_xl: 1560px;
+ $screen-sm: 576px;
+ $screen-md: 768px;
+ $screen-lg: 1106px;
+ $screen-xl: 1560px;
 
 // Containers
-$container_site: 1200px;
-$container_text: 850px;
+$container-site: 100%;
+$container-content: 1200px;
+$container-text: 850px;
 
 // Grid
-$grid_gutters: 4rem 4rem;
+$grid-gutters: 4rem 4rem;
 
 // Typography
+$font-size-smaller: 1.2rem;
+$font-size-small: 1.6rem;
+$font-size-base: 2rem;
+$font-size-large: 3.2rem;
+
 @font-face {
   font-family: 'Inter';
   font-weight: 400;
   font-display: swap;
   src: url("assets/fonts/inter.woff2") format("woff2"),
   url("assets/fonts/inter.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/inter-medium.woff2") format("woff2"),
+  url("assets/fonts/inter-medium.woff") format("woff");
 }
 
 @font-face {
@@ -41,13 +55,14 @@ $grid_gutters: 4rem 4rem;
   url("assets/fonts/inter-bold.woff") format("woff");
 }
 
-$font_family: Inter, system-ui, sans-serif;
+$font-family: Inter, system-ui, sans-serif;
 
 // Colors
-$color_purple_black  : #170D24;
-$color_dark_purple   : #241438;
-$color_greyish_purple: #C2AED8;
-$color_light_purple  : #F9F7FB;
+$color-purple-black  : #170D24;
+$color-dark-purple   : #241438;
+$color-purple        : #845EB0;
+$color-greyish-purple: #C2AED8;
+$color-light-purple  : #F9F7FB;
 
 // Spacing
 $unit100: 1.6rem;
@@ -58,3 +73,13 @@ $unit500: 9.6rem;
 $unit600: 12rem;
 $unit700: 18.4rem;
 $unit800: 22.4rem;
+
+// Transitions
+$duration-fast: 0.2s;
+$duration-normal: 0.4s;
+$duration-slow: 2s;
+
+$ease: cubic-bezier(0.29, 0, 0.28, 1); // https://cubic-bezier.com/#.29,0,.28,1
+$ease-in: cubic-bezier(0.41, 0.03, 1, 1); // https://cubic-bezier.com/#.41,.03,1,1
+$ease-out: cubic-bezier(0, 0.08, 0.47, 1); // https://cubic-bezier.com/#0,.08,.47,1
+$ease-in-out: cubic-bezier(0.45, 0, 0.55, 1); // https://cubic-bezier.com/#.45,0,.55,1

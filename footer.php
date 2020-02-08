@@ -20,12 +20,12 @@
 	if ( !empty($email) ) {
 
 		?>
-		<h6><?php echo esc_html__( 'Kontakt', 'andersen' ); ?></h6>
+		<h6 class="footer-heading"><?php echo esc_html__( 'Kontakt', 'andersen' ); ?></h6>
 		<span class="screen-reader-text"><?php echo esc_html__( 'E-post:', 'andersen' ); ?></span> <a href="<?php echo $email['url']; ?>"><?php echo $email['title']; ?></a>
 	<?php } ?>
 
 	<?php if ( have_rows('site_social', 'option') ) { ?>
-		<h6><?php echo esc_html__( 'Profiler', 'andersen' ); ?></h6>
+		<h6 class="footer-heading"><?php echo esc_html__( 'Profiler', 'andersen' ); ?></h6>
 		<?php
 
 		get_template_part( 'template-parts/components/social-profiles' );

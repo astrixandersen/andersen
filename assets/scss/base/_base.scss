@@ -27,11 +27,15 @@ html {
 body {
 	background: white;
 	font-family: $font_family;
-	font-size: 1.6rem; // default for document */
+	font-size: $font-size-small; // default for document */
 	line-height: 1.4;
 	color: $color_purple_black;
 	margin: 0px; // Remove the margin in all browsers.
 	min-height: 100%;
+
+  @media all and (min-width: $screen-lg) {
+    font-size: $font-size-base;
+  }
 }
 
 /* Accessibility */

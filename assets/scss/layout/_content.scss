@@ -7,7 +7,27 @@
  #site-header,
  #site-content,
  #site-footer {
- 	max-width: $container_site;
+ 	max-width: $container-site;
  	margin-left: auto;
  	margin-right: auto;
+ 	padding-left: $unit200;
+ 	padding-right: $unit200;
+
+ 	@media all and (min-width: $screen-md) {
+ 		padding-left: $unit300;
+ 		padding-right: $unit300;
+ 	}
+
+ 	@media all and (min-width: $screen-lg) {
+ 		padding-left: $unit400;
+ 		padding-right: $unit400;
+ 	}
+ }
+
+ #site-content {
+ 	.page-content {
+ 		max-width: $container-content;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 	}
  }

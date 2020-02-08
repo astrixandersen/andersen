@@ -6,6 +6,38 @@
 
  #site-header {
  	display: grid;
- 	grid-template-columns: [branding] 1fr [navigation] 2fr;
- 	clear: both;
+ 	width: 100%;
+ 	grid-template-columns: [title] 9fr [menu] 2fr;
+ 	align-items: center;
+ 	padding-top: $unit300;
+ 	padding-bottom: $unit300;
+
+ 	@media all and (min-width: $screen-lg) {
+ 		grid-template-columns: [title] 9fr [menu] 1fr;
+ 	}
+
+ 	.site-title,
+ 	.site-menu-toggle {
+ 		font-size: $font-size-smaller;
+
+ 		@media all and (min-width: $screen-md) {
+ 			font-size: $font-size-small;
+ 		}
+ 	}
+
+ 	.site-title {
+ 		grid-area: title;
+ 	}
+
+ 	.site-menu-toggle {
+ 		grid-area: menu;
+ 		text-align: right;
+
+ 		.toggle-menu {}
+ 	}
+
+ 	.container-menu {
+ 		display: none;
+ 	}
+
  }

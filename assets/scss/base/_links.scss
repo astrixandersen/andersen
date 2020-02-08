@@ -7,4 +7,42 @@
  #site-header,
  #site-content,
  #site-footer {
+ 	a {
+ 		color: $color-dark-purple;
+ 		text-decoration: none;
+ 	}
  }
+
+ #site-header {
+ 	a {
+ 		font-weight: 500;
+ 	}
+ }
+
+ #site-content,
+ #site-footer {
+ 	a {
+ 		z-index: 1;
+ 		position: relative;
+
+ 		&:before {
+ 			content: '';
+ 			z-index: -1;
+ 			position: absolute;
+ 			left: 0;
+ 			bottom: 0.1rem;
+ 			background: $color-greyish-purple;
+ 			width: 100%;
+ 			height: 0.15rem;
+ 			transition: background $ease-in-out $duration-normal;
+ 		}
+
+ 		&:hover:before {
+ 			background: rgba($color-purple, 0.9);
+ 			transition: background $ease $duration-fast;
+ 		}
+ 	}
+ }
+
+
+

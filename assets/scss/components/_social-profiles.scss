@@ -1,0 +1,17 @@
+/**
+ *
+ * Components => Social Profiles
+ *
+ */
+
+ .social-profiles {
+
+ 	li {
+ 		display: inline;
+ 		list-style: none;
+
+ 		+ li {
+ 			padding-left: $unit100 / 2;
+ 		}
+ 	}
+ }
