@@ -25,41 +25,14 @@
 	<?php wp_body_open(); ?>
 
 	<header id="site-header" role="banner">
-		<div class="site-branding">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<?php
 
-				$site_logo = get_field( 'site_logo', 'option' );
+		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+		<a href="#" class="toggle-menu" role="button" aria-label ="<?php echo esc_html__( 'Åpne meny', 'andersen' ); ?>">👈🏻 Meny</a>
 
-				if ( !empty($site_logo) ) :
+		<div class="container-menu">
+			<?php get_template_part('template-parts/layout/menu', 'content'); ?>
+		</div> <!-- .container-menu -->
 
-					?>
-					<img class="site-logo" src="<?php echo $site_logo; ?>" alt="<?php bloginfo('name'); ?>" />
+	</header><!-- #site-header -->
 
-					<?php else : ?>
-						<span class="site-title"><?php bloginfo('name'); ?></span>
-					<?php endif; // site-logo ?>
-				</a>
-			</div><!-- .site-branding -->
-
-			<nav id="site-navigation" class="main-navigation">
-
-				<button class="menu-toggle" aria-label="<?php echo esc_html__( 'Meny', 'andersen' ); ?>" aria-controls="primary-menu" aria-expanded="false"></button>
-
-				<?php
-
-				wp_nav_menu( array(
-					'theme_location'	=> 'menu-1',
-					'menu_class'			=> 'menu',
-					'menu_id'         => 'primary-menu',
-					'container_class' => 'primary-container',
-					'depths'		 		  => '1'
-				) );
-
-				?>
-
-			</nav><!-- #site-navigation -->
-
-		</header><!-- #site-header -->
-
-		<main id="site-content" role="main">
+	<main id="site-content" role="main">
