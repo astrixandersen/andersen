@@ -30,23 +30,11 @@
 		<p><span class="screen-reader-text"><?php esc_html__( 'E-post:', 'andersen' ); ?></span> <a href="<?php echo $mail['url']; ?>"><?php echo $mail['title']; ?></a></p>
 	<?php } ?>
 
-	<?php if ( have_rows('site_social') ) { ?>
-		<ul class="social-profiles">
-			<?php
+	<?php
 
-			while ( have_rows('site_social') ) {
-				the_row();
+	if ( have_rows('site_social', 'option') ) {
+		get_template_part( 'template-parts/components/social-profiles' );
+	}
 
-				$link = get_sub_field('link');
-
-				echo '<li>';
-				echo '<a href="' . $link['url'] . '" target="' . $link['target'] . '">' . $link['title'] . '</a>';
-				echo '</li>';
-
-			}
-
-			?>
-		</ul>
-	<?php } ?>
-
+	?>
 	</section> <!-- .contact-information -->

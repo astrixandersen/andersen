@@ -25,36 +25,44 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
-	"/assets/fonts/Inter-Bold.woff": {
+	"/acf-json/group_5e3ebac93b96e.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5e3ebac93b96e-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/assets/fonts/inter-bold.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter-Bold.woff",
+		"oAP": "/assets/fonts/inter-bold.woff",
 		"oF": 0
 		},
-	"/assets/fonts/Inter-Bold.woff2": {
+	"/assets/fonts/inter-bold.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter-Bold.woff2",
+		"oAP": "/assets/fonts/inter-bold.woff2",
 		"oF": 0
 		},
-	"/assets/fonts/Inter-SemiBold.woff": {
+	"/assets/fonts/inter-semibold.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter-SemiBold.woff",
+		"oAP": "/assets/fonts/inter-semibold.woff",
 		"oF": 0
 		},
-	"/assets/fonts/Inter-SemiBold.woff2": {
+	"/assets/fonts/inter-semibold.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter-SemiBold.woff2",
+		"oAP": "/assets/fonts/inter-semibold.woff2",
 		"oF": 0
 		},
 	"/assets/fonts/inter.woff": {
@@ -262,14 +270,6 @@
 		"oAP": "/languages/readme.txt",
 		"oF": 0
 		},
-	"/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/LICENSE",
-		"oF": 0
-		},
 	"/phpcs.xml.dist": {
 		"cB": 0,
 		"ft": 8192,
@@ -322,6 +322,22 @@
 		"oAP": "/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/template-parts/components/social-profiles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/components/social-profiles.php",
+		"oF": 0
+		},
+	"/template-parts/layout/menu-content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/layout/menu-content.php",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -1811,7 +1827,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://localhost/andersen",
+	"externalServerAddress": "http://localhost/astrix",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
