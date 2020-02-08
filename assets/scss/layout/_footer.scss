@@ -34,10 +34,11 @@
 
  	#footer-byline {
  		margin-top: $unit300;
- 		font-size: $font-size-smaller;
+ 		font-size: 1.2rem;
+ 		line-height: 1.6;
 
- 		p {
- 			margin: 0;
+ 		@media all and (min-width: $screen-sm) {
+ 			font-size: $font-size-smaller;
  		}
 
  		@media all and (max-width: $screen-sm) {
@@ -54,14 +55,21 @@
  			display: grid;
  			grid-template-columns: 1fr 1fr;
  			margin-top: $unit400;
+ 		}
 
- 			p:nth-child(2) {
+ 		@media all and (min-width: $screen-lg) {
+ 			font-size: $font-size-small;
+ 		}
+
+ 		p {
+ 			margin: 0;
+
+ 			@media all and (min-width: $screen-md) {
+ 				&:nth-child(2) {
  					text-align: right;
  				}
  			}
-
- 			@media all and (min-width: $screen-lg) {
- 				font-size: $font-size-small;
- 			}
  		}
+
  	}
+ }

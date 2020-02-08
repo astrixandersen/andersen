@@ -7,26 +7,28 @@
  #site-header {
  	display: grid;
  	width: 100%;
- 	grid-template-columns: [title] 9fr [menu] 2fr;
+ 	grid-template-columns: [title] 2fr [menu] 1fr;
  	align-items: center;
- 	padding-top: $unit300;
- 	padding-bottom: $unit300;
+ 	padding-top: $unit200;
+ 	padding-bottom: $unit200;
 
- 	@media all and (min-width: $screen-lg) {
- 		grid-template-columns: [title] 9fr [menu] 1fr;
+ 	@media all and (min-width: $screen-md) {
+ 		padding-top: $unit300;
+ 		padding-bottom: $unit300;
  	}
 
  	.site-title,
  	.site-menu-toggle {
  		font-size: $font-size-smaller;
 
- 		@media all and (min-width: $screen-md) {
+ 		@media all and (min-width: $screen-sm) {
  			font-size: $font-size-small;
  		}
  	}
 
  	.site-title {
  		grid-area: title;
+ 		margin: 0;
  	}
 
  	.site-menu-toggle {

@@ -4,8 +4,9 @@
  *
  */
 
- $screen-sm: 576px;
- $screen-md: 768px;
+ $screen-xs: 350px;
+ $screen-sm: 460px;
+ $screen-md: 670px;
  $screen-lg: 1106px;
  $screen-xl: 1560px;
 
@@ -18,7 +19,7 @@ $container-text: 850px;
 $grid-gutters: 4rem 4rem;
 
 // Typography
-$font-size-smaller: 1.2rem;
+$font-size-smaller: 1.3rem;
 $font-size-small: 1.6rem;
 $font-size-base: 2rem;
 $font-size-large: 3.2rem;
