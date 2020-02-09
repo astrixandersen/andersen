@@ -1,0 +1,19 @@
+{
+  "name": "project-info",
+  "version": "1.0.0",
+  "description": "Project Info",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "Astrid Mathilde Andersen",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@wordpress/scripts": "7.0.1",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}

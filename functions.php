@@ -84,8 +84,24 @@ function andersen_scripts() {
 	// Theme styles
 	wp_enqueue_style( 'andersen-style', get_stylesheet_uri() );
 }
-
 add_action( 'wp_enqueue_scripts', 'andersen_scripts' );
+
+
+/**
+ * Enqueue custom blocks
+ */
+function andersen_blocks() {
+	wp_enqueue_script( 'block-project-info', get_template_directory_uri() . '/blocks/project-info/build/index.js' );
+}
+add_action( 'enqueue_block_editor_assets', 'andersen_blocks' );
+
+/**
+ * Includes a "skip to content"-link for accessibility
+ */
+function andersen_skip_link() {
+	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Hopp til innhold', 'andersen' ) . '</a>';
+}
+add_action( 'wp_body_open', 'andersen_skip_link', 5 );
 
 /**
  * Include PHP-files located in '/inc'-folder
@@ -104,11 +120,3 @@ if ( file_exists($inc_folder) ) {
 		}
 	}
 }
-
-/**
- * Includes a "skip to content"-link for accessibility
- */
-function andersen_skip_link() {
-	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Hopp til innhold', 'andersen' ) . '</a>';
-}
-add_action( 'wp_body_open', 'andersen_skip_link', 5 );

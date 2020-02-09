@@ -214,13 +214,60 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/custom-template.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/custom-template.php",
+	"/blocks/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/blocks/node_modules",
 		"oF": 0
+		},
+	"/blocks/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blocks/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blocks/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blocks/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blocks/project-info/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/blocks/project-info/node_modules",
+		"oF": 0
+		},
+	"/blocks/project-info/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blocks/project-info/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blocks/project-info/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blocks/project-info/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blocks/project-info/src/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blocks/project-info/src/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/footer.php": {
 		"cB": 0,
@@ -293,6 +340,14 @@
 		"oA": 0,
 		"oAP": "/languages/readme.txt",
 		"oF": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"/phpcs.xml.dist": {
 		"cB": 0,

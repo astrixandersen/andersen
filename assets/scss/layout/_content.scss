@@ -4,6 +4,7 @@
  *
  **/
 
+ /* Containers */
  #site-header,
  #site-content,
  #site-footer {
@@ -29,5 +30,15 @@
  		max-width: $container-content;
  		margin-left: auto;
  		margin-right: auto;
+ 	}
+ }
+
+ /* Headings and content */
+ .single-post .page-header {
+ 	margin-top: $unit400;
+ 	text-align: center;
+
+ 	@media all and (min-width: $screen-lg) {
+ 		margin-top: $unit600;
  	}
  }
