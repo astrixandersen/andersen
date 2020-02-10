@@ -24,6 +24,10 @@
  		@media all and (min-width: $screen-sm) {
  			font-size: $font-size-small;
  		}
+
+ 		@media all and (min-width: $screen-xl) {
+ 			font-size: $font-size-base;
+ 		}
  	}
 
  	.site-title {

@@ -6,8 +6,8 @@
   "author": "Astrid Mathilde Andersen",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@babel/preset-env": "^7.8.4",
     "@wordpress/scripts": "^7.0.1",
+    "babel-loader": "^8.0.6",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   }

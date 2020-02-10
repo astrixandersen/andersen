@@ -81,19 +81,39 @@ add_filter('admin_footer_text', 'remove_footer_admin');
  * Enqueue scripts and styles.
  */
 function andersen_scripts() {
+
 	// Theme styles
 	wp_enqueue_style( 'andersen-style', get_stylesheet_uri() );
+
 }
 add_action( 'wp_enqueue_scripts', 'andersen_scripts' );
 
 
 /**
- * Enqueue custom blocks
+ * Register custom blocks
  */
-function andersen_blocks() {
-	wp_enqueue_script( 'block-project-info', get_template_directory_uri() . '/blocks/project-info/build/index.js' );
+function andersen_register_blocks() {
+
+	// automatically get dependencies and version number
+	$asset_file = include( dirname( __FILE__ ) . '/blocks/project-info/build/index.asset.php' );
+
+	// register script
+	wp_register_script( 'block-project-info-script', get_template_directory_uri() . '/blocks/project-info/build/index.js', $asset_file['dependencies'], $asset_file['version'] );
+
+	// register styles
+	wp_register_style( 'block-project-info-editor-style', get_template_directory_uri() . '/blocks/project-info/build/editor.css', array('wp-edit-blocks') );
+
+		wp_register_style( 'block-project-info-style', get_template_directory_uri() . '/blocks/project-info/build/style.css', array() );
+
+	// register block
+	register_block_type( 'andersen/project-info', array(
+		'style'					=> 'block-project-info-style',
+		'editor_script' => 'block-project-info-script',
+		'editor_style'	=> 'block-project-info-editor-style',
+	) );
 }
-add_action( 'enqueue_block_editor_assets', 'andersen_blocks' );
+add_action( 'init', 'andersen_register_blocks' );
+
 
 /**
  * Includes a "skip to content"-link for accessibility
