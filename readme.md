@@ -1,5 +1,9 @@
 # andersen
-The WordPress-theme for my personal website. Where I have used third party code, credit has been given in the code's comments.
+The WordPress-theme for my personal website, where I experiment with the Block Editor and write React for the first time.
+I have tried to not rely on any frameworks for this project, and I have also minimized the number of active plugins.
 
 ## Dependencies
-None 🎉
+Currently none 🎉
+
+## Active plugins
+- Disable Comments
