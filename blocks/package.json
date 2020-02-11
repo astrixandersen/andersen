@@ -2,13 +2,17 @@
   "name": "andersen-blocks",
   "version": "1.0.0",
   "description": "Custom blocks for Gutenberg",
-  "scripts": {},
+  "scripts": {
+    "build": "npm run build:latest-projects && npm run build:project-info",
+    "build:project-info": "wp-scripts build project-info/src/index.js --output-path=project-info/build",
+    "build:latest-projects": "wp-scripts build latest-projects/src/index.js --output-path=latest-projects/build"
+  },
   "author": "Astrid Mathilde Andersen",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@wordpress/components": "^9.2.0",
     "@wordpress/scripts": "^7.0.1",
-    "babel-loader": "^8.0.6",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
-  }
+  },
 }

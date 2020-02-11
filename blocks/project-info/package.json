@@ -11,5 +11,8 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "@wordpress/scripts": "7.0.1"
+  },
+  "dependencies": {
+    "@wordpress/editor": "^9.12.0"
   }
 }

@@ -273,11 +273,43 @@
 		"oAP": "/blocks/project-info/build/index.js.map",
 		"oF": 0
 		},
+	"/blocks/project-info/build/min/index.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/build/min/min/index.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/build/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blocks/project-info/build/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/blocks/project-info/node_modules": {
 		"ft": 65536,
 		"oA": 2,
 		"oAP": "/build/blocks/project-info/node_modules",
 		"oF": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/blocks/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/blocks/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/blocks/project-info/package-lock.json": {
 		"ft": 524288,
@@ -2381,7 +2413,7 @@
 		"quality": 100
 		},
 	"languageDefaultsJS": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 1,
 		"autoOutputPathFilenamePattern": "*.min.js",
 		"autoOutputPathRelativePath": "/min",
 		"autoOutputPathReplace1": "",
