@@ -7,4 +7,4 @@ The code structure is based on [Twenty Twenty](https://github.com/WordPress/twen
 Currently none 🎉
 
 ## Active plugins
-- Yoast SEO
+- [Yoast SEO](https://github.com/Yoast/wordpress-seo)
