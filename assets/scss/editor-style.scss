@@ -7,6 +7,10 @@ body {
 	color: $color-purple-black;
 }
 
+textarea {
+	font-family: $font-family !important;
+}
+
 a {
 	z-index: 1;
 	position: relative;
