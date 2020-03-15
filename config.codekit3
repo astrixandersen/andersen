@@ -246,74 +246,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/blocks/latest-projects/build/index.asset.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/blocks/latest-projects/build/index.asset.php",
-		"oF": 0
-		},
-	"/blocks/latest-projects/build/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/blocks/latest-projects/build/min/index.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/blocks/latest-projects/build/index.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/blocks/latest-projects/build/index.js.map",
-		"oF": 0
-		},
-	"/blocks/latest-projects/index.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/blocks/latest-projects/index.php",
-		"oF": 0
-		},
-	"/blocks/latest-projects/node_modules": {
-		"ft": 65536,
-		"oA": 2,
-		"oAP": "/build/blocks/latest-projects/node_modules",
-		"oF": 0
-		},
-	"/blocks/latest-projects/package-lock.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/blocks/latest-projects/package-lock-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/blocks/latest-projects/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/blocks/latest-projects/package-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/blocks/latest-projects/src/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/blocks/latest-projects/src/min/index.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/blocks/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -503,17 +435,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/blocks/project-info/node_modules/@wordpress/blocks/build-module/min/index.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/blocks/project-info/node_modules/@wordpress/data/build-module/registry.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/blocks/project-info/node_modules/@wordpress/data/build-module/min/registry.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
