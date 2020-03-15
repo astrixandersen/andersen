@@ -1,10 +1,6 @@
 import { registerBlockType } from '@wordpress/blocks';
-import {
-	RichText,
-	AlignmentToolbar,
-	BlockControls,
-	InspectorControls
-} from '@wordpress/block-editor';
+import { InnerBlocks } from '@wordpress/block-editor';;
+import { RichText } from '@wordpress/block-editor';
 
 registerBlockType( 'andersen/project-info', {
 	title: 'Prosjektinfo',
@@ -15,63 +11,43 @@ registerBlockType( 'andersen/project-info', {
 		content: {
 			type: 'array',
 			source: 'children',
+			multiline: 'p',
 			selector: 'p',
 		},
-		alignment: {
-			type: 'string',
-			default: 'none',
-		}
 	},
-	example: {
-		attributes: {
-			content: 'Hei hei',
-			alignment: 'center',
-		},
-	},
-	edit: ( props ) => {
-		const {
-			attributes: {
-				content,
-				alignment,
-			},
-			className
-		} = props;
 
-		const onChangeContent = ( newContent) => {
-			props.setAttributes( { content: newContent } );
-		};
+edit: ( props ) => {
+	const ALLOWED_BLOCKS = [ 'core/image' ];
+	const GET_IMAGE = [ [ 'core/image', {} ] ];
+	const { attributes: { content }, setAttributes } = props;
+	const onChangeContent = ( newContent ) => {
+		setAttributes( { content: newContent } );
+	};
 
-		const onChangeAlignment = ( newAlignment ) => {
-			props.setAttributes( { alignment: newAlignment === undefined ? 'none' : newAlignment } );
-		};
+	return (
+		<div className="project-info">
 
-		return (
-			<div>
-			{
-				<BlockControls>
-				<AlignmentToolbar
-				value={ alignment }
-				onChange={ onChangeAlignment }
-				/>
-				</BlockControls>
-			}
-			<RichText
-			tagname="p"
-			className={ className }
-			style={ {textAlign : alignment} }
-			onChange={ onChangeContent }
-			value={ content }
-			/>
-			</div>
-			);
-	},
-	save: ( props ) => {
-		return(
-			<RichText.Content
-			tagName="p"
-			className={ `andersen-blocks-align-${ props.attributes.alignment }` }
-			value={ props.attributes.content }
-			/>
-			);
-	},
+		<InnerBlocks className="image" allowedBlocks={ ALLOWED_BLOCKS } template={ GET_IMAGE } templateLock="insert" />
+
+		<div className="content">
+		<RichText tagName="p" onChange={ onChangeContent } value={ content } placeholder="Kort informasjon om prosjektet." keepPlaceholderOnFocus="true" />
+		</div>
+
+		</div>
+		);
+},
+
+save: ( props ) => {
+	return(
+		<div className="project-info">
+
+		<InnerBlocks.Content />
+
+		<div className="content">
+		<RichText.Content tagName="p" value={ props.attributes.content } />
+		</div>
+
+		</div>
+		);
+},
 } );

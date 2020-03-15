@@ -55,3 +55,43 @@
  		line-height: 1.4;
  	}
  }
+
+ strong,
+ b {
+ 	font-weight: 500;
+ }
+
+
+ /* Block Editor */
+ .has-small-font-size {
+ 	font-size: $font-size-smaller;
+
+ 	@media all and (min-width: $screen-lg) {
+ 		font-size: $font-size-small;
+ 	}
+ }
+
+ .has-regular-font-size {
+ 	font-size: $font-size-small;
+
+ 	@media all and (min-width: $screen-lg) {
+ 		font-size: $font-size-base;
+ 	}
+ }
+
+ .has-large-font-size {
+ 	font-size: $font-size-base;
+
+ 	@media all and (min-width: $screen-lg) {
+ 		font-size: $font-size-large;
+ 	}
+ }
+
+ .has-huge-font-size {
+ 	font-size: 3.2rem;
+
+ 	@media all and (min-width: $screen-lg) {
+ 		font-size: 5.6rem;
+ 	}
+ }
+

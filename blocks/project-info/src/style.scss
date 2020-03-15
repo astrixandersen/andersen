@@ -1,1 +1,31 @@
-.wp-block-andersen-project-info {}
+@import '../assets/scss/base/variables';
+
+.wp-block-andersen-project-info {
+
+	.wp-block-image {
+		margin-top: 0;
+		margin-bottom: $unit200;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+
+	@media all and (min-width: $screen-md) {
+		display: grid;
+		grid-gap: $grid-gutter-row $grid-gutter-column;
+		grid-template-columns: [image] 7fr [content] 5fr;
+
+		.wp-block-image {
+			grid-template: image;
+			margin: 0;
+		}
+
+		.content {
+			grid-template: content;
+		}
+	}
+
+}

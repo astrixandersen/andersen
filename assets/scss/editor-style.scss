@@ -14,7 +14,8 @@ body {
 		max-width: $container-content;
 	}
 
-	&[data-type="core/paragraph"] {
+	&[data-type="core/paragraph"],
+	&[data-type="core/heading"] {
 		max-width: $container-text;
 		margin-left: auto;
 		margin-right: auto;
@@ -45,6 +46,11 @@ body {
 				transition: background $ease $duration-fast;
 			}
 		}
+	}
+
+	strong,
+	b {
+		font-weight: 500;
 	}
 
 	textarea {

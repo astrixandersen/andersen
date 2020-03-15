@@ -1,1 +1,29 @@
-.wp-block-andersen-project-info {}
+@import '../assets/scss/base/variables';
+
+.project-info {
+
+	.editor-inner-blocks {
+		margin: 0;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+
+	@media all and (min-width: $screen-md) {
+		display: flex;
+
+		.editor-inner-blocks {
+			width: 60%;
+		}
+
+		.content {
+			width: 40%;
+			margin-left: $grid-gutter-row / 2;
+			margin-bottom: 0;
+		}
+	}
+
+}

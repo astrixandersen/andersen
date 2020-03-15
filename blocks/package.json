@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Custom blocks for Gutenberg",
   "scripts": {
-    "build": "npm run build:latest-projects && npm run build:project-info",
+    "build": "npm build:latest-projects && npm build:project-info",
     "build:project-info": "wp-scripts build project-info/src/index.js --output-path=project-info/build",
     "build:latest-projects": "wp-scripts build latest-projects/src/index.js --output-path=latest-projects/build"
   },

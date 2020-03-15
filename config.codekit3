@@ -97,6 +97,12 @@
 		"oAP": "/assets/fonts/inter.woff2",
 		"oF": 0
 		},
+	"/assets/js": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/assets/js",
+		"oF": 0
+		},
 	"/assets/scss/base/_base.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -162,6 +168,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/editor-style.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/editor-style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/layout/_content.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -214,6 +233,74 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/blocks/latest-projects/build/index.asset.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blocks/latest-projects/build/index.asset.php",
+		"oF": 0
+		},
+	"/blocks/latest-projects/build/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/latest-projects/build/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/latest-projects/build/index.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blocks/latest-projects/build/index.js.map",
+		"oF": 0
+		},
+	"/blocks/latest-projects/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blocks/latest-projects/index.php",
+		"oF": 0
+		},
+	"/blocks/latest-projects/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/blocks/latest-projects/node_modules",
+		"oF": 0
+		},
+	"/blocks/latest-projects/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blocks/latest-projects/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blocks/latest-projects/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blocks/latest-projects/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blocks/latest-projects/src/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/latest-projects/src/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/blocks/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -259,9 +346,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/blocks/project-info/build/min/index.min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -273,17 +360,6 @@
 		"oAP": "/blocks/project-info/build/index.js.map",
 		"oF": 0
 		},
-	"/blocks/project-info/build/min/index.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/blocks/project-info/build/min/min/index.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/blocks/project-info/build/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -294,11 +370,118 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/blocks/project-info/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blocks/project-info/index.php",
+		"oF": 0
+		},
 	"/blocks/project-info/node_modules": {
 		"ft": 65536,
 		"oA": 2,
 		"oAP": "/build/blocks/project-info/node_modules",
 		"oF": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/block-editor/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/block-editor/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/blocks/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/blocks/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/data/build-module/default-registry.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/data/build-module/min/default-registry.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/data/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/data/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/data/build-module/registry.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/data/build-module/min/registry.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/keyboard-shortcuts/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/keyboard-shortcuts/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/rich-text/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/rich-text/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/viewport/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/viewport/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/viewport/build-module/listener.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/block-editor/node_modules/@wordpress/viewport/build-module/min/listener.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/blocks/project-info/node_modules/@wordpress/blocks/build-module/index.js": {
 		"bF": 0,
@@ -307,6 +490,83 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/blocks/project-info/node_modules/@wordpress/blocks/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/data/build-module/default-registry.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/data/build-module/min/default-registry.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/data/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/data/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/data/build-module/registry.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/data/build-module/min/registry.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/@wordpress/viewport/build-module/listener.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/@wordpress/viewport/build-module/min/listener.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/lodash/lodash.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/lodash/min/lodash.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/memize/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/memize/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/project-info/node_modules/turbo-combine-reducers/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/project-info/node_modules/turbo-combine-reducers/min/index.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -345,9 +605,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/blocks/project-info/src/min/index.min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -360,9 +620,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/blocks/project-info/build/style.css",
-		"oF": 2,
+		"oF": 3,
 		"oS": 3,
 		"uL": 1
+		},
+	"/editor-style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/editor-style-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/footer.php": {
 		"cB": 0,
@@ -2597,7 +2867,7 @@
 	"rollupExternals": "",
 	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
 	"rollupTreeshakingEnabled": 1,
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules, /assets/js",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"tsAllowSyntheticDefaultImports": 0,
