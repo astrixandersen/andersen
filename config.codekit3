@@ -181,6 +181,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/layout/_blocks.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_blocks.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/layout/_content.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -494,28 +507,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/blocks/project-info/node_modules/@wordpress/data/build-module/default-registry.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/blocks/project-info/node_modules/@wordpress/data/build-module/min/default-registry.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/blocks/project-info/node_modules/@wordpress/data/build-module/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/blocks/project-info/node_modules/@wordpress/data/build-module/min/index.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/blocks/project-info/node_modules/@wordpress/data/build-module/registry.js": {
 		"bF": 0,
 		"ft": 64,
@@ -523,17 +514,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/blocks/project-info/node_modules/@wordpress/data/build-module/min/registry.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/blocks/project-info/node_modules/@wordpress/viewport/build-module/listener.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/blocks/project-info/node_modules/@wordpress/viewport/build-module/min/listener.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

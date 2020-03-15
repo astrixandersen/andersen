@@ -4,8 +4,14 @@
  *
  */
 
- html,
- body {
+ *,
+ *:before,
+ *:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
   border: none;
   margin: 0;
   padding: 0;
@@ -18,12 +24,6 @@ html {
 	height: 100%;
 }
 
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
-
 body {
 	background: white;
 	font-family: $font_family;
@@ -32,8 +32,9 @@ body {
 	color: $color_purple_black;
 	margin: 0px; // Remove the margin in all browsers.
 	min-height: 100%;
+  overflow-x: hidden;
 
-  @media all and (min-width: $screen-lg) {
+  @media all and (min-width: $screen-md) {
     font-size: $font-size-base;
   }
 }
@@ -72,8 +73,7 @@ body {
 
 /* Images */
 figure {
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
 }
 
 figure,

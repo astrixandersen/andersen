@@ -26,18 +26,21 @@
  }
 
 
- /* Headings */
- .single-post .page-header {
- 	margin-top: $unit400;
-
- 	@media all and (min-width: $screen-lg) {
- 		margin-top: $unit600;
- 	}
- }
-
-
- /* Page content */
+ /* Page Content */
  #site-content {
+
+ 	.page-header {
+ 		max-width: $container-text;
+ 		margin-top: $unit400;
+ 		margin-left: auto;
+ 		margin-right: auto;
+
+ 		@media all and (min-width: $screen-md) {
+ 			margin-top: $unit600;
+ 			text-align: center;
+ 		}
+ 	}
+
  	.page-content {
  		max-width: $container-content;
  		margin-left: auto;
@@ -54,6 +57,41 @@
  			margin-right: auto;
  		}
 
+ 		/* Distances */
+ 		p {
+ 			margin-top: $unit200;
+ 			margin-bottom: $unit200;
+
+ 			@media all and (min-width: $screen-md) {
+ 				margin-top: $unit300;
+ 				margin-bottom: $unit300;
+ 			}
+
+ 			+ h2 {
+ 				margin-top: $unit400;
+
+ 				@media all and (min-width: $screen-md) {
+ 					margin-top: $unit500;
+ 				}
+
+ 				@media all and (min-width: $screen-lg) {
+ 					margin-top: $unit600;
+ 				}
+ 			}
+
+ 		}
+
+ 		h2,
+ 		h3,
+ 		h4,
+ 		h5,
+ 		h6 {
+ 			+ p {
+ 				margin-top: 0;
+ 			}
+ 		}
  	}
+
+
  }
 

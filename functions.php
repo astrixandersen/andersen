@@ -65,14 +65,6 @@ if ( ! function_exists( 'andersen_setup' ) ) :
 		/**
 		 * Block Editor
 		 *
-		 * Add default block styles
-		 * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#default-block-styles
-		 */
-		add_theme_support( 'wp-block-styles' );
-
-		/**
-		 * Block Editor
-		 *
 		 * Define block font sizes
 		 * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#block-font-sizes
 		 */

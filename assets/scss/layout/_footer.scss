@@ -7,13 +7,13 @@
  #site-footer {
  	background: $color-light-purple;
  	width: 100%;
- 	margin-top: $unit400;
+ 	margin-top: $unit600;
  	margin-bottom: 0;
  	padding-top: $unit200;
  	padding-bottom: $unit200;
 
  	@media all and (min-width: $screen-md) {
- 		margin-top: $unit500;
+ 		margin-top: $unit700;
  		padding-top: $unit300;
  		padding-bottom: $unit300;
  	}
