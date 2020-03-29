@@ -1,8 +1,8 @@
 /**
- *
- * Base
- *
- */
+*
+* Base
+*
+*/
 
 *,
 *:before,
@@ -33,6 +33,10 @@ body {
   font-size: $font-size-small; // default for document */
   line-height: 1.4;
   color: $color-dark-purple;
+  overflow-wrap: break-word;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
 
   @media all and (min-width: $screen-md) {
     font-size: $font-size-base;

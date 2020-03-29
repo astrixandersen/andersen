@@ -55,12 +55,10 @@
 
     /* Distances */
     p {
-      margin-top: $unit200;
-      margin-bottom: $unit200;
+      margin: $unit200 0;
 
       @media all and (min-width: $screen-md) {
-        margin-top: $unit300;
-        margin-bottom: $unit300;
+        margin: $unit300 0;
       }
 
       + h2 {
