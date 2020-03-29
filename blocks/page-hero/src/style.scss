@@ -2,7 +2,7 @@
 
 div.wp-block-andersen-page-hero {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -13,6 +13,7 @@ div.wp-block-andersen-page-hero {
   }
 
   p {
+    margin: 0 !important;
     font-size: 3.2rem;
 
     @media all and (min-width: $screen-md) {
