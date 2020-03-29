@@ -38,16 +38,6 @@
       font-size: $font-size-smaller;
     }
 
-    @media all and (max-width: $screen-sm) {
-      a {
-        text-decoration: underline;
-
-        &:before {
-          background: none;
-        }
-      }
-    }
-
     @media all and (min-width: $screen-md) {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -60,6 +50,18 @@
 
     @media all and (min-width: $screen-xl) {
       font-size: $font-size-base;
+    }
+
+    a {
+      &:before {
+        background: $color-greyish-purple;
+        height: 0.13rem;
+      }
+
+      &:hover:before,
+      &:focus:before {
+        background: $color-purple;
+      }
     }
 
     p {

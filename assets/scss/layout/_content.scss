@@ -9,15 +9,19 @@
 #site-content,
 #site-footer {
   max-width: $container-site;
-  margin: inherit auto;
-  padding: inherit $unit200;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $unit200;
+  padding-right: $unit200;
 
   @media all and (min-width: $screen-md) {
-    padding: inherit $unit300;
+    padding-left: $unit300;
+    padding-right: $unit300;
   }
 
   @media all and (min-width: $screen-lg) {
-    padding: inherit $unit400;
+    padding-left: $unit400;
+    padding-right: $unit400;
   }
 }
 
@@ -35,7 +39,8 @@
 
   .page-content {
     max-width: $container-content;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 
     > p,
     > h2,
@@ -44,12 +49,14 @@
     > h5,
     > h6 {
       max-width: $container-text;
-      margin: inherit auto;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Distances */
     p {
-      margin: $unit200 0;
+      margin-top: $unit200;
+      margin-bottom: $unit200;
 
       @media all and (min-width: $screen-md) {
         margin-top: $unit300;
