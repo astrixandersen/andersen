@@ -11,16 +11,17 @@ Text Domain: andersen
 */
 
 // Base
-@import 'base/variables';
-@import 'base/base';
-@import 'base/typography';
-@import 'base/links';
+@import "base/fonts";
+@import "base/variables";
+@import "base/base";
+@import "base/typography";
+@import "base/links";
 
 // Layout
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/content';
-@import 'layout/blocks';
+@import "layout/header";
+@import "layout/footer";
+@import "layout/content";
+@import "layout/blocks";
 
 // Components
-@import 'components/social-profiles';
+@import "components/social-profiles";

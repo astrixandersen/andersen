@@ -4,9 +4,9 @@
  *
  */
 
- *,
- *:before,
- *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -18,20 +18,20 @@ body {
 }
 
 html {
-	font-size: 62.5%; // 10px = 1rem
-	box-sizing: border-box;
-	-ms-overflow-style: scrollbar;
-	height: 100%;
+  font-size: 62.5%; // 10px = 1rem
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  height: 100%;
 }
 
 body {
-	background: white;
-	font-family: $font_family;
-	font-size: $font-size-small; // default for document */
-	line-height: 1.4;
-	color: $color_purple_black;
-	margin: 0px; // Remove the margin in all browsers.
-	min-height: 100%;
+  background: white;
+  font-family: $font_family;
+  font-size: $font-size-small; // default for document */
+  line-height: 1.4;
+  color: $color_dark_purple;
+  margin: 0px; // Remove the margin in all browsers.
+  min-height: 100%;
   overflow-x: hidden;
 
   @media all and (min-width: $screen-md) {

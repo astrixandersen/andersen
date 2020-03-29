@@ -4,11 +4,11 @@
  *
  */
 
- $screen-xs: 350px;
- $screen-sm: 460px;
- $screen-md: 670px;
- $screen-lg: 1106px;
- $screen-xl: 1560px;
+$screen-xs: 350px;
+$screen-sm: 460px;
+$screen-md: 670px;
+$screen-lg: 1106px;
+$screen-xl: 1560px;
 
 // Containers
 $container-site: 100%;
@@ -25,46 +25,14 @@ $font-size-small: 1.6rem;
 $font-size-base: 2rem;
 $font-size-large: 3.2rem;
 
-@font-face {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/fonts/inter.woff2") format("woff2"),
-  url("assets/fonts/inter.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/fonts/inter-medium.woff2") format("woff2"),
-  url("assets/fonts/inter-medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/fonts/inter-semibold.woff2") format("woff2"),
-  url("assets/fonts/inter-semibold.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-weight: 700;
-  font-display: swap;
-  src: url("assets/fonts/inter-bold.woff2") format("woff2"),
-  url("assets/fonts/inter-bold.woff") format("woff");
-}
-
 $font-family: Inter, system-ui, sans-serif;
 
 // Colors
-$color-purple-black  : #170D24;
-$color-dark-purple   : #241438;
-$color-purple        : #845EB0;
-$color-greyish-purple: #C2AED8;
-$color-light-purple  : #F9F7FB;
+$color-purple-black: #170d24;
+$color-dark-purple: #241438;
+$color-purple: #845eb0;
+$color-greyish-purple: #c2aed8;
+$color-light-purple: #f9f7fb;
 
 // Spacing
 $unit100: 1.6rem;
@@ -83,6 +51,21 @@ $duration-normal: 0.4s;
 $duration-slow: 2s;
 
 $ease: cubic-bezier(0.29, 0, 0.28, 1); // https://cubic-bezier.com/#.29,0,.28,1
-$ease-in: cubic-bezier(0.41, 0.03, 1, 1); // https://cubic-bezier.com/#.41,.03,1,1
-$ease-out: cubic-bezier(0, 0.08, 0.47, 1); // https://cubic-bezier.com/#0,.08,.47,1
-$ease-in-out: cubic-bezier(0.45, 0, 0.55, 1); // https://cubic-bezier.com/#.45,0,.55,1
+$ease-in: cubic-bezier(
+  0.41,
+  0.03,
+  1,
+  1
+); // https://cubic-bezier.com/#.41,.03,1,1
+$ease-out: cubic-bezier(
+  0,
+  0.08,
+  0.47,
+  1
+); // https://cubic-bezier.com/#0,.08,.47,1
+$ease-in-out: cubic-bezier(
+  0.45,
+  0,
+  0.55,
+  1
+); // https://cubic-bezier.com/#.45,0,.55,1
