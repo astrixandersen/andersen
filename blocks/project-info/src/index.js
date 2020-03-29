@@ -1,5 +1,5 @@
 import { registerBlockType } from '@wordpress/blocks';
-import { InnerBlocks } from '@wordpress/block-editor';;
+import { InnerBlocks } from '@wordpress/block-editor';
 import { RichText } from '@wordpress/block-editor';
 
 registerBlockType( 'andersen/project-info', {

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Blocks => Project Info
  *

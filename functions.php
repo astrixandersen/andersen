@@ -152,6 +152,7 @@ add_action( 'wp_enqueue_scripts', 'andersen_scripts' );
  * Register custom blocks
  */
 include( dirname( __FILE__ ) . '/blocks/project-info/index.php' );
+include( dirname( __FILE__ ) . '/blocks/page-hero/index.php' );
 
 /**
  * Includes a "skip to content"-link for accessibility
