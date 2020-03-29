@@ -4,76 +4,72 @@
  *
  **/
 
- #site-footer {
- 	background: $color-light-purple;
- 	width: 100%;
- 	margin-top: $unit600;
- 	margin-bottom: 0;
- 	padding-top: $unit200;
- 	padding-bottom: $unit200;
+#site-footer {
+  background: $color-light-purple;
+  width: 100%;
+  margin: $unit600 0 0 0;
+  padding: $unit200 0;
 
- 	@media all and (min-width: $screen-md) {
- 		margin-top: $unit700;
- 		padding-top: $unit300;
- 		padding-bottom: $unit300;
- 	}
+  @media all and (min-width: $screen-md) {
+    margin-top: $unit700;
+    padding-top: $unit300;
+    padding-bottom: $unit300;
+  }
 
- 	.footer-heading {
- 		font-size: $font-size-small;
- 		margin-bottom: $unit100;
+  .footer-heading {
+    font-size: $font-size-small;
+    margin-bottom: $unit100;
 
- 		&:nth-child(1) {
- 			margin-top: 0;
- 		}
+    &:nth-child(1) {
+      margin-top: 0;
+    }
 
- 		@media all and (min-width: $screen-lg) {
- 			font-size: $font-size-base;
- 		}
- 	}
+    @media all and (min-width: $screen-lg) {
+      font-size: $font-size-base;
+    }
+  }
 
+  #footer-byline {
+    margin-top: $unit300;
+    font-size: 1.2rem;
+    line-height: 1.6;
 
- 	#footer-byline {
- 		margin-top: $unit300;
- 		font-size: 1.2rem;
- 		line-height: 1.6;
+    @media all and (min-width: $screen-sm) {
+      font-size: $font-size-smaller;
+    }
 
- 		@media all and (min-width: $screen-sm) {
- 			font-size: $font-size-smaller;
- 		}
+    @media all and (max-width: $screen-sm) {
+      a {
+        text-decoration: underline;
 
- 		@media all and (max-width: $screen-sm) {
- 			a {
- 				text-decoration: underline;
+        &:before {
+          background: none;
+        }
+      }
+    }
 
- 				&:before {
- 					background: none;
- 				}
- 			}
- 		}
+    @media all and (min-width: $screen-md) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: $unit400;
+    }
 
- 		@media all and (min-width: $screen-md) {
- 			display: grid;
- 			grid-template-columns: 1fr 1fr;
- 			margin-top: $unit400;
- 		}
+    @media all and (min-width: $screen-lg) {
+      font-size: $font-size-small;
+    }
 
- 		@media all and (min-width: $screen-lg) {
- 			font-size: $font-size-small;
- 		}
+    @media all and (min-width: $screen-xl) {
+      font-size: $font-size-base;
+    }
 
- 		@media all and (min-width: $screen-xl) {
- 			font-size: $font-size-base;
- 		}
+    p {
+      margin: 0;
 
- 		p {
- 			margin: 0;
-
- 			@media all and (min-width: $screen-md) {
- 				&:nth-child(2) {
- 					text-align: right;
- 				}
- 			}
- 		}
-
- 	}
- }
+      @media all and (min-width: $screen-md) {
+        &:nth-child(2) {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

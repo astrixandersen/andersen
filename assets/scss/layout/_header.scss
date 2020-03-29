@@ -1,49 +1,47 @@
 /**
- *
- * Layout => Header
- *
- */
+*
+* Layout => Header
+*
+*/
 
- #site-header {
- 	display: grid;
- 	width: 100%;
- 	grid-template-columns: [title] 2fr [menu] 1fr;
- 	align-items: center;
- 	padding-top: $unit200;
- 	padding-bottom: $unit200;
+#site-header {
+  display: grid;
+  width: 100%;
+  grid-template-columns: [title] 2fr [menu] 1fr;
+  align-items: center;
+  padding: $unit200 0;
 
- 	@media all and (min-width: $screen-md) {
- 		padding-top: $unit300;
- 		padding-bottom: $unit300;
- 	}
+  @media all and (min-width: $screen-md) {
+    padding: $unit300 0;
+  }
 
- 	.site-title,
- 	.site-menu-toggle {
- 		font-size: $font-size-smaller;
+  .site-title,
+  .site-menu-toggle {
+    font-size: $font-size-smaller;
 
- 		@media all and (min-width: $screen-sm) {
- 			font-size: $font-size-small;
- 		}
+    @media all and (min-width: $screen-sm) {
+      font-size: $font-size-small;
+    }
 
- 		@media all and (min-width: $screen-xl) {
- 			font-size: $font-size-base;
- 		}
- 	}
+    @media all and (min-width: $screen-xl) {
+      font-size: $font-size-base;
+    }
+  }
 
- 	.site-title {
- 		grid-area: title;
- 		margin: 0;
- 	}
+  .site-title {
+    grid-area: title;
+    margin: 0;
+  }
 
- 	.site-menu-toggle {
- 		grid-area: menu;
- 		text-align: right;
+  .site-menu-toggle {
+    grid-area: menu;
+    text-align: right;
 
- 		.toggle-menu {}
- 	}
+    .toggle-menu {
+    }
+  }
 
- 	.container-menu {
- 		display: none;
- 	}
-
- }
+  .container-menu {
+    display: none;
+  }
+}

@@ -4,94 +4,79 @@
  *
  **/
 
- /* Containers */
- #site-header,
- #site-content,
- #site-footer {
- 	max-width: $container-site;
- 	margin-left: auto;
- 	margin-right: auto;
- 	padding-left: $unit200;
- 	padding-right: $unit200;
+/* Containers */
+#site-header,
+#site-content,
+#site-footer {
+  max-width: $container-site;
+  margin: inherit auto;
+  padding: inherit $unit200;
 
- 	@media all and (min-width: $screen-md) {
- 		padding-left: $unit300;
- 		padding-right: $unit300;
- 	}
+  @media all and (min-width: $screen-md) {
+    padding: inherit $unit300;
+  }
 
- 	@media all and (min-width: $screen-lg) {
- 		padding-left: $unit400;
- 		padding-right: $unit400;
- 	}
- }
+  @media all and (min-width: $screen-lg) {
+    padding: inherit $unit400;
+  }
+}
 
+/* Page Content */
+#site-content {
+  .page-header {
+    max-width: $container-text;
+    margin: $unit400 auto 0 auto;
 
- /* Page Content */
- #site-content {
+    @media all and (min-width: $screen-md) {
+      margin-top: $unit600;
+      text-align: center;
+    }
+  }
 
- 	.page-header {
- 		max-width: $container-text;
- 		margin-top: $unit400;
- 		margin-left: auto;
- 		margin-right: auto;
+  .page-content {
+    max-width: $container-content;
+    margin: 0 auto;
 
- 		@media all and (min-width: $screen-md) {
- 			margin-top: $unit600;
- 			text-align: center;
- 		}
- 	}
+    > p,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+      max-width: $container-text;
+      margin: inherit auto;
+    }
 
- 	.page-content {
- 		max-width: $container-content;
- 		margin-left: auto;
- 		margin-right: auto;
+    /* Distances */
+    p {
+      margin: $unit200 0;
 
- 		> p,
- 		> h2,
- 		> h3,
- 		> h4,
- 		> h5,
- 		> h6 {
- 			max-width: $container-text;
- 			margin-left: auto;
- 			margin-right: auto;
- 		}
+      @media all and (min-width: $screen-md) {
+        margin-top: $unit300;
+        margin-bottom: $unit300;
+      }
 
- 		/* Distances */
- 		p {
- 			margin-top: $unit200;
- 			margin-bottom: $unit200;
+      + h2 {
+        margin-top: $unit400;
 
- 			@media all and (min-width: $screen-md) {
- 				margin-top: $unit300;
- 				margin-bottom: $unit300;
- 			}
+        @media all and (min-width: $screen-md) {
+          margin-top: $unit500;
+        }
 
- 			+ h2 {
- 				margin-top: $unit400;
+        @media all and (min-width: $screen-lg) {
+          margin-top: $unit600;
+        }
+      }
+    }
 
- 				@media all and (min-width: $screen-md) {
- 					margin-top: $unit500;
- 				}
-
- 				@media all and (min-width: $screen-lg) {
- 					margin-top: $unit600;
- 				}
- 			}
-
- 		}
-
- 		h2,
- 		h3,
- 		h4,
- 		h5,
- 		h6 {
- 			+ p {
- 				margin-top: 0;
- 			}
- 		}
- 	}
-
-
- }
-
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      + p {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -25,14 +25,14 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background: white;
-  font-family: $font_family;
-  font-size: $font-size-small; // default for document */
-  line-height: 1.4;
-  color: $color_dark_purple;
   margin: 0px; // Remove the margin in all browsers.
   min-height: 100%;
-  overflow-x: hidden;
+  font-family: $font-family;
+  font-size: $font-size-small; // default for document */
+  line-height: 1.4;
+  color: $color-dark-purple;
 
   @media all and (min-width: $screen-md) {
     font-size: $font-size-base;
@@ -55,7 +55,7 @@ body {
 
 .screen-reader-text:focus {
   background-color: white;
-  border: 1px solid $color_purple_black;
+  border: 1px solid $color-purple-black;
   clip: auto !important;
   clip-path: none;
   color: #444;
