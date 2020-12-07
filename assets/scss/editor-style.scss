@@ -1,60 +1,100 @@
-@import 'base/variables';
+@import "base/variables";
 
 body {
-	font-family: $font-family;
-	font-size: 20px;
-	line-height: 1.4;
-	color: $color-purple-black;
+  font-family: $font-family-primary;
+  font-size: 20px;
+  line-height: 1.4;
+  color: $color-purple-black;
 }
 
 .wp-block {
-	max-width: $container-content;
+  max-width: $container-content;
 
-	&[data-align="wide"] {
-		max-width: $container-content;
-	}
+  &.editor-post-title textarea {
+    font-family: $font-family-secondary;
+    font-weight: 300;
+    text-align: center;
+  }
 
-	&[data-type="core/paragraph"],
-	&[data-type="core/heading"] {
-		max-width: $container-text;
-		margin-left: auto;
-		margin-right: auto;
-	}
+  &[data-align="wide"] {
+    max-width: $container-content;
+  }
 
-	p[role="textbox"] {
-		a {
-			z-index: 1;
-			position: relative;
-			color: $color-dark-purple;
-			text-decoration: none;
-			cursor: pointer;
+  &[data-type="core/paragraph"],
+  &[data-type="core/heading"],
+  &[data-type="core/list"] {
+    max-width: $container-text;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-			&:before {
-				content: '';
-				z-index: -1;
-				position: absolute;
-				left: 0;
-				bottom: 1px;
-				background: $color-greyish-purple;
-				width: 100%;
-				height: 2px;
-				transition: background $ease-in-out $duration-normal;
-			}
+  &[data-type="core/heading"] {
+    margin-top: $unit300;
 
-			&:hover:before {
-				background: rgba($color-purple, 0.9);
-				transition: background $ease $duration-fast;
-			}
-		}
-	}
+    @media all and (min-width: $screen-md) {
+      margin-top: $unit400;
+    }
 
-	strong,
-	b {
-		font-weight: 500;
-	}
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit400;
+    }
+  }
 
-	textarea {
-		font-family: $font-family !important;
-	}
+  &[data-type="core/list"] {
+    padding-left: $unit300;
 
+    li {
+      + li {
+        padding-top: $unit100;
+      }
+    }
+  }
+}
+
+h3[data-type="core/heading"] {
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  margin-bottom: $unit100 / 2;
+
+  @media all and (min-width: $screen-lg) {
+    margin-bottom: $unit100;
+  }
+}
+
+h4[data-type="core/heading"] {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+
+  @media all and (min-width: $screen-md) {
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+  }
+}
+
+h5[data-type="core/heading"] {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+
+  @media all and (min-width: $screen-md) {
+    font-weight: 500;
+  }
+}
+
+h6[data-type="core/heading"] {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+
+  @media all and (min-width: $screen-md) {
+    font-weight: 700;
+  }
+
+  @media all and (min-width: $screen-lg) {
+    font-weight: 600;
+  }
+}
+
+strong,
+b {
+  font-weight: 500;
 }
