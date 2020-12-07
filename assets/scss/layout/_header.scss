@@ -7,9 +7,10 @@
 #site-header {
   display: grid;
   width: 100%;
-  grid-template-columns: [title] 2fr [menu] 1fr;
+  grid-template-columns: [title] 2fr [menu] auto;
   align-items: center;
   padding: $unit200 0;
+  text-align: left;
 
   @media all and (min-width: $screen-md) {
     padding: $unit300 0;
@@ -37,11 +38,25 @@
     grid-area: menu;
     text-align: right;
 
-    .toggle-menu {
+    a span[role="img"] {
+      padding-right: 0.4rem;
     }
   }
 
-  .container-menu {
+  #container-menu {
     display: none;
+  }
+}
+
+/* When the menu is open */
+.menu-open {
+  #container-menu {
+    display: block !important;
+  }
+
+  .skip-link,
+  #site-content,
+  #site-footer {
+    //display: none; // prevent access from menu
   }
 }

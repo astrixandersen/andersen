@@ -29,7 +29,7 @@
 #site-content {
   .page-header {
     max-width: $container-text;
-    margin: $unit400 auto 0 auto;
+    margin: $unit500 auto 0 auto;
 
     @media all and (min-width: $screen-md) {
       margin-top: $unit600;
@@ -42,46 +42,16 @@
     margin-left: auto;
     margin-right: auto;
 
-    > p,
     > h2,
     > h3,
     > h4,
     > h5,
-    > h6 {
+    > h6,
+    > p,
+    > ul {
       max-width: $container-text;
       margin-left: auto;
       margin-right: auto;
-    }
-
-    /* Distances */
-    p {
-      margin: $unit200 0;
-
-      @media all and (min-width: $screen-md) {
-        margin: $unit300 0;
-      }
-
-      + h2 {
-        margin-top: $unit400;
-
-        @media all and (min-width: $screen-md) {
-          margin-top: $unit500;
-        }
-
-        @media all and (min-width: $screen-lg) {
-          margin-top: $unit600;
-        }
-      }
-    }
-
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      + p {
-        margin-top: 0;
-      }
     }
   }
 }
