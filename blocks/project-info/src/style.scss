@@ -1,50 +1,56 @@
-@import '../assets/scss/base/variables';
+@import "../assets/scss/base/variables";
+@import "../assets/scss/base/padding";
 
 .wp-block-andersen-project-info {
-	margin-top: $unit300;
-	margin-bottom: $unit500;
+  margin-top: $unit300;
+  margin-bottom: $unit500;
 
-	@media all and (min-width: $screen-md) {
-		margin-top: $unit400;
-	}
+  @media all and (max-width: $screen-xl) {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
 
-	@media all and (min-width: $screen-lg) {
-		display: grid;
-		position: relative;
-		left: 50%;
-		right: 50%;
-		width: 100vw;
+  @media all and (min-width: $screen-md) {
+    display: grid;
+    grid-gap: $grid-gutter-row $grid-gutter-column;
+    align-items: center;
+    justify-items: flex-end;
+    grid-template-columns: [content] 5fr [image] 7fr;
+    margin-top: $unit400;
+  }
 
-		grid-gap: $grid-gutter-row $grid-gutter-column;
-		grid-template-columns: [image] 7fr [content] 5fr;
+  @media all and (min-width: $screen-lg) {
+    margin-top: $unit500;
+    margin-bottom: $unit600;
+  }
 
-		margin-top: $unit500;
-		margin-bottom: $unit600;
-		margin-left: -50vw;
-		margin-right: -50vw;
+  .content {
+    grid-template: "content";
+    order: -1;
+    max-width: $container-text;
+    @extend .site-padding;
 
-		padding-left: $unit400;
-		padding-right: $unit400;
-	}
+    @media all and (min-width: $screen-md) {
+      padding-right: 0;
+    }
+  }
 
+  .wp-block-image {
+    grid-template: "image";
+    margin-top: 0 !important;
+    margin-bottom: $unit200;
 
-	.wp-block-image {
-		margin-top: 0 !important;
-		margin-bottom: $unit200;
+    @media all and (min-width: $screen-md) {
+      margin: 0;
+    }
 
-		@media all and (min-width: $screen-md) {
-			grid-template: image;
-			margin: 0;
-		}
-
-		img {
-			max-width: 100%;
-			height: auto;
-		}
-	}
-
-
-	.content {
-		grid-template: content;
-	}
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }

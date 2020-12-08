@@ -2,10 +2,10 @@
 
 div.wp-block-andersen-page-hero {
   display: flex;
-  height: 90vh;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: 90vh;
   text-align: center;
 
   @media all and (min-width: $screen-lg) {

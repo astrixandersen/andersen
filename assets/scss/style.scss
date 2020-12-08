@@ -16,12 +16,14 @@ Text Domain: andersen
 @import "base/base";
 @import "base/typography";
 @import "base/links";
+@import "base/padding";
 
 // Layout
+@import "layout/containers";
 @import "layout/header";
-@import "layout/footer";
+@import "layout/menu-content";
 @import "layout/content";
-@import "layout/blocks";
+@import "layout/footer";
 
 // Components
 @import "components/social-profiles";

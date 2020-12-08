@@ -1,0 +1,44 @@
+/**
+*
+* Layout => Site Containers
+*
+*/
+
+#site-header,
+#site-content,
+#site-footer {
+  max-width: $container-site;
+  margin-left: auto;
+  margin-right: auto;
+  @extend .site-padding;
+}
+
+#site-content {
+  .page-header {
+    max-width: $container-text;
+    margin: $unit500 auto 0 auto;
+
+    @media all and (min-width: $screen-md) {
+      margin-top: $unit600;
+      text-align: center;
+    }
+  }
+
+  .page-content {
+    max-width: $container-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6,
+    > p,
+    > ul {
+      max-width: $container-text;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

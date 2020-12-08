@@ -27,11 +27,11 @@ edit: ( props ) => {
 	return (
 		<div className="project-info">
 
-		<InnerBlocks className="image" allowedBlocks={ ALLOWED_BLOCKS } template={ GET_IMAGE } templateLock="insert" />
-
 		<div className="content">
 		<RichText tagName="p" onChange={ onChangeContent } value={ content } placeholder="Kort informasjon om prosjektet." keepPlaceholderOnFocus="true" />
 		</div>
+
+		<InnerBlocks className="image" allowedBlocks={ ALLOWED_BLOCKS } template={ GET_IMAGE } templateLock="insert" />
 
 		</div>
 		);

@@ -1,0 +1,20 @@
+/**
+*
+* Base => Padding
+*
+*/
+
+.site-padding {
+  padding-left: $unit200;
+  padding-right: $unit200;
+
+  @media all and (min-width: $screen-md) {
+    padding-left: $unit300;
+    padding-right: $unit300;
+  }
+
+  @media all and (min-width: $screen-lg) {
+    padding-left: $unit400;
+    padding-right: $unit400;
+  }
+}

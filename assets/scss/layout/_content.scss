@@ -1,57 +1,33 @@
 /**
  *
- * Layout => Post => Content
+ * Layout => Page Content
  *
  **/
 
-/* Containers */
-#site-header,
-#site-content,
-#site-footer {
-  max-width: $container-site;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: $unit200;
-  padding-right: $unit200;
-
-  @media all and (min-width: $screen-md) {
-    padding-left: $unit300;
-    padding-right: $unit300;
-  }
-
-  @media all and (min-width: $screen-lg) {
-    padding-left: $unit400;
-    padding-right: $unit400;
-  }
-}
-
-/* Page Content */
-#site-content {
-  .page-header {
-    max-width: $container-text;
-    margin: $unit500 auto 0 auto;
+.page-content {
+  /* Image Block */
+  .wp-block-image {
+    margin-top: $unit400;
 
     @media all and (min-width: $screen-md) {
-      margin-top: $unit600;
-      text-align: center;
+      margin-top: $unit500;
     }
-  }
 
-  .page-content {
-    max-width: $container-content;
-    margin-left: auto;
-    margin-right: auto;
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit600;
+    }
 
-    > h2,
-    > h3,
-    > h4,
-    > h5,
-    > h6,
-    > p,
-    > ul {
-      max-width: $container-text;
-      margin-left: auto;
-      margin-right: auto;
+    img {
+      height: auto;
+    }
+
+    figcaption {
+      font-size: $font-size-smaller;
+      color: $color-dark-purple;
+
+      @media all and (min-width: $screen-md) {
+        font-size: $font-size-small;
+      }
     }
   }
 }

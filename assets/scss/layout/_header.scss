@@ -9,11 +9,13 @@
   width: 100%;
   grid-template-columns: [title] 2fr [menu] auto;
   align-items: center;
-  padding: $unit200 0;
+  padding-top: $unit200;
+  padding-bottom: $unit200;
   text-align: left;
 
   @media all and (min-width: $screen-md) {
-    padding: $unit300 0;
+    padding-top: $unit300;
+    padding-bottom: $unit300;
   }
 
   .site-title,
