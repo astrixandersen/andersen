@@ -2,6 +2,8 @@
 @import "../assets/scss/base/padding";
 
 .wp-block-andersen-project-info {
+  display: grid;
+  grid-template-columns: 1fr;
   margin-top: $unit300;
   margin-bottom: $unit500;
 
@@ -15,7 +17,6 @@
   }
 
   @media all and (min-width: $screen-md) {
-    display: grid;
     grid-gap: $grid-gutter-row $grid-gutter-column;
     align-items: center;
     justify-items: flex-end;
@@ -29,28 +30,34 @@
   }
 
   .content {
-    grid-template: "content";
     order: -1;
     max-width: $container-text;
     @extend .site-padding;
 
     @media all and (min-width: $screen-md) {
+      grid-template: "content";
       padding-right: 0;
     }
   }
 
   .wp-block-image {
-    grid-template: "image";
-    margin-top: 0 !important;
-    margin-bottom: $unit200;
+    margin: 0 !important;
 
     @media all and (min-width: $screen-md) {
-      margin: 0;
+      grid-template: "image";
     }
 
     img {
       max-width: 100%;
       height: auto;
+    }
+
+    figcaption {
+      @extend .site-padding;
+
+      @media all and (min-width: $screen-xl) {
+        padding: 0;
+      }
     }
   }
 }
