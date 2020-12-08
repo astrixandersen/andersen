@@ -3,7 +3,7 @@ Theme Name: Andersen
 Author: Astrid Mathilde Andersen
 Author URI: https://astridandersen.no
 Description: Personal website made with WordPress + Javascript
-Tags: lightweight,
+Tags: lightweight, Block Editor
 Version: 1.0.0
 License: GPL
 Text Domain: andersen
@@ -19,6 +19,7 @@ Text Domain: andersen
 @import "base/padding";
 
 // Layout
+@import "layout/404";
 @import "layout/containers";
 @import "layout/header";
 @import "layout/menu-content";
