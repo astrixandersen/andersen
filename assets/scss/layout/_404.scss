@@ -1,0 +1,27 @@
+/**
+*
+* Layout => 404
+*
+*/
+
+.error404 {
+  .page-content {
+    @media all and (min-width: $screen-md) {
+      text-align: center;
+    }
+  }
+
+  figure {
+    margin-top: $unit200;
+
+    @media all and (min-width: $screen-md) {
+      margin-top: $unit400;
+      margin-bottom: $unit200;
+    }
+
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit500;
+      margin-bottom: $unit500;
+    }
+  }
+}
