@@ -14,15 +14,25 @@ get_header();
 		
 		?>
 		
-		<article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
-		
-		<header class="page-header">
-		<?php the_title( '<h2 class="page-title">', '</h2>' ); ?>
+		<article id="<?php echo get_post_type(); ?>-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<?php
+			
+			if ( is_page() ) {
+				echo '<header class="page-header">';
+				the_title( '<h2 class="page-title">', '</h2>' );
+				echo '</header>';
+			}
+
+			else {
+				get_template_part( 'template-parts/layout/header', get_post_type() );
+			}
+
+			?>
 		</header>
 		
-		<div class="page-content">
+		<div class="<?php echo get_post_type(); ?>-content">
 		<?php the_content(); ?>
-		</div> <!-- .post-content -->
+		</div> <!-- .<?php echo get_post_type(); ?>-content -->
 		
 		</article>
 		
