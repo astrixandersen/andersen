@@ -1,9 +1,9 @@
 <?php
-
 /**
- * Components => Social Links
+ * The template part for displaying social profiles
+ * 
+ * @package andersen
  */
-
 ?>
 
 <ul class="social-profiles">
