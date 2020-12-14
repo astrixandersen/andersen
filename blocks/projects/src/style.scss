@@ -1,0 +1,116 @@
+/**
+* 'blocks/projects'
+*/
+
+@import "../assets/scss/base/variables";
+@import "../assets/scss/base/typography";
+
+.andersen-block-project {
+  + .andersen-block-project {
+    margin-top: $unit500;
+
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit600;
+    }
+  }
+
+  a {
+    display: grid;
+    cursor: default;
+
+    @media all and (min-width: $screen-md) {
+      grid-template-columns: 1fr 1fr;
+      gap: $grid-gutter-row $grid-gutter-column;
+      align-items: center;
+    }
+
+    @media all and (min-width: $screen-lg) {
+      grid-template-columns: 7fr 5fr;
+    }
+
+    &:before {
+      background: transparent !important;
+      height: 0 !important;
+      transition: none !important;
+    }
+
+    header {
+      justify-self: flex-end;
+      margin-top: $unit200;
+      cursor: pointer;
+
+      .andersen-block-project-title {
+        display: inline-block;
+        position: relative;
+        @extend h4;
+        margin-top: 0;
+        margin-bottom: 0.4rem;
+
+        @media all and (min-width: $screen-md) {
+          margin-bottom: 0.8rem;
+        }
+
+        &:before {
+          content: "";
+          z-index: -1;
+          position: absolute;
+          left: 0;
+          bottom: 0.2rem;
+          background: $color-purple-black;
+          width: 100%;
+          height: 0.2rem;
+          transition: all $duration-normal $ease;
+          -webkit-transition: all $duration-normal $ease;
+          -moz-transition: all $duration-normal $ease;
+
+          @media all and (min-width: $screen-md) {
+            height: 0.2rem;
+            bottom: 0.3rem;
+          }
+        }
+      }
+
+      .andersen-block-project-excerpt {
+        margin: 0;
+      }
+    }
+
+    figure {
+      order: -1;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+
+      img {
+        transition: margin-left $duration-slow ease;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      /*.andersen-block-project-title:before {
+        background: rgba($color-greyish-purple, 0);
+        transition: all $duration-normal $ease;
+        -webkit-transition: all $duration-normal $ease;
+        -moz-transition: all $duration-normal $ease;
+      }*/
+
+      figure img {
+        margin-left: 2.4rem;
+        transition: margin-left $duration-slow ease;
+      }
+    }
+  }
+
+  &:nth-child(odd) > a {
+    @media all and (min-width: $screen-md) {
+      figure {
+        order: 0;
+      }
+    }
+
+    @media all and (min-width: $screen-lg) {
+      grid-template-columns: 5fr 7fr;
+    }
+  }
+}

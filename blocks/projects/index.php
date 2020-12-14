@@ -75,12 +75,13 @@ function andersen_block_projects_render_callback( $block_attributes, $content ) 
         $markup .= '</a></article>';
       }
 
-      $class = 'wp-block-andersen-projects';
-      $wrapper_attributes = get_block_wrapper_attributes( array( 'class' => $class ) );
+      $wrapper_attributes = get_block_wrapper_attributes();
+      $heading = esc_html__( 'Utvalgte prosjekter', 'andersen' );
 
       return sprintf(
-        '<div %1$s>%2$s</div>',
+        '<div %1$s><h2 class="screen-reader-text">%2$s</h2>%3$s</div>',
         $wrapper_attributes,
+        $heading,
         $markup
       );
 
