@@ -17,16 +17,15 @@ get_header();
 <h2 class="page-title"><?php echo esc_html__( '"Du hører bølgene slå mot berget og vinden suse deg i ørene. Når du snur deg, er du omringet av hav på alle kanter."', 'andersen' ); ?></h2>
 </header>
 
-<figure>
-<img src="<?php echo get_template_directory_uri(); ?>/assets/images/404-image.jpg">
-<figcaption><?php echo esc_html__( 'Foto: Drew Beamer, unsplash.com', 'andersen' ); ?></figcaption>
-</figure>
-
 <div class="page-content">
 <p><?php echo esc_html__( 'Det var kanskje ikke meningen at du skulle havne her?', 'andersen' ); ?></p>
 <p><a href="<?php echo home_url( '/' ); ?>">Tilbake på land -></a></p>
 </div> <!-- .post-content -->
 
+<figure>
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/404-image.jpg">
+<figcaption><?php echo esc_html__( 'Foto: Drew Beamer, unsplash.com', 'andersen' ); ?></figcaption>
+</figure>
 
 </section><!-- .error-404 -->
 

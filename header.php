@@ -28,7 +28,7 @@
 <?php wp_body_open(); ?>
 
 <header id="site-header" role="banner">
-
+	
 <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 
 <?php
@@ -45,7 +45,8 @@ $projects = get_posts( array(
 		
 		?>
 		<div class="site-menu-toggle">
-		<a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label ="<?php echo esc_html__( 'Åpne meny', 'andersen' ); ?>"><span role="img" aria-label="Åpne">👈🏻</span> Meny</a>
+		<h2 class="screen-reader-text"><?php echo esc_html__( 'Hovedmeny', 'andersen' ); ?></h2>
+		<a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="<?php echo esc_html__( 'Gå til hovedmeny', 'andersen' ); ?>"><span role="img" aria-label="<?php echo esc_html__( 'Åpne', 'andersen' ); ?>">👈🏻</span> <?php echo esc_html__( 'Meny', 'andersen' ); ?></a>
 		</div> <!-- .site-menu-toggle -->
 		
 		<div id="container-menu">

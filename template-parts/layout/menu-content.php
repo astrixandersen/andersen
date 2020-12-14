@@ -1,15 +1,17 @@
 <?php
 /**
-* Layout => Menu Content
+* The template part for displaying menu content
+* 
+* @package andersen
 */
 ?>
 
 <div class="site-menu-toggle">
-<a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label ="<?php echo esc_html__( 'Lukk meny', 'andersen' ); ?>">Lukk <span role="img" aria-hidden="true">👉🏻</span></a>
+<a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label ="<?php echo esc_html__( 'Lukk meny', 'andersen' ); ?>"><?php echo esc_html__( 'Lukk', 'andersen' ); ?> <span role="img" aria-hidden="true">👉🏻</span></a>
 </div> <!-- .site-menu-toggle -->
 
 <section class="project-navigation">
-<h2><?php echo esc_html__( 'Aktuelle prosjekter', 'andersen' ); ?></h2>
+<h3><?php echo esc_html__( 'Aktuelle prosjekter', 'andersen' ); ?></h3>
 
 <nav id="project-navigation" class="project-navigation">
 <ul>
@@ -27,7 +29,6 @@ while ( $projects->have_posts() ) {
 	$projects->the_post();
 	the_title( '<li><a href="' . get_the_permalink() . '">', '</a></li>' );
 }
-
 wp_reset_postdata();
 
 ?>
@@ -37,7 +38,7 @@ wp_reset_postdata();
 </section> <!-- .project-navigation -->
 
 <section class="contact-information">
-<h2 class="screen-reader-text"><?php echo esc_html__( 'Kontaktinformasjon', 'andersen' ); ?></h2>
+<h3 class="screen-reader-text"><?php echo esc_html__( 'Kontaktinformasjon', 'andersen' ); ?></h3>
 <?php
 
 $email  = get_field('site_contact');
