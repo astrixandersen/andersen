@@ -7,12 +7,25 @@
 #post-hero {
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: space-between;
   max-width: $container-content;
   margin-left: auto;
   margin-right: auto;
 
-  @media all and (max-width: $screen-xl) {
+  @media all and (min-width: $screen-md) {
+    grid-gap: $grid-gutter-row $grid-gutter-column;
+    align-items: center;
+    grid-template-columns: [image] 7fr [title] 5fr;
+  }
+
+  @media all and (min-width: $screen-lg) {
+    grid-template-columns: [image] 8fr [title] 4fr;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    grid-template-columns: [image] 11fr [title] 1fr;
+  }
+
+  @media all and (max-width: $screen-lg) {
     position: relative;
     left: 50%;
     right: 50%;
@@ -21,22 +34,17 @@
     margin-right: -50vw;
   }
 
-  @media all and (min-width: $screen-md) {
-    display: grid;
-    grid-gap: $grid-gutter-row $grid-gutter-column;
-    align-items: center;
-    justify-items: flex-end;
-    grid-template-columns: [image] 7fr [title] 5fr;
-  }
-
   .post-header {
-    align-self: center;
+    margin-top: $unit500;
     @extend .site-padding;
     text-align: center;
 
     @media all and (min-width: $screen-md) {
-      grid-area: "title";
-      margin: 0;
+      grid-column: title;
+      align-self: center;
+      margin-top: 0;
+      padding-left: 0;
+      text-align: left;
     }
 
     .post-title {
@@ -45,11 +53,10 @@
   }
 
   .post-thumbnail {
-    align-self: end;
-    margin: $unit500 0 0 0;
+    margin: $unit400 0 0 0;
 
     @media all and (min-width: $screen-md) {
-      grid-area: "image";
+      grid-column: image;
       order: -1;
       margin: 0;
     }
