@@ -1,15 +1,14 @@
-@import "../assets/scss/base/variables";
-
-div.wp-block-andersen-page-hero {
+.wp-block-andersen-page-hero {
+  @import "../assets/scss/base/variables";
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  min-height: 70vh;
   text-align: center;
 
   @media all and (min-width: $screen-lg) {
-    height: 80vh;
+    min-height: 80vh;
   }
 
   p {
@@ -21,7 +20,7 @@ div.wp-block-andersen-page-hero {
     }
 
     @media all and (min-width: $screen-lg) {
-      font-size: 5.6rem;
+      font-size: 6.4rem;
     }
   }
 }

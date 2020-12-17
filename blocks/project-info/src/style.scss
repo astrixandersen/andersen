@@ -1,13 +1,32 @@
-@import "../assets/scss/base/variables";
-@import "../assets/scss/base/padding";
-
 .wp-block-andersen-project-info {
+  @import "../assets/scss/base/variables";
+  @import "../assets/scss/base/padding";
+
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: $unit300;
-  margin-bottom: $unit500;
+  max-width: $container-content;
+  margin: $unit300 auto;
 
-  @media all and (max-width: $screen-xl) {
+  @media all and (min-width: $screen-md) {
+    grid-gap: $grid-gutter-row $grid-gutter-column;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: [content] 5fr [image] 7fr;
+    margin-top: $unit400;
+    margin-bottom: $unit400;
+  }
+
+  @media all and (min-width: $screen-lg) {
+    grid-template-columns: [content] 4fr [image] 8fr;
+    margin-top: $unit500;
+    margin-bottom: $unit600;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    margin-top: $unit600;
+  }
+
+  @media all and (max-width: $screen-lg) {
     position: relative;
     left: 50%;
     right: 50%;
@@ -16,27 +35,20 @@
     margin-right: -50vw;
   }
 
-  @media all and (min-width: $screen-md) {
-    grid-gap: $grid-gutter-row $grid-gutter-column;
-    align-items: center;
-    justify-items: flex-end;
-    grid-template-columns: [content] 5fr [image] 7fr;
-    margin-top: $unit400;
-  }
-
-  @media all and (min-width: $screen-lg) {
-    margin-top: $unit500;
-    margin-bottom: $unit600;
-  }
-
   .content {
     order: -1;
     max-width: $container-text;
     @extend .site-padding;
 
     @media all and (min-width: $screen-md) {
-      grid-template: "content";
+      grid-column: content;
+      justify-self: center;
       padding-right: 0;
+      font-size: $font-size-small;
+    }
+
+    @media all and (min-width: $screen-lg) {
+      font-size: $font-size-base;
     }
   }
 
@@ -44,7 +56,8 @@
     margin: 0 !important;
 
     @media all and (min-width: $screen-md) {
-      grid-template: "image";
+      grid-column: image;
+      justify-self: flex-end;
     }
 
     img {

@@ -28,6 +28,7 @@ registerBlockType("andersen/page-hero", {
   save({ className, attributes }) {
     return (
       <div className={className}>
+        <h2 className="screen-reader-text">Introduksjon</h2>
         <RichText.Content tagName="p" value={attributes.content} />
       </div>
     );
