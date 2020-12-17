@@ -13,6 +13,7 @@
 </main><!-- #main -->
 
 <footer id="site-footer" role="contentinfo">
+	<div class="container">
 <?php
 
 echo sprintf('<h2 class="screen-reader-text">%s</h2>',
@@ -72,6 +73,7 @@ wp_nav_menu( array(
 	?>
 	</div> <!-- #footer-byline -->
 	
+	</div> <!-- .container -->
 	</footer><!-- #site-footer -->
 	
 	<?php wp_footer(); ?>

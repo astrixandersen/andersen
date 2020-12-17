@@ -4,10 +4,41 @@
 *
 */
 
-h2 {
-  margin-bottom: $unit100;
-  font-size: 4.8rem;
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin-top: $unit400;
+
+  @media all and (min-width: $screen-md) {
+    margin-top: $unit500;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  + p,
+  + ul {
+    margin-top: 0;
+  }
+}
+
+h1,
+h2.page-title,
+h2.post-title {
+  margin-bottom: 0;
+  font-size: 4.8rem;
 
   @media all and (min-width: $screen-md) {
     font-size: 6.4rem;
@@ -18,81 +49,85 @@ h2 {
   }
 }
 
-.home h2 {
-  @extend h3;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  margin-top: $unit400;
-  font-weight: 700;
+h2 {
+  margin-top: $unit500;
+  margin-bottom: $unit200;
+  font-size: 3.2rem;
 
   @media all and (min-width: $screen-md) {
-    margin-top: $unit500;
+    margin-top: $unit700;
+    font-size: 4.8rem;
   }
 
   @media all and (min-width: $screen-lg) {
-    margin-top: $unit500;
+    margin-top: $unit700 + $unit200;
+    font-size: 5.4rem;
   }
 }
 
 h3 {
-  font-size: 2.8rem;
-  margin-bottom: $unit100 / 2;
+  margin-bottom: $unit100;
+  font-size: 2.4rem;
 
   @media all and (min-width: $screen-md) {
+    margin-top: $unit500 + $unit200;
+    margin-bottom: $unit200;
     font-size: 3.6rem;
   }
 
   @media all and (min-width: $screen-lg) {
+    margin-top: $unit600;
+    margin-bottom: $unit200 + ($unit100 / 2);
     font-size: 4rem;
     line-height: 1.2;
-    margin-bottom: $unit100;
   }
 }
 
 h4 {
+  margin-bottom: 1.2rem;
   font-size: 2rem;
-  margin-bottom: 0.4rem;
 
   @media all and (min-width: $screen-md) {
+    margin-bottom: $unit100;
     font-size: 2.8rem;
-    margin-bottom: 0.4rem;
   }
 
   @media all and (min-width: $screen-lg) {
+    margin-top: $unit500;
+    margin-bottom: $unit200;
     font-size: 3.2rem;
     line-height: 1.25;
   }
 }
 
 h5 {
+  margin-bottom: 0.8rem;
   font-size: 1.6rem;
-  margin-bottom: 0.4rem;
 
   @media all and (min-width: $screen-md) {
+    margin-bottom: 1.2rem;
     font-size: 2rem;
   }
 
   @media all and (min-width: $screen-lg) {
+    margin-bottom: $unit100;
     font-size: 2.4rem;
   }
 }
 
 h6 {
+  margin-bottom: 0.8rem;
   font-size: 1.3rem;
+  font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 0.4rem;
 
   @media all and (min-width: $screen-md) {
-    font-weight: 700;
+    margin-bottom: 1.2rem;
     font-size: 1.4rem;
   }
 
   @media all and (min-width: $screen-lg) {
-    font-weight: 600;
+    margin-bottom: $unit100;
     font-size: 1.6rem;
   }
 }
@@ -118,12 +153,17 @@ ul {
   }
 }
 
+strong,
+b {
+  font-weight: 600;
+}
+
 /* Block Editor */
 .has-huge-font-size,
 .display {
   font-family: $font-family-secondary;
   font-size: 4.4rem;
-  font-weight: 300;
+  font-weight: 400;
 
   @media all and (min-width: $screen-md) {
     font-size: 6.4rem;

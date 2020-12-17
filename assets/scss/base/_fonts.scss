@@ -27,3 +27,11 @@
   src: url("../andersen/assets/fonts/inter-semibold.woff2") format("woff2"),
     url("../andersen/assets/fonts/inter-semibold.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../andersen/assets/fonts/inter-bold.woff2") format("woff2"),
+    url("../andersen/assets/fonts/inter-bold.woff") format("woff");
+}

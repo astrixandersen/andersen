@@ -13,23 +13,29 @@
 
   @media all and (min-width: $screen-md) {
     margin-top: $unit700;
-    padding-top: $unit300;
-    padding-bottom: $unit300;
+    padding-top: $unit400;
+    padding-bottom: $unit400;
+  }
+
+  .container {
+    max-width: $container-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer-heading {
     font-family: $font-family-primary;
     font-size: $font-size-small;
-    font-weight: 500;
     margin-top: $unit400;
-    margin-bottom: $unit100 / 2;
+
+    @media all and (min-width: $screen-md) {
+      margin-top: $unit500;
+      margin-bottom: $unit100;
+      font-size: $font-size-base;
+    }
 
     &:first-of-type {
       margin-top: 0;
-    }
-
-    @media all and (min-width: $screen-md) {
-      font-size: $font-size-base;
     }
   }
 
@@ -43,6 +49,14 @@
 
       + li {
         padding-left: $unit100 / 2;
+
+        @media all and (min-width: $screen-md) {
+          padding-left: $unit100;
+        }
+
+        @media all and (min-width: $screen-xl) {
+          padding-left: $unit200;
+        }
       }
     }
   }
