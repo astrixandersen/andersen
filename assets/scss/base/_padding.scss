@@ -17,4 +17,9 @@
     padding-left: $unit400;
     padding-right: $unit400;
   }
+
+  @media all and (min-width: $screen-xl) {
+    padding-left: $unit500;
+    padding-right: $unit500;
+  }
 }
