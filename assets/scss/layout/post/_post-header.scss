@@ -41,7 +41,7 @@
 
     @media all and (min-width: $screen-md) {
       grid-column: title;
-      align-self: center;
+      justify-self: center;
       margin-top: 0;
       padding-left: 0;
       text-align: left;
