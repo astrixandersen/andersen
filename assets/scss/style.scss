@@ -19,15 +19,15 @@ Text Domain: andersen
 @import "base/padding";
 
 // Layout
+@import "layout/page/page-header";
+@import "layout/post/post-header";
+
 @import "layout/404";
-@import "layout/containers";
-@import "layout/header";
-@import "layout/menu-content";
-
-@import "layout/header-post";
-@import "layout/content";
-
-@import "layout/footer";
+@import "layout/site-containers";
+@import "layout/site-header";
+@import "layout/site-navigation";
+@import "layout/site-content";
+@import "layout/site-footer";
 
 // Components
 @import "components/social-profiles";

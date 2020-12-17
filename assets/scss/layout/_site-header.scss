@@ -29,19 +29,39 @@
     @media all and (min-width: $screen-xl) {
       font-size: $font-size-base;
     }
+
+    a {
+      font-weight: 500;
+    }
   }
 
   .site-title {
     grid-area: title;
     margin: 0;
+
+    a {
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
   }
 
   .site-menu-toggle {
     grid-area: menu;
     text-align: right;
 
-    a span[role="img"] {
-      padding-right: 0.4rem;
+    a {
+      > .label {
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+
+      span[role="img"] {
+        padding-right: 0.4rem;
+      }
     }
   }
 
@@ -59,6 +79,6 @@
   .skip-link,
   #site-content,
   #site-footer {
-    //display: none; // prevent access from menu
+    display: none; // prevent access from menu
   }
 }

@@ -75,6 +75,7 @@ if ( ! function_exists( 'andersen_setup' ) ) :
 					)
 				);
 				
+				
 				/**
 				* Block Editor
 				*
@@ -228,6 +229,7 @@ if ( ! function_exists( 'andersen_setup' ) ) :
 					*/
 					include( dirname( __FILE__ ) . '/blocks/project-info/index.php' );
 					include( dirname( __FILE__ ) . '/blocks/page-hero/index.php' );
+					include( dirname( __FILE__ ) . '/blocks/projects/index.php' );
 					
 					/**
 					* Includes a "skip to content"-link for accessibility

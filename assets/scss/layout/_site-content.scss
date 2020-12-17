@@ -28,4 +28,17 @@
       font-size: $font-size-small;
     }
   }
+
+  /* Columns block */
+  div + .wp-block-columns {
+    margin-top: $unit500;
+
+    @media all and (min-width: $screen-md) {
+      margin-top: $unit600;
+    }
+
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit700;
+    }
+  }
 }

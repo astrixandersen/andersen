@@ -4,51 +4,39 @@
 *
 */
 
+a {
+  font-weight: 400;
+  color: $color-dark-purple;
+  -webkit-transition: all $duration-fast $ease;
+  -moz-transition: all $duration-fast $ease;
+  transition: all $duration-fast $ease;
+
+  &:hover,
+  &:focus {
+    -webkit-transition: all $duration-fast $ease;
+    -moz-transition: all $duration-fast $ease;
+    transition: all $duration-fast $ease;
+  }
+}
+
 #site-header,
-#site-content,
 #site-footer {
   a {
-    color: $color-dark-purple;
     text-decoration: none;
   }
 }
 
-#site-header {
+#site-content {
   a {
-    font-weight: 500;
-  }
-}
+    text-decoration: underline;
 
-#site-content,
-#site-footer {
-  a {
-    z-index: 1;
-    position: relative;
-
-    &:before {
-      content: "";
-      z-index: -1;
-      position: absolute;
-      left: 0;
-      bottom: 0.05rem;
-      background: $color-greyish-purple;
-      width: 100%;
-      height: 0.1rem;
-      transition: background $ease-in-out $duration-normal;
-      -webkit-transition: background $ease-in-out $duration-normal;
-      -moz-transition: background $ease-in-out $duration-normal;
-
-      @media all and (min-width: $screen-md) {
-        height: 0.2rem;
-        bottom: 0.15rem;
-      }
+    &:hover,
+    &:focus {
+      color: $color-purple;
     }
 
-    &:hover:before {
-      background: rgba($color-purple, 0.9);
-      transition: background $ease $duration-fast;
-      -webkit-transition: background $ease $duration-fast;
-      -moz-transition: background $ease $duration-fast;
+    &:focus {
+      text-decoration: none;
     }
   }
 }

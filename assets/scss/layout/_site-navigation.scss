@@ -1,0 +1,38 @@
+/**
+*
+* Layout => Menu 
+*
+*/
+
+.menu-open #site-navigation {
+  animation: slideLeft $duration-slow $ease-in-out 0.1s forwards;
+}
+
+.menu-close #site-navigation {
+  right: -100vw;
+  animation: slideRight $duration-slow $ease-in-out 0.1s forwards;
+}
+
+#site-navigation {
+  z-index: 1000;
+  position: fixed;
+  background: $color-light-purple;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: -100vw;
+  padding: $unit200;
+
+  @media all and (min-width: $screen-md) {
+    padding: $unit300;
+  }
+
+  #project-links {
+    li {
+      list-style: none;
+
+      a {
+      }
+    }
+  }
+}

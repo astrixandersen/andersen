@@ -17,12 +17,8 @@
   .page-header,
   .post-header {
     max-width: $container-text;
-    margin: $unit500 auto 0 auto;
-
-    @media all and (min-width: $screen-md) {
-      margin-top: $unit600;
-      text-align: center;
-    }
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .page-content,

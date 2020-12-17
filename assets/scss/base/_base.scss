@@ -30,8 +30,9 @@ body {
   margin: 0px; // Remove the margin in all browsers.
   min-height: 100%;
   font-family: $font-family-primary;
+  font-feature-settings: "cpsp", "ss03", "cv01", "cv02", "cv03", "cv04", "cv05",
+    "cv10";
   font-size: $font-size-small; // default for document */
-  line-height: 1.4;
   color: $color-dark-purple;
   overflow-wrap: break-word;
   -webkit-hyphens: manual;

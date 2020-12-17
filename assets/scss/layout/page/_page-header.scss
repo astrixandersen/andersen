@@ -1,0 +1,16 @@
+/**
+ * Layout => Page => Header
+ */
+
+.page-header {
+  margin-top: $unit500;
+
+  @media all and (min-width: $screen-md) {
+    margin-top: $unit600;
+    text-align: center;
+  }
+
+  .page-title {
+    margin-bottom: 0;
+  }
+}
