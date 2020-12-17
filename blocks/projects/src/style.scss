@@ -29,7 +29,6 @@
     }
 
     @media all and (min-width: $screen-md) {
-      display: grid;
       grid-template-columns: [image] 1fr [header] 1fr;
       gap: $grid-gutter-row $grid-gutter-column;
       align-items: center;
@@ -42,14 +41,26 @@
 
   &:nth-child(odd) {
     a {
+      @media all and (min-width: $screen-md) {
+        grid-template-columns: [header] 1fr [image] 1fr;
+      }
+
       @media all and (min-width: $screen-lg) {
         grid-template-columns: [header] 5fr [image] 7fr;
+      }
+
+      .andersen-block-project-image {
+        @media all and (min-width: $screen-md) {
+          order: 0;
+        }
       }
     }
   }
 
   .andersen-block-project-header {
-    grid-template: "header";
+    @media all and (min-width: $screen-md) {
+      grid-column: header;
+    }
 
     @media all and (max-width: $screen-md) {
       margin-top: $unit200;
@@ -73,20 +84,15 @@
   }
 
   .andersen-block-project-image {
-    grid-template: "image";
     order: -1;
+
+    @media all and (min-width: $screen-md) {
+      grid-column: image;
+    }
 
     figure {
       margin: 0;
       padding: 0;
-    }
-  }
-
-  &:nth-child(odd) {
-    .andersen-block-project-image {
-      @media all and (min-width: $screen-md) {
-        order: 0;
-      }
     }
   }
 }
