@@ -17,7 +17,7 @@ function andersen_block_projects_render_callback( $block_attributes, $content ) 
     'post_type'        => 'post',
     'posts_per_page'   => -1,
     'post_status'      => 'publish',
-    'order'            => 'DESC',
+    'order'            => 'ASC',
     'orderby'          => 'date'
   );
   
@@ -38,8 +38,8 @@ function andersen_block_projects_render_callback( $block_attributes, $content ) 
       $link = esc_url( get_the_permalink( $post ) );
       $id = get_the_ID( $post );
       
-      $markup .= sprintf(
-        '<article id="project-%1$u" class="andersen-block-project"><a href="%2$s">',
+      $markup .= sprintf( 
+        '<article id="project-%1$u" class="andersen-block-project"><a href="%2$s">', 
         $id,
         $link
       );
@@ -102,9 +102,9 @@ function andersen_block_projects_render_callback( $block_attributes, $content ) 
     wp_register_style( 'block-projects-style', get_template_directory_uri() . '/blocks/projects/build/style.css', array() );
     
     register_block_type( 'andersen/projects', array(
-      'style'					      => 'block-projects-style',
+      'style'					  => 'block-projects-style',
       'editor_script'   => 'block-projects-script',
-      'editor_style'	   => 'block-projects-editor-style',
+      'editor_style'	  => 'block-projects-editor-style',
       'render_callback' => 'andersen_block_projects_render_callback'
       ) );
     }
