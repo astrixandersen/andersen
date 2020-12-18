@@ -64,26 +64,11 @@
   #footer-byline {
     width: 100%;
     margin-top: $unit200;
-    font-size: $font-size-smaller;
     line-height: 1.6;
     text-align: right;
 
     @media all and (min-width: $screen-md) {
       margin-top: 0;
-      font-size: $font-size-small;
-    }
-
-    @media all and (min-width: $screen-lg) {
-      font-size: $font-size-small;
-    }
-
-    a {
-      @media all and (min-width: $screen-md) {
-        &:before {
-          height: 0.1rem;
-          bottom: 0.1rem;
-        }
-      }
     }
 
     p {
