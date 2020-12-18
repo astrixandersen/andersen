@@ -19,24 +19,15 @@ a {
   }
 }
 
-#site-header,
+#site-content,
 #site-footer {
   a {
-    text-decoration: none;
-  }
-}
-
-#site-content {
-  a {
     text-decoration: underline;
+    text-decoration-color: $color-greyish-purple;
 
     &:hover,
     &:focus {
-      color: $color-purple;
-    }
-
-    &:focus {
-      text-decoration: none;
+      text-decoration-color: $color-purple;
     }
   }
 }

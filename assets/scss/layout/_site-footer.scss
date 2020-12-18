@@ -61,37 +61,6 @@
     }
   }
 
-  a {
-    z-index: 1;
-    position: relative;
-
-    &:before {
-      content: "";
-      z-index: -1;
-      position: absolute;
-      left: 0;
-      bottom: 0.09rem;
-      background: $color-greyish-purple;
-      width: 100%;
-      height: 0.1rem;
-      -webkit-transition: all $duration-fast $ease;
-      -moz-transition: all $duration-fast $ease;
-      transition: all $duration-fast $ease;
-
-      @media all and (min-width: $screen-md) {
-        height: 0.2rem;
-        bottom: 0.1rem;
-      }
-    }
-
-    &:hover:before {
-      background: $color-purple;
-      -webkit-transition: all $duration-fast $ease;
-      -moz-transition: all $duration-fast $ease;
-      transition: all $duration-fast $ease;
-    }
-  }
-
   #footer-byline {
     width: 100%;
     margin-top: $unit200;
