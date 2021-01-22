@@ -1169,14 +1169,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/phpcs.xml.dist": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/phpcs.xml.dist",
-		"oF": 0
-		},
 	"/readme.html": {
 		"cB": 0,
 		"ft": 8192,
