@@ -18,6 +18,11 @@
     padding-bottom: $unit300;
   }
 
+  @media all and (min-width: $screen-lg) {
+    padding-top: $unit400;
+    padding-bottom: $unit400;
+  }
+
   .site-title,
   .site-menu-toggle {
     font-size: $font-size-smaller;
