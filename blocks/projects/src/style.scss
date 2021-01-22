@@ -18,13 +18,19 @@
     display: grid;
     grid-template-columns: 1fr;
     text-decoration: none !important;
+    text-decoration-color: $color-greyish-purple;
+    -webkit-transition: all $duration-normal $ease;
+    -moz-transition: all $duration-normal $ease;
+    transition: all $duration-normal $ease;
 
     &:hover,
     &:focus {
-      color: $color-dark-purple !important;
-
       .andersen-block-project-header .andersen-block-project-title {
-        text-decoration: underline !important;
+        text-decoration: underline;
+        text-decoration-color: $color-greyish-purple;
+        -webkit-transition: all $duration-normal $ease;
+        -moz-transition: all $duration-normal $ease;
+        transition: all $duration-normal $ease;
       }
     }
 
@@ -69,9 +75,13 @@
     .andersen-block-project-title {
       display: inline-block;
       position: relative;
-      @extend h4;
+      @extend h3;
       margin-top: 0;
       margin-bottom: 0.4rem;
+      text-decoration-color: $color-greyish-purple;
+      -webkit-transition: all $duration-normal $ease;
+      -moz-transition: all $duration-normal $ease;
+      transition: all $duration-normal $ease;
 
       @media all and (min-width: $screen-md) {
         margin-bottom: 0.8rem;

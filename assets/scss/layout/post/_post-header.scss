@@ -10,22 +10,23 @@
   max-width: $container-content;
   margin-left: auto;
   margin-right: auto;
+  @extend .site-padding;
+
+  @media all and (max-width: $screen-sm) {
+    padding: 0;
+  }
 
   @media all and (min-width: $screen-md) {
     grid-gap: $grid-gutter-row $grid-gutter-column;
-    align-items: center;
     grid-template-columns: [image] 7fr [title] 5fr;
-  }
-
-  @media all and (min-width: $screen-lg) {
-    grid-template-columns: [image] 8fr [title] 4fr;
+    padding: 0;
   }
 
   @media all and (min-width: $screen-xl) {
     grid-template-columns: [image] 11fr [title] 1fr;
   }
 
-  @media all and (max-width: $screen-lg) {
+  @media all and (max-width: $screen-xl) {
     position: relative;
     left: 50%;
     right: 50%;
@@ -41,10 +42,9 @@
 
     @media all and (min-width: $screen-md) {
       grid-column: title;
-      justify-self: center;
+      align-self: center;
       margin-top: 0;
       padding-left: 0;
-      text-align: left;
     }
 
     .post-title {
@@ -53,12 +53,18 @@
   }
 
   .post-thumbnail {
+    max-width: 100%;
     margin: $unit400 0 0 0;
 
     @media all and (min-width: $screen-md) {
       grid-column: image;
       order: -1;
       margin: 0;
+    }
+
+    img {
+      min-width: 100%;
+      height: auto;
     }
   }
 }

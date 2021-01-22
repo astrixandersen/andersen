@@ -1,5 +1,5 @@
 {
-"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https://codekitapp.com/",
+"AAInfo": "This is a CodeKit 3 project config file. EDITING THIS FILE IS A POOR LIFE DECISION. Doing so may cause CodeKit to crash and/or corrupt your project. Several critical values in this file are 64-bit integers, which JavaScript JSON parsers do not support because JavaScript cannot handle 64-bit integers. These values will be corrupted if the file is parsed with JavaScript. This file is not backwards-compatible with CodeKit 1 or 2. For details, see https://codekitapp.com/",
 "buildSteps": [
 	{
 		"name": "Process All Remaining Files and Folders",
@@ -7,7 +7,7 @@
 		"uuidString": "486A5A20-0022-485D-963C-C507F0616BDC"
 		}
 	],
-"creatorBuild": "31934",
+"creatorBuild": "33081",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -49,20 +49,20 @@
 		"oAP": "/assets/fonts/inter-bold.woff2",
 		"oF": 0
 		},
-	"/assets/fonts/Inter-Medium.woff": {
+	"/assets/fonts/inter-medium.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter-Medium.woff",
+		"oAP": "/assets/fonts/inter-medium.woff",
 		"oF": 0
 		},
-	"/assets/fonts/Inter-Medium.woff2": {
+	"/assets/fonts/inter-medium.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/fonts/Inter-Medium.woff2",
+		"oAP": "/assets/fonts/inter-medium.woff2",
 		"oF": 0
 		},
 	"/assets/fonts/inter-semibold.woff": {
@@ -97,6 +97,19 @@
 		"oAP": "/assets/fonts/inter.woff2",
 		"oF": 0
 		},
+	"/assets/images/404-image.jpg": {
+		"ft": 16384,
+		"iS": 385752,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/404-image.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
 	"/assets/js": {
 		"ft": 65536,
 		"oA": 1,
@@ -107,166 +120,468 @@
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_base.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
+		},
+	"/assets/scss/base/_fonts.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_fonts.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
 		},
 	"/assets/scss/base/_links.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_links.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
+		},
+	"/assets/scss/base/_padding.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_padding.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
 		},
 	"/assets/scss/base/_typography.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_typography.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/assets/scss/base/_variables.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_variables.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/assets/scss/components/_social-profiles.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_social-profiles.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/assets/scss/editor-style.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/editor-style.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
-	"/assets/scss/layout/_blocks.scss": {
+	"/assets/scss/layout/_404.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/_blocks.css",
+		"oAP": "/_404.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
-	"/assets/scss/layout/_content.scss": {
+	"/assets/scss/layout/_site-containers.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/_content.css",
+		"oAP": "/_site-containers.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
-	"/assets/scss/layout/_footer.scss": {
+	"/assets/scss/layout/_site-content.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/_footer.css",
+		"oAP": "/_site-content.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
-	"/assets/scss/layout/_header.scss": {
+	"/assets/scss/layout/_site-footer.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/_header.css",
+		"oAP": "/_site-footer.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
+		},
+	"/assets/scss/layout/_site-header.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_site-header.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/assets/scss/layout/_site-navigation.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_site-navigation.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/assets/scss/layout/page/_page-header.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_page-header.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/assets/scss/layout/post/_post-header.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_post-header.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
 		},
 	"/assets/scss/style.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
-	"/blocks/node_modules": {
-		"ft": 65536,
-		"oA": 2,
-		"oAP": "/build/blocks/node_modules",
+	"/blocks/page-hero/build/editor.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blocks/page-hero/build/editor-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blocks/page-hero/build/index.asset.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blocks/page-hero/build/index.asset.php",
 		"oF": 0
 		},
-	"/blocks/package-lock.json": {
+	"/blocks/page-hero/build/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/build/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/build/index.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blocks/page-hero/build/index.js.map",
+		"oF": 0
+		},
+	"/blocks/page-hero/build/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blocks/page-hero/build/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blocks/page-hero/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blocks/page-hero/index.php",
+		"oF": 0
+		},
+	"/blocks/page-hero/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/blocks/page-hero/node_modules",
+		"oF": 0
+		},
+	"/blocks/page-hero/node_modules/@wordpress/block-editor/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/@wordpress/block-editor/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/node_modules/@wordpress/blocks/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/@wordpress/blocks/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/node_modules/@wordpress/data/build-module/default-registry.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/@wordpress/data/build-module/min/default-registry.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/node_modules/@wordpress/data/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/@wordpress/data/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/node_modules/@wordpress/data/build-module/registry.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/@wordpress/data/build-module/min/registry.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/node_modules/@wordpress/keyboard-shortcuts/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/@wordpress/keyboard-shortcuts/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/node_modules/@wordpress/rich-text/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/@wordpress/rich-text/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/node_modules/@wordpress/viewport/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/@wordpress/viewport/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/node_modules/@wordpress/viewport/build-module/listener.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/@wordpress/viewport/build-module/min/listener.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/node_modules/lodash/lodash.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/lodash/min/lodash.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/node_modules/memize/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/memize/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/node_modules/turbo-combine-reducers/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/node_modules/turbo-combine-reducers/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/package-lock.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/blocks/package-lock-min.json",
+		"oAP": "/blocks/page-hero/package-lock-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
 		},
-	"/blocks/package.json": {
+	"/blocks/page-hero/package.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/blocks/package-min.json",
+		"oAP": "/blocks/page-hero/package-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"/blocks/page-hero/src/editor.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blocks/page-hero/build/editor.css",
+		"oF": 2,
+		"oS": 3,
+		"sct": 1
+		},
+	"/blocks/page-hero/src/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/page-hero/src/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/page-hero/src/style.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blocks/page-hero/build/style.css",
+		"oF": 2,
+		"oS": 3,
+		"sct": 1
 		},
 	"/blocks/project-info/build/editor.css": {
 		"aP": 1,
@@ -492,14 +807,14 @@
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/blocks/project-info/build/editor.css",
 		"oF": 3,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/blocks/project-info/src/index.js": {
 		"bF": 0,
@@ -516,14 +831,253 @@
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/blocks/project-info/build/style.css",
 		"oF": 3,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
+		},
+	"/blocks/projects/build/index.asset.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blocks/projects/build/index.asset.php",
+		"oF": 0
+		},
+	"/blocks/projects/build/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/build/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/build/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blocks/projects/build/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blocks/projects/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blocks/projects/index.php",
+		"oF": 0
+		},
+	"/blocks/projects/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/blocks/projects/node_modules",
+		"oF": 0
+		},
+	"/blocks/projects/node_modules/@wordpress/block-editor/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/@wordpress/block-editor/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/@wordpress/blocks/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/@wordpress/blocks/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/@wordpress/data/build-module/default-registry.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/@wordpress/data/build-module/min/default-registry.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/@wordpress/data/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/@wordpress/data/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/@wordpress/data/build-module/registry.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/@wordpress/data/build-module/min/registry.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/@wordpress/keyboard-shortcuts/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/@wordpress/keyboard-shortcuts/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/@wordpress/notices/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/@wordpress/notices/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/@wordpress/rich-text/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/@wordpress/rich-text/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/@wordpress/viewport/build-module/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/@wordpress/viewport/build-module/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/@wordpress/viewport/build-module/listener.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/@wordpress/viewport/build-module/min/listener.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/lodash/lodash.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/lodash/min/lodash.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/memize/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/memize/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/node_modules/turbo-combine-reducers/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/node_modules/turbo-combine-reducers/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blocks/projects/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blocks/projects/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blocks/projects/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blocks/projects/src/editor.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blocks/projects/build/editor.css",
+		"oF": 2,
+		"oS": 3,
+		"sct": 1
+		},
+	"/blocks/projects/src/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/blocks/projects/src/min/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blocks/projects/src/style.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blocks/projects/build/style.css",
+		"oF": 3,
+		"oS": 3,
+		"sct": 1
 		},
 	"/editor-style.css": {
 		"aP": 1,
@@ -650,14 +1204,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/singular.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/singular.php",
-		"oF": 0
-		},
 	"/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -676,6 +1222,14 @@
 		"oAP": "/template-parts/components/social-profiles.php",
 		"oF": 0
 		},
+	"/template-parts/layout/header-post.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/layout/header-post.php",
+		"oF": 0
+		},
 	"/template-parts/layout/menu-content.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -691,7 +1245,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 580391201.99604499,
-	"displayValue": "astridandersen",
+	"displayValue": "andersen",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-punDog",
 	"iconImageWasSetByUser": 1
@@ -1167,8 +1721,7 @@
 			"optionString": "{'before': true, 'after': true}"
 			},
 		"block-scoped-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"block-spacing": {
 			"active": 0,
@@ -1223,20 +1776,20 @@
 			"optionString": "'that'"
 			},
 		"constructor-super": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"curly": {
 			"active": 0,
 			"optionString": "'all'"
 			},
 		"default-case": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"default-case-last": {
+			"active": 0
 			},
 		"default-param-last": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"dot-location": {
 			"active": 0,
@@ -1255,8 +1808,7 @@
 			"optionString": "'always', {'null': 'always'}"
 			},
 		"for-direction": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"func-call-spacing": {
 			"active": 0,
@@ -1287,12 +1839,14 @@
 			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
+			"active": 0
+			},
+		"grouped-accessor-pairs": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "'anyOrder'"
 			},
 		"guard-for-in": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"handle-callback-err": {
 			"active": 0,
@@ -1407,44 +1961,35 @@
 			"optionString": "{'ignoreChainWithDepth': 2}"
 			},
 		"no-alert": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-array-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-async-promise-executor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-await-in-loop": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
 			},
 		"no-buffer-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-caller": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-case-declarations": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-class-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-compare-neg-zero": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-cond-assign": {
 			"active": 1,
@@ -1459,116 +2004,101 @@
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-constant-condition": {
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0
+			},
 		"no-continue": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-control-regex": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-debugger": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-delete-var": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-div-regex": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-dupe-args": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-dupe-class-members": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
+			},
+		"no-dupe-else-if": {
+			"active": 1
 			},
 		"no-dupe-keys": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-duplicate-imports": {
 			"active": 0,
 			"optionString": "{'includeExports': false}"
 			},
 		"no-else-return": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-empty": {
 			"active": 1,
 			"optionString": "{'allowEmptyCatch': false}"
 			},
 		"no-empty-character-class": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-empty-function": {
 			"active": 0,
 			"optionString": "{'allow': []}"
 			},
 		"no-empty-pattern": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-eq-null": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-eval": {
 			"active": 0,
 			"optionString": "{'allowIndirect': false}"
 			},
 		"no-ex-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-extend-native": {
 			"active": 0,
 			"optionString": "{'exceptions': []}"
 			},
 		"no-extra-bind": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-extra-boolean-cast": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-extra-labels": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-extra-parens": {
 			"active": 0,
 			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
 			},
 		"no-extra-semi": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-fallthrough": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-floating-decimal": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-func-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-global-assign": {
 			"active": 1,
@@ -1579,20 +2109,16 @@
 			"optionString": "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
 			},
 		"no-implicit-globals": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-implied-eval": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-import-assign": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-inline-comments": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-inner-declarations": {
 			"active": 1,
@@ -1611,36 +2137,33 @@
 			"optionString": "{'skipStrings': true, 'skipComments': false, 'skipRegExps': true, 'skipTemplates': true}"
 			},
 		"no-iterator": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-label-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-labels": {
 			"active": 0,
 			"optionString": "{'allowLoop': false, 'allowSwitch': false}"
 			},
 		"no-lone-blocks": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-lonely-if": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-loop-func": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"no-loss-of-precision": {
+			"active": 0
 			},
 		"no-magic-numbers": {
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
 			},
 		"no-misleading-character-class": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-mixed-operators": {
 			"active": 0,
@@ -1655,108 +2178,95 @@
 			"optionString": ""
 			},
 		"no-multi-assign": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
 			},
 		"no-multi-str": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-multiple-empty-lines": {
 			"active": 0,
 			"optionString": "{'max': 2, 'maxBOF': 2, 'maxEOF': 2}"
 			},
 		"no-negated-condition": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-nested-ternary": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-func": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-object": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-require": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-new-symbol": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-new-wrappers": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-obj-calls": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-octal": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-octal-escape": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-param-reassign": {
 			"active": 0,
 			"optionString": "{'props': false}"
 			},
 		"no-path-concat": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-plusplus": {
 			"active": 0,
 			"optionString": "{'allowForLoopAfterthoughts': false}"
 			},
 		"no-process-env": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-process-exit": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"no-promise-executor-return": {
+			"active": 0
 			},
 		"no-proto": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-prototype-builtins": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
 			},
 		"no-regex-spaces": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
+			},
+		"no-restricted-exports": {
+			"active": 0,
+			"optionString": "{'restrictedNamedExports': []}"
 			},
 		"no-restricted-globals": {
 			"active": 0,
 			"optionString": "'event', 'fdescribe'"
 			},
 		"no-restricted-imports": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-restricted-modules": {
 			"active": 0,
@@ -1775,36 +2285,33 @@
 			"optionString": "'except-parens'"
 			},
 		"no-return-await": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-script-url": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-self-assign": {
 			"active": 1,
 			"optionString": "{'props': true}"
 			},
 		"no-self-compare": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-sequences": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
+			},
+		"no-setter-return": {
+			"active": 1
 			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
 			},
 		"no-shadow-restricted-names": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-sparse-arrays": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-sync": {
 			"active": 0,
@@ -1815,20 +2322,16 @@
 			"optionString": "{allowIndentationTabs: false}"
 			},
 		"no-template-curly-in-string": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-ternary": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-this-before-super": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-throw-literal": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-trailing-spaces": {
 			"active": 0,
@@ -1839,36 +2342,34 @@
 			"optionString": "{'typeof': false}"
 			},
 		"no-undef-init": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-undefined": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-underscore-dangle": {
 			"active": 0,
 			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
 			},
 		"no-unexpected-multiline": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unmodified-loop-condition": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-unneeded-ternary": {
 			"active": 0,
 			"optionString": "{'defaultAssignment': true}"
 			},
 		"no-unreachable": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
+			},
+		"no-unreachable-loop": {
+			"active": 0,
+			"optionString": "{'ignore': []}"
 			},
 		"no-unsafe-finally": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unsafe-negation": {
 			"active": 1,
@@ -1879,8 +2380,7 @@
 			"optionString": "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
 			},
 		"no-unused-labels": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"no-unused-vars": {
 			"active": 1,
@@ -1890,41 +2390,37 @@
 			"active": 0,
 			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
 			},
+		"no-useless-backreference": {
+			"active": 0
+			},
 		"no-useless-call": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-catch": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-computed-key": {
 			"active": 0,
 			"optionString": ""
 			},
 		"no-useless-concat": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-constructor": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-escape": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-useless-rename": {
 			"active": 0,
 			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
 			},
 		"no-useless-return": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-var": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-void": {
 			"active": 0,
@@ -1935,12 +2431,10 @@
 			"optionString": "{'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}"
 			},
 		"no-whitespace-before-property": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"no-with": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"nonblock-statement-body-position": {
 			"active": 0,
@@ -1987,8 +2481,7 @@
 			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
 			},
 		"prefer-arrow-callback": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-const": {
 			"active": 0,
@@ -1998,37 +2491,33 @@
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
+		"prefer-exponentiation-operator": {
+			"active": 0
+			},
 		"prefer-named-capture-group": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-numeric-literals": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-object-spread": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-regex-literals": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-rest-params": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-spread": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"prefer-template": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"quote-props": {
 			"active": 0,
@@ -2043,24 +2532,20 @@
 			"optionString": "'always'"
 			},
 		"require-atomic-updates": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-await": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-jsdoc": {
 			"active": 0,
 			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
 			},
 		"require-unicode-regexp": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"require-yield": {
-			"active": 1,
-			"optionString": ""
+			"active": 1
 			},
 		"rest-spread-spacing": {
 			"active": 0,
@@ -2123,8 +2608,7 @@
 			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"template-curly-spacing": {
 			"active": 0,
@@ -2151,16 +2635,14 @@
 			"optionString": "{'requireStringLiterals': true}"
 			},
 		"vars-on-top": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"wrap-iife": {
 			"active": 0,
 			"optionString": "'outside'"
 			},
 		"wrap-regex": {
-			"active": 0,
-			"optionString": ""
+			"active": 0
 			},
 		"yield-star-spacing": {
 			"active": 0,
@@ -2555,7 +3037,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsHAML": {
 		"autoOutputAction": 0,
@@ -2581,7 +3065,9 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"outputFormat": 0,
-		"quality": 100
+		"quality": 100,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 1,
@@ -2673,7 +3159,9 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"optimizerType": 1,
-		"quality": 100
+		"quality": 100,
+		"webpOptimizationPresetUUID": "lpckwebp-none",
+		"webpRGBQuality": 75
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -2694,13 +3182,13 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 1,
+		"compilerType": 1,
 		"createSourceMap": 0,
-		"debugStyle": 0,
 		"decimalPrecision": 10,
+		"emitCharset": 1,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 1
+		"shouldRunBless": 0
 		},
 	"languageDefaultsSLIM": {
 		"autoOutputAction": 0,
@@ -3074,6 +3562,8 @@
 		},
 	"uglifyMangleNames": 1,
 	"uglifyReservedNamesString": "$,exports,require",
+	"webpPresets": {
+		},
 	"websiteRelativeRoot": ""
 	},
 "settingsFileVersion": "3"
