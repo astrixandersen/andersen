@@ -4,7 +4,6 @@
 *
 */
 
-h1,
 h2,
 h3,
 h4,
@@ -17,6 +16,7 @@ h4,
 h5,
 h6 {
   margin-top: $unit400;
+  line-height: 1.2;
 
   @media all and (min-width: $screen-md) {
     margin-top: $unit500;
@@ -49,10 +49,16 @@ h2.post-title {
   }
 }
 
+h2.page-title,
+h2.post-title {
+  letter-spacing: -0.02em;
+}
+
 h2 {
   margin-top: $unit500;
   margin-bottom: $unit200;
   font-size: 3.2rem;
+  line-height: 1.1;
 
   @media all and (min-width: $screen-md) {
     margin-top: $unit700;
