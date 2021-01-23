@@ -74,25 +74,41 @@ $ease-in-out: cubic-bezier(
 
 // Animations
 @keyframes slideLeft {
+  0% {
+    left: 100vw;
+  }
+
   100% {
-    right: -1vw;
+    left: 0;
   }
 }
 
 @-webkit-keyframes slideLeft {
+  0% {
+    left: 100vw;
+  }
+
   100% {
-    right: -1vw;
+    left: 0;
   }
 }
 
 @keyframes slideRight {
+  0% {
+    left: 0;
+  }
+
   100% {
-    right: -100vw;
+    left: 100vw;
   }
 }
 
-@-webkit-keyframes slideLeft {
+@-webkit-keyframes slideRight {
+  0% {
+    left: 0;
+  }
+
   100% {
-    right: -100vw;
+    left: 100vw;
   }
 }

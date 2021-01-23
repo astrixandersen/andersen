@@ -4,34 +4,99 @@
 *
 */
 
+#site-navigation {
+  display: none;
+}
+
 .menu-open #site-navigation {
+  display: block;
   animation: slideLeft $duration-slow $ease-in-out 0.1s forwards;
+  -webkit-animation: slideLeft $duration-slow $ease-in-out 0.1s forwards;
+  -moz-animation: slideLeft $duration-slow $ease-in-out 0.1s forwards;
 }
 
 .menu-close #site-navigation {
-  right: -100vw;
+  display: block;
+  left: 0;
   animation: slideRight $duration-slow $ease-in-out 0.1s forwards;
+  -webkit-animation: slideRight $duration-slow $ease-in-out 0.1s forwards;
+  -moz-animation: slideRight $duration-slow $ease-in-out 0.1s forwards;
 }
 
 #site-navigation {
   z-index: 1000;
   position: fixed;
+  overflow-y: scroll;
   background: $color-light-purple;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   top: 0;
-  right: -100vw;
+  left: 100vw;
   padding: $unit200;
 
   @media all and (min-width: $screen-md) {
     padding: $unit300;
   }
 
-  #project-links {
-    li {
-      list-style: none;
+  .site-menu-toggle {
+    @media all and (min-width: $screen-md) {
+      padding-right: $unit300;
+    }
+  }
 
-      a {
+  .site-menu-title {
+    @extend h5;
+    font-weight: 400;
+  }
+
+  #project-menu,
+  #page-main-menu,
+  #page-secondary-menu {
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        padding: 0;
+
+        a {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  #project-menu {
+    margin-top: $unit500;
+  }
+
+  #project-menu,
+  #page-main-menu {
+    @extend h4;
+
+    li {
+      &:first-of-type {
+        padding-top: 0.4rem;
+      }
+
+      + li {
+        padding-top: 1.2rem;
+      }
+    }
+  }
+
+  #page-main-menu,
+  #page-secondary-menu {
+    margin-top: $unit400 + $unit100;
+  }
+
+  #page-secondary-menu {
+    @extend h5;
+
+    li {
+      + li {
+        padding-top: $unit100 / 2;
       }
     }
   }
