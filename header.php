@@ -28,32 +28,18 @@
 <?php wp_body_open(); ?>
 
 <header id="site-header" role="banner">
-	
+
 <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 
-<?php
+<!-- Beginning of site navigation -->
+<div class="site-menu-toggle open">
+<h2 class="screen-reader-text"><?php echo esc_html__( 'Hovedmeny', 'andersen' ); ?></h2>
+<a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="<?php echo esc_html__( 'Gå til hovedmeny', 'andersen' ); ?>"><span role="img" aria-label="<?php echo esc_html__( 'Åpne', 'andersen' ); ?>">👈🏻</span> <span class="label"><?php echo esc_html__( 'Meny', 'andersen' ); ?></span></a>
+</div> <!-- .site-menu-toggle -->
 
-/* Check if there is any projects, before displaying the menu link */
-$projects = get_posts( array(
-	'post_type'   => 'post', 
-	'post_status' => 'publish',
-	'orderby'     => 'date',
-	'order'       => 'DESC',
-	) );
-	
-	if ( !empty($projects) ) {
-		
-		?>
-		<div class="site-menu-toggle">
-		<h2 class="screen-reader-text"><?php echo esc_html__( 'Hovedmeny', 'andersen' ); ?></h2>
-		<a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="<?php echo esc_html__( 'Gå til hovedmeny', 'andersen' ); ?>"><span role="img" aria-label="<?php echo esc_html__( 'Åpne', 'andersen' ); ?>">👈🏻</span> <span class="label"><?php echo esc_html__( 'Meny', 'andersen' ); ?></span></a>
-		</div> <!-- .site-menu-toggle -->
-		
-		<div id="site-navigation">
-		<?php get_template_part('template-parts/layout/site-navigation'); ?>
-		</div> <!-- #site-navigation -->
-		<?php } // $projects ?>
-		
-		</header><!-- #site-header -->
-		
-		<main id="site-content" role="main">
+<?php get_template_part('template-parts/layout/site-navigation'); ?>
+<!-- End of site navigation -->
+
+</header><!-- #site-header -->
+
+<main id="site-content" role="main">

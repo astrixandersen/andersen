@@ -30,7 +30,7 @@ if ( !empty($email) ) {
 	);
 	
 	echo sprintf(
-		'<span class="screen-reader-text">%1$s</span><a href="%2$s">%3$s</a>',
+		'<p><span class="screen-reader-text">%1$s</span><a href="%2$s">%3$s</a></p>',
 		esc_html__( 'E-post:', 'andersen' ),
 		$email['url'],
 		$email['title']

@@ -11,6 +11,7 @@
   align-items: center;
   padding-top: $unit200;
   padding-bottom: $unit200;
+  @extend .site-padding;
   text-align: left;
 
   @media all and (min-width: $screen-md) {
