@@ -1,29 +1,26 @@
-@import '../assets/scss/base/variables';
+@import "../assets/scss/base/variables";
 
 .project-info {
+  .editor-inner-blocks {
+    margin: 0;
 
-	.editor-inner-blocks {
-		margin: 0;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 
-		img {
-			max-width: 100%;
-			height: auto;
-		}
-	}
+  @media all and (min-width: $screen-md) {
+    display: flex;
 
+    .editor-inner-blocks {
+      width: 50%;
+    }
 
-	@media all and (min-width: $screen-md) {
-		display: flex;
-
-		.editor-inner-blocks {
-			width: 60%;
-		}
-
-		.content {
-			width: 40%;
-			margin-left: $grid-gutter-row / 2;
-			margin-bottom: 0;
-		}
-	}
-
+    .content {
+      width: 50%;
+      margin-left: $grid-gutter-row / 2;
+      margin-bottom: 0;
+    }
+  }
 }

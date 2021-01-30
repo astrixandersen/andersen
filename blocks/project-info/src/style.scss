@@ -1,82 +1,47 @@
+@import "../assets/scss/base/variables";
+
 .wp-block-andersen-project-info {
-  @import "../assets/scss/base/variables";
-  @import "../assets/scss/base/padding";
-
-  display: grid;
-  grid-template-columns: 1fr;
   max-width: $container-content;
-  margin: $unit300 auto;
-  @extend .site-padding;
-
-  @media all and (max-width: $screen-sm) {
-    padding: 0;
-  }
+  margin-top: $unit300;
+  margin-bottom: $unit500;
+  margin-left: auto;
+  margin-right: auto;
 
   @media all and (min-width: $screen-md) {
-    grid-gap: $grid-gutter-row $grid-gutter-column;
-    align-items: center;
-    justify-content: space-between;
-    grid-template-columns: [content] 5fr [image] 7fr;
     margin-top: $unit400;
-    margin-bottom: $unit400;
-    padding: 0;
   }
 
   @media all and (min-width: $screen-lg) {
-    grid-template-columns: [content] 4fr [image] 8fr;
+    display: grid;
+    position: relative;
+
+    grid-gap: $grid-gutter-row $grid-gutter-column;
+    grid-template-columns: [image] 7fr [content] 5fr;
+
     margin-top: $unit500;
     margin-bottom: $unit600;
-  }
-
-  @media all and (min-width: $screen-xl) {
-    margin-top: $unit600;
-  }
-
-  @media all and (max-width: $screen-xl) {
-    position: relative;
-    left: 50%;
-    right: 50%;
-    width: 100vw;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  }
-
-  .content {
-    order: -1;
-    max-width: $container-text;
-    @extend .site-padding;
-
-    @media all and (min-width: $screen-md) {
-      grid-column: content;
-      justify-self: center;
-      padding: 0;
-      font-size: $font-size-small;
-    }
-
-    @media all and (min-width: $screen-lg) {
-      font-size: $font-size-base;
-    }
+    padding-left: $unit400;
+    padding-right: $unit400;
   }
 
   .wp-block-image {
-    margin: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: $unit200;
 
     @media all and (min-width: $screen-md) {
-      grid-column: image;
-      justify-self: flex-end;
+      grid-area: image;
+      margin: 0;
     }
 
     img {
       max-width: 100%;
       height: auto;
     }
+  }
 
-    figcaption {
-      @extend .site-padding;
-
-      @media all and (min-width: $screen-xl) {
-        padding: 0;
-      }
+  .content {
+    @media all and (min-width: $screen-md) {
+      grid-area: content;
     }
   }
 }
