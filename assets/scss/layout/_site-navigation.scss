@@ -5,14 +5,15 @@
 */
 
 .menu-open {
-  overflow: hidden;
+  @media all and (max-width: $screen-md) {
+    overflow: hidden;
+  }
 
   #site-navigation {
     display: block;
-    overflow-y: scroll;
-    animation: slideLeft $duration-slow $ease-in-out 0.1s forwards;
-    -webkit-animation: slideLeft $duration-slow $ease-in-out 0.1s forwards;
-    -moz-animation: slideLeft $duration-slow $ease-in-out 0.1s forwards;
+    animation: slideLeft $duration-normal $ease-in-out 0.1s forwards;
+    -webkit-animation: slideLeft $duration-normal $ease-in-out 0.1s forwards;
+    -moz-animation: slideLeft $duration-normal $ease-in-out 0.1s forwards;
   }
 }
 
@@ -20,9 +21,21 @@
   #site-navigation {
     display: block;
     left: 0;
-    animation: slideRight $duration-slow $ease-in-out 0.1s forwards;
-    -webkit-animation: slideRight $duration-slow $ease-in-out 0.1s forwards;
-    -moz-animation: slideRight $duration-slow $ease-in-out 0.1s forwards;
+    animation: slideRight $duration-normal $ease-in-out 0.1s forwards;
+    -webkit-animation: slideRight $duration-normal $ease-in-out 0.1s forwards;
+    -moz-animation: slideRight $duration-normal $ease-in-out 0.1s forwards;
+
+    @media all and (min-width: $screen-md) {
+      left: 40vw;
+    }
+
+    @media all and (min-width: $screen-lg) {
+      left: 50vw;
+    }
+
+    @media all and (min-width: $screen-xl) {
+      left: 60vw;
+    }
   }
 }
 
@@ -40,32 +53,44 @@
   @extend .site-padding;
 
   @media all and (min-width: $screen-md) {
+    width: 60%;
     padding-top: $unit300;
     padding-bottom: $unit300;
   }
 
   @media all and (min-width: $screen-lg) {
+    width: 50%;
     padding-top: $unit400;
     padding-bottom: $unit400;
   }
 
+  @media all and (min-width: $screen-xl) {
+    width: 40%;
+  }
+
   .site-menu-content {
+    margin-top: $unit600;
+
     @media all and (min-width: $screen-md) {
+      height: 100%;
+      margin-top: $unit600;
+    }
+
+    @media all and (min-width: $screen-lg) {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 100%;
+      margin-top: 0;
     }
 
     .site-menu-title {
       margin-top: 0;
       margin-bottom: 1.2rem;
       font-size: 1.6rem;
-      font-weight: 500;
+      font-weight: 400;
 
-      @media all and (min-width: $screen-md) {
+      @media all and (min-width: $screen-lg) {
         font-size: 2rem;
-        font-weight: 400;
       }
     }
 
@@ -88,13 +113,6 @@
     }
 
     .project-navigation {
-      margin-top: $unit500;
-
-      @media all and (min-width: $screen-lg) {
-        //margin-top: $unit400;
-        margin-top: 0;
-      }
-
       #project-menu {
         margin: 0;
         font-size: 2.4rem;
@@ -103,12 +121,8 @@
           font-size: 3.2rem;
         }
 
-        @media all and (min-width: $screen-md) {
-          font-size: 4.8rem;
-        }
-
         @media all and (min-width: $screen-lg) {
-          font-size: 5.6rem;
+          font-size: 3.6rem;
         }
 
         li + li {
@@ -140,17 +154,13 @@
           font-size: 2.4rem;
         }
 
-        @media all and (min-width: $screen-md) {
-          font-size: 3.2rem;
-        }
-
         @media all and (min-width: $screen-lg) {
-          font-size: 3.6rem;
+          font-size: 2.8rem;
         }
 
         li {
-          @media all and (min-width: $screen-md) {
-            display: inline;
+          @media all and (min-width: $screen-lg) {
+            // display: inline;
           }
 
           + li {
@@ -160,9 +170,9 @@
               padding-top: 1.2rem;
             }
 
-            @media all and (min-width: $screen-md) {
-              padding-top: 0;
-              padding-left: $unit100;
+            @media all and (min-width: $screen-lg) {
+              /*  padding-top: 0;
+              padding-left: $unit100;*/
             }
           }
         }

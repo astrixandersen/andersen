@@ -93,6 +93,72 @@ $ease-in-out: cubic-bezier(
   }
 }
 
+@media all and (min-width: $screen-md) {
+  @keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 40vw;
+    }
+  }
+
+  @-webkit-keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 50vw;
+    }
+  }
+}
+
+@media all and (min-width: $screen-lg) {
+  @keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 50vw;
+    }
+  }
+
+  @-webkit-keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 50vw;
+    }
+  }
+}
+
+@media all and (min-width: $screen-xl) {
+  @keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 60vw;
+    }
+  }
+
+  @-webkit-keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 60vw;
+    }
+  }
+}
+
 @keyframes slideRight {
   0% {
     left: 0;
@@ -110,5 +176,71 @@ $ease-in-out: cubic-bezier(
 
   100% {
     left: 100vw;
+  }
+}
+
+@media all and (min-width: $screen-md) {
+  @keyframes slideRight {
+    0% {
+      left: 40vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
+  }
+
+  @-webkit-keyframes slideRight {
+    0% {
+      left: 40vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
+  }
+}
+
+@media all and (min-width: $screen-lg) {
+  @keyframes slideRight {
+    0% {
+      left: 50vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
+  }
+
+  @-webkit-keyframes slideRight {
+    0% {
+      left: 50vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
+  }
+}
+
+@media all and (min-width: $screen-xl) {
+  @keyframes slideRight {
+    0% {
+      left: 60vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
+  }
+
+  @-webkit-keyframes slideRight {
+    0% {
+      left: 60vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
   }
 }
