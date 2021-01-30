@@ -13,7 +13,7 @@
 </main><!-- #main -->
 
 <footer id="site-footer" role="contentinfo">
-	<div class="container">
+<div class="container">
 <?php
 
 echo sprintf('<h2 class="screen-reader-text">%s</h2>',
@@ -43,8 +43,24 @@ if ( have_rows('site_social', 'option') ) {
 		'<h3 class="footer-heading">%s</h3>',
 		esc_html__( 'Profiler', 'andersen' )
 	);
-	get_template_part( 'template-parts/components/social-profiles' );
-}
+	
+	echo '<ul class="social-profiles">';
+	
+	while ( have_rows('site_social', 'option') ) {
+		the_row();
+		
+		$link = get_sub_field('link');
+		
+		echo sprintf(
+			'<li><a href="%1$s" target="%2$s">%3$s</a></li>',
+			$link['url'],
+			$link['target'],
+			$link['title']
+		);
+	}
+	
+	echo '</ul>';
+} 
 
 /* Menu */
 echo sprintf(
