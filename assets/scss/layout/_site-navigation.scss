@@ -1,9 +1,10 @@
 /**
- *
- * Layout => Menu 
- *
- **/
+*
+* Layout => Menu 
+*
+**/
 
+/* Behavior */
 .menu-open {
   @media all and (max-width: $screen-md) {
     overflow: hidden;
@@ -39,18 +40,25 @@
   }
 }
 
+/* Menu */
 #site-navigation {
   z-index: 1000;
   display: none;
+  overflow-y: scroll;
+
   position: fixed;
+  top: 0;
+  left: 100vw;
+
   background: $color-light-purple;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 100vw;
+
   padding-top: $unit200;
   padding-bottom: $unit200;
   @extend .site-padding;
+
+  line-height: 1.25;
 
   @media all and (min-width: $screen-md) {
     width: 60%;
@@ -68,11 +76,12 @@
     width: 40%;
   }
 
+  /* Menu content */
   .site-menu-content {
     margin-top: $unit600;
 
     @media all and (min-width: $screen-md) {
-      height: 100%;
+      height: 90%;
       margin-top: $unit600;
     }
 
@@ -80,7 +89,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-top: 0;
+      margin-top: $unit400;
     }
 
     .site-menu-title {
@@ -89,93 +98,98 @@
       font-size: 1.6rem;
       font-weight: 400;
 
+      @media all and (min-width: $screen-sm) {
+        margin-bottom: $unit100;
+      }
+
       @media all and (min-width: $screen-lg) {
         font-size: 2rem;
       }
     }
 
-    .project-navigation #project-menu,
-    .page-navigation #page-main-menu {
-      line-height: 1.25;
-
-      ul {
-        margin: 0;
-        padding: 0;
-
-        li {
-          list-style: none;
-
-          a {
-            font-weight: 500;
-          }
-        }
-      }
-    }
-
-    .project-navigation {
-      #project-menu {
-        margin: 0;
-        font-size: 2.4rem;
-
-        @media all and (min-width: $screen-sm) {
-          font-size: 3.2rem;
-        }
-
-        @media all and (min-width: $screen-lg) {
-          font-size: 3.6rem;
-        }
-
-        li + li {
-          padding-top: $unit100;
-
-          @media all and (min-width: $screen-sm) {
-            padding-top: $unit100 + 0.4rem;
-          }
-
-          @media all and (min-width: $screen-md) {
-            padding-top: $unit200;
-          }
-        }
-      }
-    }
-
-    .page-navigation {
+    section + section {
       margin-top: $unit500;
 
       @media all and (min-width: $screen-md) {
-        margin-top: $unit600;
+        margin-top: $unit500 + $unit100;
       }
 
-      #page-main-menu {
-        margin: 0;
-        font-size: 2rem;
+      @media all and (min-width: $screen-lg) {
+        margin-top: $unit600;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+      }
+    }
+
+    a {
+      font-weight: 500;
+    }
+
+    /* Projects */
+    #project-menu {
+      margin: 0;
+      font-size: 2.4rem;
+
+      @media all and (min-width: $screen-sm) {
+        font-size: 3.2rem;
+      }
+
+      @media all and (min-width: $screen-lg) {
+        font-size: 3.6rem;
+      }
+
+      li + li {
+        padding-top: $unit100;
 
         @media all and (min-width: $screen-sm) {
-          font-size: 2.4rem;
+          padding-top: $unit100 + 0.4rem;
         }
 
-        @media all and (min-width: $screen-lg) {
-          font-size: 2.8rem;
+        @media all and (min-width: $screen-md) {
+          padding-top: $unit200;
         }
+      }
+    }
 
-        li {
-          @media all and (min-width: $screen-lg) {
-            // display: inline;
-          }
+    /* Pages */
+    #page-main-menu {
+      margin: 0;
+      font-size: 2rem;
 
-          + li {
-            padding-top: $unit100 / 2;
+      @media all and (min-width: $screen-sm) {
+        font-size: 2.4rem;
+      }
 
-            @media all and (min-width: $screen-sm) {
-              padding-top: 1.2rem;
-            }
+      @media all and (min-width: $screen-lg) {
+        font-size: 2.8rem;
+      }
 
-            @media all and (min-width: $screen-lg) {
-              /*  padding-top: 0;
-              padding-left: $unit100;*/
-            }
-          }
+      li + li {
+        padding-top: $unit100 / 2;
+
+        @media all and (min-width: $screen-sm) {
+          padding-top: 1.2rem;
         }
+      }
+    }
+
+    /* Contact */
+    .contact {
+      font-size: 1.6rem;
+
+      @media all and (min-width: $screen-sm) {
+        font-size: 2rem;
+      }
+
+      @media all and (min-width: $screen-lg) {
+        font-size: 2.4rem;
       }
     }
   }

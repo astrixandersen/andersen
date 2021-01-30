@@ -59,6 +59,28 @@ if ( ! empty($projects) ) {
 		?>
 		</section> <!-- .page-navigation -->
 		
-		</div> <!-- .site-menu-content -->
+		<?php 
 		
-		</div> <!-- #site-navigation -->
+		$email = get_field('site_contact', 'option');
+		
+		if ( ! empty( $email ) ) {
+			
+			?>
+			<section class="contact">
+			<h3 class="site-menu-title"><?php echo esc_html__( 'Kontakt', 'andersen' ); ?></h3>
+			<?php 
+			
+			echo sprintf(
+				'<p><span class="screen-reader-text">%1$s</span><a href="%2$s">%3$s</a></p>',
+				esc_html__( 'E-post:', 'andersen' ),
+				$email['url'],
+				$email['title']
+			); 
+			
+			?>
+			</section> <!-- .contact -->
+			<?php } ?>
+			
+			</div> <!-- .site-menu-content -->
+			
+			</div> <!-- #site-navigation -->
