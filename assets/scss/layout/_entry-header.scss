@@ -1,16 +1,21 @@
 /**
- * Layout => Page => Header
- */
+ *
+ * Layout => Entry header
+ *
+ **/
 
-.page-header {
+.entry-header {
+  max-width: $container-text;
   margin-top: $unit500;
+  margin-left: auto;
+  margin-right: auto;
 
   @media all and (min-width: $screen-md) {
     margin-top: $unit600;
     text-align: center;
   }
 
-  .page-title {
+  .entry-title {
     margin-bottom: 0;
   }
 }

@@ -20,22 +20,14 @@ while ( have_posts() ) {
 	
 	?>
 	<article id="<?php echo get_post_type(); ?>-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php
+
+	<header class="entry-header">
+	<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+	</header> <!-- .entry-header -->
 	
-	if ( is_page() ) {
-		the_title( '<header class="page-header"><h2 class="page-title">', '</h2></header>' );
-	}
-	
-	else {
-		get_template_part( 'template-parts/layout/header', get_post_type() );
-	}
-	
-	?>
-	</header>
-	
-	<div class="<?php echo get_post_type(); ?>-content">
+	<div class="entry-content">
 	<?php the_content(); ?>
-	</div> <!-- .<?php echo get_post_type(); ?>-content -->
+	</div> <!-- .entry-content -->
 	
 	</article>
 	<?php 

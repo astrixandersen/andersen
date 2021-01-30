@@ -1,8 +1,8 @@
 /**
-*
-* Layout => Footer
-*
-**/
+ *
+ * Layout => Footer
+ *
+ **/
 
 #site-footer {
   background: $color-light-purple;
@@ -10,6 +10,7 @@
   margin: $unit600 0 0 0;
   padding-top: $unit200;
   padding-bottom: $unit200;
+  @extend .site-padding;
 
   @media all and (min-width: $screen-md) {
     margin-top: $unit700;

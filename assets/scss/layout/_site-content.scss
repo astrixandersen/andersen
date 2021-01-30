@@ -5,7 +5,12 @@
  **/
 
 #site-content {
-  /* Image Block */
+  max-width: $container-site;
+  margin-left: auto;
+  margin-right: auto;
+  @extend .site-padding;
+
+  /* Image block */
   .wp-block-image {
     margin-top: $unit400;
 
