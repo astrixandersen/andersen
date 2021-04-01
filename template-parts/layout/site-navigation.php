@@ -22,7 +22,7 @@ $projects = new WP_Query( array(
 	'posts_per_page' => -1,
 ));
 
-if ( ! empty($projects) ) {
+if ( $projects->have_posts() ) {
 	
 	?>
 	<section class="project-navigation">

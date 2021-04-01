@@ -63,17 +63,20 @@ if ( have_rows('site_social', 'option') ) {
 } 
 
 /* Menu */
-echo sprintf(
-	'<h3 class="footer-heading">%s</h3>',
-	esc_html__( 'Nyttige lenker', 'andersen' )
-);
 
-wp_nav_menu( array(
-	'menu' => 'footer-menu',
-	'theme_location' => 'footer-menu',
-	'container' => 'nav',
-	'container_id' => 'footer-menu',
-	) );
+if ( has_nav_menu('footer-menu') ) { 
+	echo sprintf(
+		'<h3 class="footer-heading">%s</h3>',
+		esc_html__( 'Nyttige lenker', 'andersen' )
+	);
+	
+	wp_nav_menu( array(
+		'menu' => 'footer-menu',
+		'theme_location' => 'footer-menu',
+		'container' => 'nav',
+		'container_id' => 'footer-menu',
+		) );
+	}
 	
 	?>
 	
