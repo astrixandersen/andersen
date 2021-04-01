@@ -32,12 +32,19 @@
 <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 
 <!-- Beginning of site navigation -->
+<?php if ( has_nav_menu('main-menu') ) { ?>
 <div class="site-menu-toggle open">
 <h2 class="screen-reader-text"><?php echo esc_html__( 'Hovedmeny', 'andersen' ); ?></h2>
 <a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="<?php echo esc_html__( 'Gå til hovedmeny', 'andersen' ); ?>"><span role="img" aria-label="<?php echo esc_html__( 'Åpne', 'andersen' ); ?>">👈🏻</span> <span class="label"><?php echo esc_html__( 'Meny', 'andersen' ); ?></span></a>
 </div> <!-- .site-menu-toggle -->
 
-<?php get_template_part('template-parts/layout/site-navigation'); ?>
+<?php 
+
+get_template_part('template-parts/layout/site-navigation');
+
+} // has_nav_menu('main-menu')
+
+?>
 <!-- End of site navigation -->
 
 </header><!-- #site-header -->
