@@ -15,6 +15,14 @@
     text-align: center;
   }
 
+  @media all and (min-width: $screen-lg) {
+    margin-top: $unit700;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    margin-top: $unit700 + $unit300;
+  }
+
   .entry-title {
     margin-bottom: 0;
   }

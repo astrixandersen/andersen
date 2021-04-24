@@ -5,8 +5,13 @@
 */
 
 .site-padding {
-  padding-left: $unit200;
-  padding-right: $unit200;
+  padding-left: $unit100;
+  padding-right: $unit100;
+
+  @media all and (min-width: $screen-sm) {
+    padding-left: $unit200;
+    padding-right: $unit200;
+  }
 
   @media all and (min-width: $screen-md) {
     padding-left: $unit400;
