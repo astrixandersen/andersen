@@ -21,6 +21,11 @@
     @media all and (min-width: $screen-lg) {
       margin-top: $unit600;
     }
+
+    img {
+      min-width: 100%;
+      height: auto;
+    }
   }
 
   figcaption {

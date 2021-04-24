@@ -3,45 +3,75 @@
 .wp-block-andersen-project-info {
   max-width: $container-content;
   margin-top: $unit300;
-  margin-bottom: $unit500;
+  margin-bottom: $unit300;
   margin-left: auto;
   margin-right: auto;
-
+  
   @media all and (min-width: $screen-md) {
     margin-top: $unit400;
+    margin-bottom: $unit500;
   }
-
+  
   @media all and (min-width: $screen-lg) {
     display: grid;
     position: relative;
-
-    grid-gap: $grid-gutter-row $grid-gutter-column;
+    
+    grid-gap: 0 $grid-gutter-column;
     grid-template-columns: [image] 7fr [content] 5fr;
-
+    grid-auto-rows: max-content;
+    justify-content: center;
+    
     margin-top: $unit500;
-    margin-bottom: $unit600;
-    padding-left: $unit400;
-    padding-right: $unit400;
   }
-
+  
+  @media all and (min-width: $screen-xl) {
+    grid-template-columns: [image] 8fr [content] 4fr;
+    margin-bottom: $unit600;
+  }
+  
   .wp-block-image {
     margin-top: 0 !important;
     margin-bottom: $unit200;
-
-    @media all and (min-width: $screen-md) {
+    
+    @media all and (min-width: $screen-lg) {
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      justify-content: center;
       grid-area: image;
+      height: 45vh;
       margin: 0;
     }
-
+    
+    @media all and (min-width: $screen-xl) {
+      height: 55vh;
+    }
+    
     img {
       max-width: 100%;
       height: auto;
+      
+      @media all and (min-width: $screen-lg) {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+      }
     }
   }
-
+  
   .content {
+    @media all and (max-width: $screen-lg) {
+      max-width: $container-text;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
     @media all and (min-width: $screen-md) {
       grid-area: content;
+    }
+    
+    @media all and (min-width: $screen-xl) {
+      font-size: $font-size-base;
     }
   }
 }
