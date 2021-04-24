@@ -4,7 +4,6 @@
 
 .andersen-block-project {
   @import "../assets/scss/base/variables";
-  @import "../assets/scss/base/typography";
 
   + .andersen-block-project {
     margin-top: $unit500;
@@ -13,7 +12,7 @@
       margin-top: $unit600;
     }
   }
-
+ 
   a {
     display: grid;
     grid-template-columns: 1fr;
@@ -75,16 +74,15 @@
     .andersen-block-project-title {
       display: inline-block;
       position: relative;
-      @extend h3;
       margin-top: 0;
-      margin-bottom: 0.4rem;
+      margin-bottom: $unit100 / 2;
       text-decoration-color: $color-greyish-purple;
       -webkit-transition: all $duration-normal $ease;
       -moz-transition: all $duration-normal $ease;
       transition: all $duration-normal $ease;
 
-      @media all and (min-width: $screen-md) {
-        margin-bottom: 0.8rem;
+      @media all and (min-width: $screen-lg) {
+        margin-bottom: $unit100;
       }
     }
 
@@ -95,14 +93,15 @@
 
   .andersen-block-project-image {
     order: -1;
+    margin: 0;
+    padding: 0;
 
     @media all and (min-width: $screen-md) {
       grid-column: image;
     }
 
-    figure {
-      margin: 0;
-      padding: 0;
+    img {
+      min-width: 100%;
     }
   }
 }

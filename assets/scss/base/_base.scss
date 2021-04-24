@@ -39,8 +39,12 @@ body {
   hyphens: manual;
   color: $color-dark-purple;
 
-  @media all and (min-width: $screen-md) {
+  @media all and (min-width: $screen-lg) {
     font-size: $font-size-base;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    font-size: $font-size-large;
   }
 }
 

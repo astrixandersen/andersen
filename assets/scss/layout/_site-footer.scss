@@ -8,14 +8,22 @@
   background: $color-light-purple;
   width: 100%;
   margin: $unit600 0 0 0;
-  padding-top: $unit200;
-  padding-bottom: $unit200;
+  padding-top: $unit300;
+  padding-bottom: $unit300;
   @extend .site-padding;
 
   @media all and (min-width: $screen-md) {
     margin-top: $unit700;
     padding-top: $unit400;
     padding-bottom: $unit400;
+  }
+
+  @media all and (min-width: $screen-lg) {
+    padding-top: $unit500;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    padding-top: $unit500;
   }
 
   .container {
@@ -28,11 +36,20 @@
     font-family: $font-family-primary;
     font-size: $font-size-small;
     margin-top: $unit400;
+    margin-bottom: $unit100 / 2;
 
     @media all and (min-width: $screen-md) {
+      margin-bottom: $unit100 / 2;
+    }
+
+    @media all and (min-width: $screen-lg) {
       margin-top: $unit500;
       margin-bottom: $unit100;
       font-size: $font-size-base;
+    }
+
+    @media all and (min-width: $screen-xl) {
+      font-size: $font-size-large;
     }
 
     &:first-of-type {
@@ -70,6 +87,10 @@
 
     @media all and (min-width: $screen-md) {
       margin-top: 0;
+    }
+
+    @media all and (min-width: $screen-xl) {
+      font-size: 0.8em;
     }
 
     p {

@@ -36,16 +36,21 @@ h6 {
 
 h1,
 h2.page-title,
-h2.post-title {
+h2.post-title,
+h2.entry-title {
   margin: 0;
-  font-size: 4.8rem;
+  font-size: 4rem;
 
   @media all and (min-width: $screen-md) {
-    font-size: 6.4rem;
+    font-size: 5.2rem;
   }
 
   @media all and (min-width: $screen-lg) {
-    font-size: 7.2rem;
+    font-size: 6.4rem;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    font-size: 7.6rem;
   }
 }
 
@@ -56,18 +61,24 @@ h2.post-title {
 
 h2 {
   margin-top: $unit500;
-  margin-bottom: $unit200;
+  margin-bottom: $unit100;
   font-size: 3.2rem;
   line-height: 1.1;
 
   @media all and (min-width: $screen-md) {
     margin-top: $unit700;
-    font-size: 4.8rem;
+    font-size: 4rem;
   }
 
   @media all and (min-width: $screen-lg) {
     margin-top: $unit700 + $unit200;
-    font-size: 5.4rem;
+    margin-bottom: $unit200;
+    font-size: 5.2rem;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    margin-bottom: $unit300;
+    font-size: 6rem;
   }
 }
 
@@ -78,7 +89,7 @@ h3 {
   @media all and (min-width: $screen-md) {
     margin-top: $unit500 + $unit200;
     margin-bottom: $unit200;
-    font-size: 3.6rem;
+    font-size: 3.2rem;
   }
 
   @media all and (min-width: $screen-lg) {
@@ -86,6 +97,10 @@ h3 {
     margin-bottom: $unit200 + ($unit100 / 2);
     font-size: 4rem;
     line-height: 1.2;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    font-size: 4.4rem;
   }
 }
 
@@ -95,14 +110,18 @@ h4 {
 
   @media all and (min-width: $screen-md) {
     margin-bottom: $unit100;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   @media all and (min-width: $screen-lg) {
     margin-top: $unit500;
     margin-bottom: $unit200;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     line-height: 1.25;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    font-size: 3.2rem;
   }
 }
 
