@@ -216,7 +216,7 @@ if ( ! function_exists( 'andersen_setup' ) ) :
 					function andersen_scripts() {
 						
 						// Theme styles
-						wp_enqueue_style( 'andersen-style', get_stylesheet_uri() );
+						wp_enqueue_style( 'andersen-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version') );
 						
 						// Open menu
 						wp_enqueue_script( 'andersen-navigation', get_template_directory_uri() . '/assets/js/min/open-menu.min.js', array(), '', true );
