@@ -52,7 +52,7 @@ if ( have_rows('site_social', 'option') ) {
 		$link = get_sub_field('link');
 		
 		echo sprintf(
-			'<li><a href="%1$s" target="%2$s">%3$s</a></li>',
+			'<li><a href="%1$s" target="%2$s" rel="nofollow">%3$s</a></li>',
 			$link['url'],
 			$link['target'],
 			$link['title']
